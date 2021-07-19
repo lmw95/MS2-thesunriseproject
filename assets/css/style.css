@@ -15,7 +15,7 @@ body {
 .overlay-higher {
     position: absolute;
     z-index: 12;
-    top: 38.5%;
+    top: 37.5%;
     width: 100%;
     text-align: left;
 }
@@ -35,6 +35,16 @@ body {
     z-index: 12;
     top: 65%;
     width: 100%;
+}
+
+/*Hover effect over social media icons*/
+
+.overlay-social-media i {
+    transition: all 0.1s ease-in-out;
+}
+
+.overlay-social-media i:hover {
+    transform: scale(1.5);
 }
 
 /*Main carousel overlay*/
@@ -57,5 +67,5 @@ body {
 /*Carousel main titles - scroll with carousel*/
 
 .cell-overlay .title {
-    font-size: 88px;
+    font-size: 100px;
 }
