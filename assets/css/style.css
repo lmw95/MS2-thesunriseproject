@@ -55,6 +55,7 @@ body {
     display: flex;
     justify-content: left;
     align-items: center;
+    background-color: rgba(13, 113, 136, 0.3);
 }
 
 /*Individual carousel cells*/
@@ -68,4 +69,5 @@ body {
 
 .cell-overlay .title {
     font-size: 100px;
+    color: rgba(246, 186, 69);
 }
