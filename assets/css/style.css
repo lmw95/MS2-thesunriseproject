@@ -22,3 +22,7 @@ body {
     width: 100%;
     height: 100vh;
   }
+
+.cell-overlay .title {
+    font-size: 90px;
+}
