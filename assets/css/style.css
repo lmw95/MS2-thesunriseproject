@@ -17,7 +17,6 @@ body {
     z-index: 12;
     top: 38.5%;
     width: 100%;
-    height: 100px;
     text-align: left;
 }
 
@@ -28,8 +27,14 @@ body {
     z-index: 12;
     top: 58.5%;
     width: 100%;
-    height: 100px;
     text-align: left;
+}
+
+.overlay-social-media {
+    position: absolute;
+    z-index: 12;
+    top: 65%;
+    width: 100%;
 }
 
 /*Main carousel overlay*/
@@ -52,5 +57,5 @@ body {
 /*Carousel main titles - scroll with carousel*/
 
 .cell-overlay .title {
-    font-size: 90px;
+    font-size: 88px;
 }
