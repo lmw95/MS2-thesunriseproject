@@ -30,6 +30,15 @@ body {
     text-align: left;
 }
 
+/*Subtitle colouring*/
+
+.overlay-higher .subtitle,
+.overlay-lower .subtitle {
+    color: #9AB95D;
+}
+
+/*Carousel overlay 3 - fixed in position*/
+
 .overlay-social-media {
     position: absolute;
     z-index: 12;
@@ -41,10 +50,12 @@ body {
 
 .overlay-social-media i {
     transition: all 0.1s ease-in-out;
+    color: rgba(154, 185, 93, 0.2);
 }
 
 .overlay-social-media i:hover {
     transform: scale(1.5);
+    color:#9AB95D;
 }
 
 /*Main carousel overlay*/
@@ -69,4 +80,5 @@ body {
 
 .cell-overlay .title {
     font-size: 100px;
+    color: #F6BA45;
 }
