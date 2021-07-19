@@ -13,6 +13,8 @@
     <!-- Hover.css CDN -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
     <title>The Sunrise Project</title>
+    <!-- Flickity JS -->
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 <body>
     
@@ -42,8 +44,31 @@
         </div>
     </nav>
     <header class="hero">
-        <div class="hero-body">
-            
+        <div class="hero-body p-0">
+            <!--Flickity carousel to rotate hero images-->
+            <div class="carousel" data-flickity='{ "autoPlay": true, "pauseAutoPlayOnHover": false, "wrapAround": true, "prevNextButtons": false,
+            "pageDots": false, "autoPlay": 3500 }'>
+				<div class="carousel-cell">
+					<div class="cell-overlay">
+						<h1 class="title pb-2 ml-6 is-size-1">Wild beaches</h1>
+					</div>
+				</div>
+				<div class="carousel-cell">
+					<div class="cell-overlay">
+						<h1 class="title pb-2 ml-6 is-size-1">Forgotten history</h1>
+					</div>
+				</div>
+				<div class="carousel-cell">
+					<div class="cell-overlay">
+						<h1 class="title pb-2 ml-6 is-size-1">Nature's secrets</h1>
+					</div>
+				</div>
+				<div class="carousel-cell">
+					<div class="cell-overlay">
+						<h1 class="title pb-2 ml-6 is-size-1">A change in pace</h1>
+					</div>
+				</div>
+			</div>
         </div>
     </header>
 
