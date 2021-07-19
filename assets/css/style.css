@@ -64,6 +64,21 @@ body {
     color:#9AB95D;
 }
 
+/*Carousel overlay 4 - fixed in position*/
+
+.overlay-scroll {
+    position: absolute;
+    z-index: 12;
+    top: 92.5%;
+    width: 100%;
+    color: rgba(154, 185, 93, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+.overlay-scroll:hover {
+    color: #9AB95D;
+}
+
 /*Main carousel overlay*/
 
 .cell-overlay {
