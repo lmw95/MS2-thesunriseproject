@@ -10,6 +10,8 @@ body {
     margin: 0;
 }
 
+/*Carousel subtitle 1 - fixed in position*/
+
 .overlay-higher {
     position: absolute;
     z-index: 12;
@@ -19,14 +21,18 @@ body {
     text-align: left;
 }
 
+/*Carousel subtitle 2 - fixed in position*/
+
 .overlay-lower {
     position: absolute;
     z-index: 12;
-    top: 58%;
+    top: 58.5%;
     width: 100%;
     height: 100px;
     text-align: left;
 }
+
+/*Main carousel overlay*/
 
 .cell-overlay {
     height: 100%;
@@ -36,10 +42,14 @@ body {
     align-items: center;
 }
 
+/*Individual carousel cells*/
+
 .carousel-cell {
     width: 100%;
     height: 100vh;
   }
+
+/*Carousel main titles - scroll with carousel*/
 
 .cell-overlay .title {
     font-size: 90px;
