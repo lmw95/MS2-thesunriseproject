@@ -10,6 +10,24 @@ body {
     margin: 0;
 }
 
+.overlay-higher {
+    position: absolute;
+    z-index: 12;
+    top: 38.5%;
+    width: 100%;
+    height: 100px;
+    text-align: left;
+}
+
+.overlay-lower {
+    position: absolute;
+    z-index: 12;
+    top: 58%;
+    width: 100%;
+    height: 100px;
+    text-align: left;
+}
+
 .cell-overlay {
     height: 100%;
     width: 100%;
