@@ -55,7 +55,7 @@ body {
     display: flex;
     justify-content: left;
     align-items: center;
-    background-color: rgba(13, 113, 136, 0.3);
+    background-color: rgba(33, 29, 28, 0.5);
 }
 
 /*Individual carousel cells*/
