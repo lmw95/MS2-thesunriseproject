@@ -16,12 +16,6 @@ body {
     color: #9AB95D;
 }
 
-/*Hover.css underline*/
-
-.hvr-underline-from-center:before {
-    background: #9AB95D;
-}
-
 /*Carousel subtitle 1 - fixed in position*/
 
 .overlay-higher {
