@@ -104,3 +104,15 @@ body {
     color: #F6BA45;
     font-weight: 400;
 }
+
+/*Visitor Center section*/
+
+.visitor-center {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #9AB95D;
+    color: #0D7188;
+}
+
+.visitor-center .title {
+    color: #211D1C;
+}
