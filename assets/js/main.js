@@ -6,6 +6,13 @@ $("#clickToScroll").click(function(){
     scroll(0,position.top);
 });
 
+// Function that changes the navbar when the user scrolls down - code https://stackoverflow.com/a/41037394
+$(function () {
+    $(document).scroll(function () {
+      var $nav = $(".navbar");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
 
 });
 
