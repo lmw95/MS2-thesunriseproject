@@ -7,6 +7,5 @@ $("#clickToScroll").click(function(){
 });
 
 
-
 });
 
