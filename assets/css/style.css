@@ -132,6 +132,8 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+/*Text that takes user to scroll to quiz*/
+
 .quiz-scroll {
     color: rgba(13, 113, 136, 0.5);
     transition: all 0.2s ease-in-out;
@@ -140,6 +142,28 @@ body {
 .quiz-scroll:hover {
     cursor: pointer;
     color: #0d7188;
+}
+
+/*Bulma tabs*/
+
+.visitor-center .tabs ul a {
+    color: #211D1C;
+    transition: all 0.1s ease-in-out;
+    border-bottom-style: none;
+    background-color: rgba(102, 192, 163, 0.5);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.visitor-center .tabs ul a:hover {
+    background-color:#66C0A3;
+    overflow: hidden;
+}
+
+.active-tab {
+    background-color: #66C0A3;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 /*Mobile queries*/
