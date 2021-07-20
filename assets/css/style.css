@@ -14,14 +14,13 @@ body {
 /*Navbar items hover effect*/
 
 .navbar .nav-end .navbar-item a:hover {
-    color: #9AB95D;
     cursor: pointer;
 }
 
 /*Navbar scrolling jQuery class*/
 
 .navbar.scrolled {
-    background-color: rgba(102, 192, 163, 0.9) !important;
+    background-color: rgba(73, 121, 107, 0.9) !important;
     transition: background-color 400ms linear;
   }
 
@@ -49,7 +48,7 @@ body {
 
 .overlay-higher .subtitle,
 .overlay-lower .subtitle {
-    color: #9AB95D;
+    color: #BB9457;
 }
 
 /*Carousel overlay 3 - fixed in position*/
@@ -65,12 +64,12 @@ body {
 
 .overlay-social-media i {
     transition: all 0.1s ease-in-out;
-    color: rgba(154, 185, 93, 0.2);
+    color: rgba(187, 148, 87, 0.2);
 }
 
 .overlay-social-media i:hover {
     transform: scale(1.5);
-    color:#9AB95D;
+    color:#BB9457;
     cursor: pointer;
 }
 
@@ -81,12 +80,12 @@ body {
     z-index: 12;
     top: 92.5%;
     width: 100%;
-    color: rgba(154, 185, 93, 0.2);
+    color: rgba(187, 148, 87, 0.2);
     transition: all 0.2s ease-in-out;
 }
 
 .overlay-scroll:hover {
-    color: #9AB95D;
+    color: #BB9457;
     cursor: pointer;
 }
 
@@ -112,7 +111,7 @@ body {
 
 .cell-overlay .title {
     font-size: 110px;
-    color: #F6BA45;
+    color: #FFFCEB;
     font-weight: 400;
     font-family: 'Caveat', cursive;
 }
@@ -121,8 +120,8 @@ body {
 
 .visitor-center {
     font-family: 'Roboto Condensed', sans-serif;
-    background-color: rgba(154, 185, 93, 0.5);
-    color: #0D7188;
+    background-color: #BB9457;
+    color: #FFFCEB;
 }
 
 .visitor-center .title,
@@ -137,13 +136,13 @@ body {
 /*Text that takes user to scroll to quiz*/
 
 .quiz-scroll {
-    color: rgba(13, 113, 136, 0.5);
+    color: rgba(255, 252, 235, 0.5);
     transition: all 0.2s ease-in-out;
 }
 
 .quiz-scroll:hover {
     cursor: pointer;
-    color: #0d7188;
+    color: #FFFCEB;
 }
 
 /*Bulma tabs*/
@@ -152,18 +151,18 @@ body {
     color: #211D1C;
     transition: all 0.1s ease-in-out;
     border-bottom-style: none;
-    background-color: rgba(102, 192, 163, 0.5);
+    background-color: rgba( 0.5);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
 .visitor-center .tabs ul a:hover {
-    background-color:#66C0A3;
+    background-color:#735238;
     overflow: hidden;
 }
 
 .active-tab {
-    background-color: #66C0A3;
+    background-color: #735238;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -172,8 +171,8 @@ body {
 
 .quiz-section {
     font-family: 'Roboto Condensed', sans-serif;
-    background-color: #4E9CAC;
-    color: #9AB95D;
+    background-color: #49796B;
+    color: #fffceb;
 }
 
 /*Mobile queries*/
