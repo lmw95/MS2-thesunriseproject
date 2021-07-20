@@ -20,8 +20,7 @@ body {
 
 .navbar.scrolled {
     background-color: rgba(102, 192, 163, 0.6) !important;
-    transition: background-color 600ms linear;
-    transition-delay: 0.5s;
+    transition: background-color 400ms linear;
   }
 
 /*Carousel subtitle 1 - fixed in position*/
