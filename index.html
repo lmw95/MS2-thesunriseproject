@@ -13,8 +13,11 @@
     <!-- Hover.css CDN -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
     <title>The Sunrise Project</title>
+    <!-- JQuery 3.6.0 -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- Flickity JS -->
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="/assets/js/main.js"></script>
 </head>
 <body>
     
@@ -52,7 +55,7 @@
                 </span>
             </div>
             <!--Fixed div that doesn't scroll with the carousel-->
-            <div class="container is-fluid overlay-scroll has-text-centered">
+            <div class="container is-fluid overlay-scroll has-text-centered" id="clickToScroll">
                 <p>Scroll down to explore with us</p>
                 <span class="icon is-small">
                     <i class="fas fa-angle-down"></i>
@@ -115,7 +118,7 @@
             </nav>
         </div>
     </header>
-    <section class="section visitor-center is-large p-4">
+    <section class="section visitor-center is-large p-4" id="visitorCenter">
         <div class="columns">
             <div class="column is-full p-5 has-text-centered">
                 <span class="icon is-large">
