@@ -117,3 +117,40 @@ body {
 .visitor-center .title {
     color: #211D1C;
 }
+
+
+/*Mobile queries*/
+
+/*Mobile media query - 360px to 798px*/
+@media (min-width: 360px) and (max-width: 798px) {
+    .cell-overlay {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cell-overlay .title {
+        font-size: 9vh;
+        line-height: 50px;
+        margin-left: 0 !important;
+        margin-top: 170px;
+        text-align: center;
+        padding: 0.5em;
+    }
+
+    .overlay-higher, .overlay-lower,
+    .overlay-social-media, .overlay-scroll {
+        text-align: center;
+    }
+
+    .overlay-higher {
+        top: 51%;
+    }
+
+    .overlay-lower {
+        top: 74%;
+    }
+
+    .overlay-social-media {
+        top: 85%;
+    }
+}
