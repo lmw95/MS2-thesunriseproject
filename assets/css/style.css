@@ -21,7 +21,7 @@ body {
 /*Navbar scrolling jQuery class*/
 
 .navbar.scrolled {
-    background-color: rgba(102, 192, 163, 0.6) !important;
+    background-color: rgba(102, 192, 163, 0.9) !important;
     transition: background-color 400ms linear;
   }
 
@@ -121,7 +121,7 @@ body {
 
 .visitor-center {
     font-family: 'Roboto Condensed', sans-serif;
-    background-color: #9AB95D;
+    background-color: rgba(154, 185, 93, 0.5);
     color: #0D7188;
 }
 
@@ -172,6 +172,8 @@ body {
 
 .quiz-section {
     font-family: 'Roboto Condensed', sans-serif;
+    background-color: #4E9CAC;
+    color: #9AB95D;
 }
 
 /*Mobile queries*/
