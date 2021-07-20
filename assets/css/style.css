@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@300;400;500;600&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -103,6 +103,7 @@ body {
     font-size: 100px;
     color: #F6BA45;
     font-weight: 400;
+    font-family: 'Caveat', cursive;
 }
 
 /*Visitor Center section*/
