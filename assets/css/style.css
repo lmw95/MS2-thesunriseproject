@@ -16,6 +16,14 @@ body {
     color: #9AB95D;
 }
 
+/*Navbar scrolling jQuery class*/
+
+.navbar.scrolled {
+    background-color: rgba(102, 192, 163, 0.5) !important;
+    transition: background-color 800ms linear;
+    transition-delay: 0.5s;
+  }
+
 /*Carousel subtitle 1 - fixed in position*/
 
 .overlay-higher {
@@ -116,6 +124,11 @@ body {
 
 .visitor-center .title {
     color: #211D1C;
+}
+
+.visitor-center .welcome {
+    font-family: 'Roboto Condensed', sans-serif;
+
 }
 
 
