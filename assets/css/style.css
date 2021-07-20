@@ -19,8 +19,8 @@ body {
 /*Navbar scrolling jQuery class*/
 
 .navbar.scrolled {
-    background-color: rgba(102, 192, 163, 0.5) !important;
-    transition: background-color 800ms linear;
+    background-color: rgba(102, 192, 163, 0.6) !important;
+    transition: background-color 600ms linear;
     transition-delay: 0.5s;
   }
 
