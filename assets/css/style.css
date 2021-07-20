@@ -8,6 +8,7 @@ html {
 body {
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 /*Navbar items hover effect*/
@@ -124,7 +125,8 @@ body {
     color: #0D7188;
 }
 
-.visitor-center .title {
+.visitor-center .title,
+.quiz-section .title {
     color: #211D1C;
 }
 
@@ -164,6 +166,12 @@ body {
     background-color: #66C0A3;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+}
+
+/*Quiz section*/
+
+.quiz-section {
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 /*Mobile queries*/
