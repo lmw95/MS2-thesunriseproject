@@ -148,12 +148,13 @@ body {
 /*Bulma tabs*/
 
 .visitor-center .tabs ul a {
-    color: #211D1C;
+    color: #FFFCEB;
     transition: all 0.1s ease-in-out;
     border-bottom-style: none;
     background-color: rgba( 0.5);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    letter-spacing: 1px;
 }
 
 .visitor-center .tabs ul a:hover {
@@ -185,10 +186,10 @@ body {
     }
     
     .cell-overlay .title {
-        font-size: 9vh;
+        font-size: 11vw;
         line-height: 50px;
         margin-left: 0 !important;
-        margin-top: 170px;
+        margin-top: 230px;
         text-align: center;
         padding: 0.5em;
     }
@@ -199,7 +200,7 @@ body {
     }
 
     .overlay-higher {
-        top: 51%;
+        top: 49%;
     }
 
     .overlay-lower {
