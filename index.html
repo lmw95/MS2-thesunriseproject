@@ -191,14 +191,86 @@
     <!--Interactive tour guide quiz section-->
     <section class="section quiz-section is-large pt-4 pl-4 pr-4 pb-5" id="quizSection">
         <div class="columns mb-0">
-            <div class="column is-full pt-5 pb-0 has-text-centered">
+            <div class="column is-full pt-5 pb-0 has-text-centered is-flex is-justify-content-center is-align-items-center" style="flex-direction: column;">
                 <span class="icon is-large">
                     <i class="fas fa-map-signs fa-3x"></i>
                 </span>
-                <h1 class="title is-size-1 pt-3">The Sunrise Project's Tour Guide</h1>
+                <h1 class="title is-size-1 pt-3 mb-0">The Sunrise Project's Tour Guide</h1>
+                <p class="welcome is-size-5 p-5 has-text-centered" style="max-width: 1000px;">
+                    
+                    The part you've been waiting for... our tour guide! This little online guide will help you to make the most of your trip around The Sunrise Coast. Simply choose one of your favourite activities from the selection below, filter by the criteria provided and it will provide you with a perfect location for your day out. </p>
             </div>
         </div>
     </section>
+
+    <!--Modal - only active when contact button clicked-->
+    <div class="modal is-active">
+        <div class="modal-background">
+        </div>
+        <div class="modal-content">
+          <div class="box p-6">
+              <!--Full name input-->
+              <div class="field">
+                <label class="label">Full name</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input" type="text" placeholder="Enter your full name">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+                  <span class="icon is-small is-right">
+                    <i class="fas fa-check"></i>
+                  </span>
+                </div>
+              </div>
+              <!--Email input-->
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input" type="email" placeholder="Enter your email">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </div>
+              </div>
+              <!--Subject dropdown selection-->
+              <div class="field">
+                <label class="label">Subject</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option>Select dropdown</option>
+                      <option>With options</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!--Message input-->
+              <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                  <textarea class="textarea" placeholder="Textarea"></textarea>
+                </div>
+              </div>
+              <!--T&C checkbox-->
+              <div class="field">
+                <div class="control">
+                  <label class="checkbox">
+                    <input type="checkbox">
+                    I agree to the <a href="#">terms and conditions</a>
+                  </label>
+                </div>
+              </div>
+              <!--Submission button-->
+              <div class="field is-grouped">
+                <div class="control">
+                  <button class="button is-link">Submit</button>
+                </div>
+                <div class="control">
+                  <button class="button is-link is-light">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
