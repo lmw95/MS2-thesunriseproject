@@ -13,11 +13,6 @@
     <!-- Hover.css CDN -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
     <title>The Sunrise Project</title>
-    <!-- JQuery 3.6.0 -->
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <!-- Flickity JS -->
-	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="/assets/js/main.js"></script>
 </head>
 <body>
     
@@ -275,6 +270,16 @@
             </form>
         </div>
     </div>
+
+    <script>
+        $("#toggleModal").click(function() {
+            $(".modal").addClass("is-active", "is-clipped");
+        });
+
+        $("#closeModal").click(function() {
+            $(".modal").removeClass("is-active", "is-clipped");
+        });
+    </script>
 
 </body>
 </html>
