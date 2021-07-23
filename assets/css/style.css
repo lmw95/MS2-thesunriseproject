@@ -159,13 +159,10 @@ body {
 
 .visitor-center .tabs ul a:hover {
     background-color:#735238;
-    overflow: hidden;
 }
 
 .active-tab {
     background-color: #735238;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
 }
 
 /*Quiz section*/
