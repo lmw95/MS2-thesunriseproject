@@ -311,6 +311,12 @@
             $("#projectToggleButton").removeClass("active-tab");
             $("#historyToggleButton").removeClass("active-tab");
         });
+
+        // Function that allows the user to scroll to next section of the page from the Visitor's Center section
+        $("#clickToScrollQuiz").click(function() {
+            var position = $("#quizSection").position();
+            scroll(0,position.top);
+        });
     </script>
 
 </body>
