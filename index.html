@@ -278,14 +278,17 @@
     </div>
 
     <script>
+        //Function that allows modal to open
         $("#toggleModal").click(function() {
             $(".modal").addClass("is-active", "is-clipped");
         });
 
+        //Function that allows modal to close when cancel button is clicked
         $("#closeModal").click(function() {
             $(".modal").removeClass("is-active", "is-clipped");
         });
 
+        // Function that allows modal to close when background is clicked
         $(".modal-background").click(function() {
             $(".modal").removeClass("is-active", "is-clipped");
         });
