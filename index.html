@@ -157,19 +157,19 @@
         <!--Bulma tabs for toggleable menu bar-->
         <div class="tabs is-centered is-boxed is-fullwidth mb-0 pt-4">
             <ul style="border-bottom-color: none; border-bottom-style: none;">
-              <li class="active-tab">
+              <li class="active-tab" id="projectToggleButton">
                 <a class="pt-5 pb-5 mr-1">
                   <span class="icon is-small"><i class="fas fa-handshake" aria-hidden="true"></i></span>
                   <span class="is-uppercase is-size-6 has-text-weight-semibold ml-2">What is the Sunrise Project?</span>
                 </a>
               </li>
-              <li>
+              <li id="historyToggleButton">
                 <a class="pt-5 pb-5 ml-1 mr-1">
                   <span class="icon is-small"><i class="fas fa-water" aria-hidden="true"></i></span>
                   <span class="is-uppercase is-size-6 has-text-weight-semibold ml-2">What is the Sunrise Coast?</span>
                 </a>
               </li>
-              <li>
+              <li id="inspoToggleButton">
                 <a class="p-5 ml-1">
                   <span class="icon is-small"><i class="fas fa-landmark" aria-hidden="true"></i></span>
                   <span class="is-uppercase is-size-6 has-text-weight-semibold ml-2">Be inspired...</span>
@@ -291,6 +291,25 @@
         // Function that allows modal to close when background is clicked
         $(".modal-background").click(function() {
             $(".modal").removeClass("is-active", "is-clipped");
+        });
+
+        // Function that toggles different sections in visitor center
+        $("#projectToggleButton").click(function() {
+            $(this).addClass("active-tab");
+            $("#historyToggleButton").removeClass("active-tab");
+            $("#inspoToggleButton").removeClass("active-tab");
+        });
+
+        $("#historyToggleButton").click(function() {
+            $(this).addClass("active-tab");
+            $("#projectToggleButton").removeClass("active-tab");
+            $("#inspoToggleButton").removeClass("active-tab");
+        });
+
+        $("#inspoToggleButton").click(function() {
+            $(this).addClass("active-tab");
+            $("#projectToggleButton").removeClass("active-tab");
+            $("#historyToggleButton").removeClass("active-tab");
         });
     </script>
 
