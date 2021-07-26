@@ -147,13 +147,12 @@
       </div>
         <div class="columns">
           <div class="column is-full p-6">
-            <p class="is-size-5 is-uppercase has-text-weight-bold">Choose a favourite</p>
+            <p class="is-size-5 is-uppercase has-text-weight-bold">Choose two of your favourites...</p>
           </div>
         </div>
         <div class="columns mb-5">
-          <div class="column is-1"></div>
           <div class="column is-2">
-            <span class="quiz-option is-flex is-justify-content-center is-align-items-center" style="flex-direction: column;">
+            <span class="is-flex is-justify-content-center is-align-items-center p-3" style="flex-direction: column; border: solid 4px rgba(221, 110, 66 , 0.3);">
               <span class="icon is-medium">
                 <i class="fas fa-landmark"></i>
               </span>
@@ -161,7 +160,7 @@
             </span>
           </div>
           <div class="column is-2">
-            <span class="quiz-option is-flex is-justify-content-center is-align-items-center" style="flex-direction: column;">
+            <span class="is-flex is-justify-content-center is-align-items-center p-3" style="flex-direction: column; border: solid 4px rgba(221, 110, 66, 0.3);">
               <span class="icon is-medium">
                 <i class="fas fa-dove"></i>
               </span>
@@ -169,7 +168,7 @@
             </span>
           </div>
           <div class="column is-2">
-            <span class="quiz-option is-flex is-justify-content-center is-align-items-center" style="flex-direction: column;">
+            <span class="is-flex is-justify-content-center is-align-items-center p-3" style="flex-direction: column; border: solid 4px rgba(221, 110, 66, 0.3);">
               <span class="icon is-medium">
                 <i class="fas fa-hiking"></i>
               </span>
@@ -177,7 +176,7 @@
             </span>
           </div>
           <div class="column is-2">
-            <span class="quiz-option is-flex is-justify-content-center is-align-items-center" style="flex-direction: column;">
+            <span class="is-flex is-justify-content-center is-align-items-center p-3" style="flex-direction: column; border: solid 4px rgba(221, 110, 66, 0.3);">
               <span class="icon is-medium">
                 <i class="fas fa-anchor"></i>
               </span>
@@ -185,14 +184,21 @@
             </span>
           </div>
           <div class="column is-2">
-            <span class="quiz-option is-flex is-justify-content-center is-align-items-center" style="flex-direction: column;">
+            <span class="is-flex is-justify-content-center is-align-items-center p-3" style="flex-direction: column; border: solid 4px rgba(221, 110, 66, 0.3);">
               <span class="icon is-medium p-3">
                 <i class="fas fa-grin-stars"></i>
               </span>
               <p class="is-uppercase">Theme parks</p>
             </span>
           </div>
-          <div class="column is-1"></div>
+          <div class="column is-2">
+            <span class="quiz-option is-flex is-justify-content-center is-align-items-center p-3" style="flex-direction: column; border: solid 4px rgba(221, 110, 66, 0.3);">
+              <span class="icon is-medium">
+                <i class="fas fa-cocktail"></i>
+              </span>
+              <p class="is-uppercase">Nightlife</p>
+            </span>
+          </div>
         </div>
     </section>
 
@@ -211,7 +217,7 @@
               <p class="welcome is-size-5 p-5 has-text-centered" style="max-width: 1000px;">
                   
                   Welcome to the Sunrise Coast! We are here to help you make the most of your 
-                  days out in Lowestoft, Kessingland and Great Yarmouth, and enjoy your time 
+                  days out in Lowestoft, Oulton Broad, Kessingland and Great Yarmouth, and enjoy your time 
                   in our little corner of the country. In the Visitor Center, you can find all 
                   the information you need about the local area, including history, a little bit 
                   about us and inspiration for your days out! </p>
@@ -371,10 +377,14 @@
             scroll(0,position.top);
         });
 
+        // Function that allows the user to scroll to the next section of the website from the Guide section
         $("#clickToScrollVC").click(function() {
           var position = $("#visitorCenter").position();
           scroll(0,position.top);
         });
+
+        // Function that changes background of guide options when clicked on
+
     </script>
 
 </body>
