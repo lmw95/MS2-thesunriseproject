@@ -79,6 +79,8 @@ $(".quiz-option").on("mouseover", function() {
 
 $(".quiz-option").on("mouseleave", function() {
   $(this).css("border", "none");
+  $(this).css("border", "4px");
+  $(this).css("border", "4px");
 })
 
 // Function that only allows two quiz option divs to be clicked at one time
