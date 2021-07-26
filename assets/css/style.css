@@ -20,7 +20,7 @@ body {
 /*Navbar scrolling jQuery class*/
 
 .navbar.scrolled {
-    background-color: rgba(73, 121, 107, 0.9) !important;
+    background-color: rgba(79, 109, 122, 0.8) !important;
     transition: background-color 400ms linear;
   }
 
@@ -48,7 +48,7 @@ body {
 
 .overlay-higher .subtitle,
 .overlay-lower .subtitle {
-    color: #BB9457;
+    color: rgb(221, 110, 66);
 }
 
 /*Carousel overlay 3 - fixed in position*/
@@ -64,12 +64,12 @@ body {
 
 .overlay-social-media i {
     transition: all 0.1s ease-in-out;
-    color: rgba(187, 148, 87, 0.2);
+    color: rgba(221, 110, 66, 0.2);
 }
 
 .overlay-social-media i:hover {
     transform: scale(1.5);
-    color:#BB9457;
+    color:rgb(221, 110, 66);
     cursor: pointer;
 }
 
@@ -80,12 +80,12 @@ body {
     z-index: 12;
     top: 92.5%;
     width: 100%;
-    color: rgba(187, 148, 87, 0.2);
+    color: rgba(221, 110, 66, 0.2);
     transition: all 0.2s ease-in-out;
 }
 
 .overlay-scroll:hover {
-    color: #BB9457;
+    color: rgb(221, 110, 66);
     cursor: pointer;
 }
 
@@ -97,7 +97,7 @@ body {
     display: flex;
     justify-content: left;
     align-items: center;
-    background-color: rgba(33, 29, 28, 0.6);
+    background-color: rgba(33, 29, 28, 0.7);
 }
 
 /*Individual carousel cells*/
@@ -111,7 +111,7 @@ body {
 
 .cell-overlay .title {
     font-size: 110px;
-    color: #FFFCEB;
+    color: rgba(234, 234, 234);
     font-weight: 400;
     font-family: 'Caveat', cursive;
 }
@@ -120,8 +120,8 @@ body {
 
 .visitor-center {
     font-family: 'Roboto Condensed', sans-serif;
-    background-color: #BB9457;
-    color: #FFFCEB;
+    background-color: rgb(221, 110, 66);
+    color: rgba(234, 234, 234);
 }
 
 .visitor-center .title,
@@ -136,19 +136,19 @@ body {
 /*Text that takes user to scroll to quiz*/
 
 .quiz-scroll {
-    color: rgba(255, 252, 235, 0.5);
+    color: rgba(79, 109, 122, 0.5);
     transition: all 0.2s ease-in-out;
 }
 
 .quiz-scroll:hover {
     cursor: pointer;
-    color: #FFFCEB;
+    color: rgb(79, 109, 122);
 }
 
 /*Bulma tabs*/
 
 .visitor-center .tabs ul a {
-    color: #FFFCEB;
+    color: rgb(234, 234, 234);
     transition: all 0.1s ease-in-out;
     border-bottom-style: none;
     letter-spacing: 1px;
@@ -166,8 +166,8 @@ body {
 
 .quiz-section {
     font-family: 'Roboto Condensed', sans-serif;
-    background-color: #49796B;
-    color: #fffceb;
+    background-color: rgba(234, 234, 234);
+    color: rgba(79, 109, 122);
 }
 
 /*Mobile queries*/
