@@ -151,9 +151,6 @@ body {
     color: #FFFCEB;
     transition: all 0.1s ease-in-out;
     border-bottom-style: none;
-    background-color: rgba( 0.5);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
     letter-spacing: 1px;
 }
 
