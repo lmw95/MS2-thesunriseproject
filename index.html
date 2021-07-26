@@ -122,7 +122,7 @@
     </header>
 
     <!--Interactive tour guide quiz section-->
-    <section class="section quiz-section is-large pt-4 pl-6 pr-6 pb-5" id="quizSection">
+    <section class="section quiz-section pt-4 pl-6 pr-6 pb-6" id="quizSection">
         <div class="columns mb-0">
             <div class="column is-full pt-5 pb-0 has-text-centered is-flex is-justify-content-center is-align-items-center" style="flex-direction: column;">
                 <span class="icon is-large">
@@ -132,8 +132,8 @@
                 <p class="welcome is-size-5 p-5 has-text-centered" style="max-width: 1000px;">
                     
                     The part you've been waiting for... our tour guide! This little online guide will help you to make the most of your trip around The Sunrise Coast. Simply choose one of your favourite activities from the selection below, filter by the criteria provided and it will provide you with a perfect location for your day out. </p>
-            </div>
-        </div>
+              </div>
+          </div>
         <div class="block quiz-scroll has-text-centered">
           <p class="is-size-6 pb-1" id="clickToScrollVC">
 
@@ -150,38 +150,38 @@
             <p class="is-size-5 is-uppercase has-text-weight-bold pb-3">Choose two of your favourites...</p>
           </div>
         </div>
-        <div class="columns mb-5 is-flex is-justify-content-center is-align-items-center">
-          <div class="column is-2 is-flex is-justify-content-center is-align-items-center" style="flex-direction: column; border: solid 4px rgba(221, 110, 66 , 0.3);" id="history">
+        <div class="columns">
+          <div class="column quiz-option is-2 is-flex is-justify-content-center is-align-items-center" style="flex-direction: column;" id="history">
               <span class="icon is-medium">
                 <i class="fas fa-landmark"></i>
               </span>
               <p class="is-uppercase">History</p>
           </div>
-          <div class="column is-2 is-flex is-justify-content-center is-align-items-center mx-1" style="flex-direction: column; border: solid 4px rgba(221, 110, 66, 0.3);" id="nature">
+          <div class="column quiz-option is-2 is-flex is-justify-content-center is-align-items-center" style="flex-direction: column;" id="nature">
               <span class="icon is-medium">
                 <i class="fas fa-dove"></i>
               </span>
               <p class="is-uppercase has-text-centered">Nature & zoos</p>
           </div>
-          <div class="column is-2 is-flex is-justify-content-center is-align-items-center mx-1" style="flex-direction: column; border: solid 4px rgba(221, 110, 66, 0.3);" id="walking">
+          <div class="column  quiz-option is-2 is-flex is-justify-content-center is-align-items-center" style="flex-direction: column;" id="walking">
               <span class="icon is-medium">
                 <i class="fas fa-hiking"></i>
               </span>
               <p class="is-uppercase">Walking</p>
           </div>
-          <div class="column is-2 is-flex is-justify-content-center is-align-items-center mx-1" style="flex-direction: column; border: solid 4px rgba(221, 110, 66, 0.3);" id="broads">
+          <div class="column quiz-option is-2 is-flex is-justify-content-center is-align-items-center" style="flex-direction: column;" id="broads">
               <span class="icon is-medium">
                 <i class="fas fa-anchor"></i>
               </span>
               <p class="is-uppercase has-text-centered">On the Broads</p>
           </div>
-          <div class="column is-2 is-flex is-justify-content-center is-align-items-center mx-1" style="flex-direction: column; border: solid 4px rgba(221, 110, 66, 0.3);" id="themeParks">
+          <div class="column quiz-option is-2 is-flex is-justify-content-center is-align-items-center" style="flex-direction: column;" id="themeParks">
               <span class="icon is-medium p-3">
                 <i class="fas fa-grin-stars"></i>
               </span>
-              <p class="is-uppercase">Theme parks</p>
+              <p class="is-uppercase has-text-centered">Theme parks</p>
           </div>
-          <div class="column is-2 is-flex is-justify-content-center is-align-items-center" style="flex-direction: column; border: solid 4px rgba(221, 110, 66, 0.3);" id="nightlife">
+          <div class="column quiz-option is-2 is-flex is-justify-content-center is-align-items-center" style="flex-direction: column;" id="nightlife">
               <span class="icon is-medium">
                 <i class="fas fa-cocktail"></i>
               </span>
@@ -373,6 +373,10 @@
         });
 
         // Function that changes background of guide options when clicked on
+        $(".quiz-option").on("click", function() {
+          $(this).css("background-color", "#dd6e42");
+          $(this).css("color", "#eaeaea");
+        });
 
     </script>
 
