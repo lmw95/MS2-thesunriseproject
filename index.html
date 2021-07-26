@@ -189,10 +189,15 @@
             </span>
           </div>
         </div>
+        <div class="columns">
+          <div class="column is-full is-flex is-justify-content-center is-align-items-center p-5">
+            <button class="p-2 is-uppercase">Reset</button>
+          </div>
+        </div>
     </section>
 
     <!--Visitor Center section-->
-    <section class="section visitor-center is-large pt-4 pl-4 pr-4 pb-5" id="visitorCenter">
+    <section class="section visitor-center is-large pt-4 pl-4 pr-4 pb-5" id="visitorCenter" style="display: none;">
       <div class="columns mb-0">
           <div class="column is-full pt-5 pb-0 has-text-centered">
               <span class="icon is-large">
@@ -378,6 +383,10 @@
           $(this).css("color", "#eaeaea");
         });
 
+        // Function that changes the cursor to a pointer when mouseover
+        $(".quiz-option").on("mouseover", function() {
+          $(this).css("cursor", "pointer");
+        });
     </script>
 
 </body>
