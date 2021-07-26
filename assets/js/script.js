@@ -72,6 +72,10 @@ $(this).css("cursor", "pointer");
 
 // Function that only allows two quiz option divs to be clicked at one time
 
+// Function that resets the quiz
+$("#resetButton").on("click", function() {
+  $(".quiz-option").removeClass("clicked");
+});
 
 // Function that returns the user's results
 
