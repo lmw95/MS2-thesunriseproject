@@ -24,6 +24,11 @@ body {
     transition: background-color 400ms linear;
   }
 
+.clicked {
+    background-color:rgb(221, 110, 66);
+    color: #eaeaea;
+}
+
 /*Carousel subtitle 1 - fixed in position*/
 
 .overlay-higher {
@@ -168,6 +173,17 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     background-color: rgba(234, 234, 234);
     color: rgba(79, 109, 122);
+}
+
+.quiz-section button {
+    color: rgba(234, 234, 234);
+    background-color: rgba(221, 110, 66, 0.8);
+    border: none;
+}
+
+.quiz-section button:hover {
+    background-color: rgb(221, 110, 66);
+    cursor: pointer;
 }
 
 /*Mobile queries*/
