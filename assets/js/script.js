@@ -70,6 +70,17 @@ $(".quiz-option").on("mouseover", function() {
 $(this).css("cursor", "pointer");
 });
 
+// Function that changes the border colour of the quiz options when mouseover
+$(".quiz-option").on("mouseover", function() {
+  $(this).css("border", "solid 4px rgb(221, 110, 66, 0.3)");
+  $(this).css("margin-top", "-4px");
+  $(this).css("margin-bottom", "-4px");
+})
+
+$(".quiz-option").on("mouseleave", function() {
+  $(this).css("border", "none");
+})
+
 // Function that only allows two quiz option divs to be clicked at one time
 
 // Function that resets the quiz
