@@ -186,6 +186,8 @@ body {
     cursor: pointer;
 }
 
+/*Location result pages*/
+
 .location-result {
     font-family: "Roboto Condensed", sans-serif;
     background-color: rgb(234, 234, 234);
@@ -194,6 +196,11 @@ body {
 .location-result .title {
    font-size: 80px;
    color:rgb(234, 234, 234);
+}
+
+.location-result .subtitle {
+    color: rgb(234, 234, 234);
+    letter-spacing: 1px;
 }
 
 /*Mobile queries*/
