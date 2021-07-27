@@ -1,5 +1,7 @@
-let APIkey = "AIzaSyAz2AgSP-awt4zaXYsWQWIXLev7StjPLLM"; // Google API key
+ // Google API key
+let APIkey = "AIzaSyAz2AgSP-awt4zaXYsWQWIXLev7StjPLLM";
 
+// Initiates the maps for all location pages
 function initMap() {
     let mapL = new google.maps.Map(document.getElementById("mapLowestoft"), {
         zoom: 13,
@@ -33,6 +35,50 @@ function initMap() {
         }
     });
 
+    // Create all locations for each location's top 5 attractions
+    // LOWESTOFT
+    const maritimeMuseum;
 
+    const transportMuseum ;
+
+    const nessPoint;
+
+    const lowestoftBeacH;
+
+    const pleasurewoodHills;
+
+    //YARMOUTH
+    const pleasureBeach;
+
+    const redwings;
+
+    const raceCourse;
+
+    const yareValley;
+
+    const burghCastle;
+    
+
+    //KESSINGLAND
+    const africaAlive
+
+    const kessinglandBeach;
+    
+    const benacre;
+
+    const carBoot;
+
+    const suffolkHeathPath;
+
+    //OULTON BROAD
+    const carltonMarshes;
+
+    const nicholasEveritt;
+
+    const riverTours;
+
+    const watersports;
+
+    const commodorePub;
 
 }
