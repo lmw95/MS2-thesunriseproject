@@ -17,8 +17,10 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<!-- Flickity JS -->
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-	<!--Main.js file-->
+	<!--Script.js file-->
 	<script src="assets/js/script.js"></script>
+  <!--Maps.js file-->
+  <script src="assets/js/maps.js"></script>
 </head>
 <body>
     
@@ -240,6 +242,7 @@
         <div class="columns">
           <div class="column is-two-thirds">
             <!--In this section, Google Maps with clickable markers which will change HTML of divs below-->
+            <div class="container is-fluid" id="mapLowestoft" style="height: 300px;"></div>
           </div>
           <div class="column is-one-third">
             <!--In this section, inner HTML will change to correspond with clicked marker-->
@@ -401,7 +404,7 @@
             <!--In this section, inner HTML will change to correspond with clicked marker-->
           </div>
         </div>
-        
+
       </div>
     </section>
 
@@ -541,10 +544,8 @@
         </div>
       </div>
 
-    <script>
-        
-
-    </script>
+    <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAz2AgSP-awt4zaXYsWQWIXLev7StjPLLM&callback=initMap"></script>
 
 </body>
 </html>
