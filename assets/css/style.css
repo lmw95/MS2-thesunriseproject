@@ -203,6 +203,35 @@ body {
     letter-spacing: 1px;
 }
 
+.location-img-l {
+    background: url(/assets/images/lowestoft.jpg) no-repeat center center; 
+    background-size: cover; 
+    height: 200px;
+}
+
+.location-img-g {
+    background: url(/assets/images/gorleston.jpg) no-repeat center center;
+    background-size: cover;
+    height: 200px;
+}
+
+.location-img-k {
+    background: url(/assets/images/kessingland-2.jpg) no-repeat center center;
+    background-size: cover;
+    height: 200px;
+}
+
+.location-img-ob {
+    background: url(/assets/images/ob.jpg) no-repeat center center;
+    background-size: cover;
+    height: 200px;
+}
+
+.enjoy {
+    color:rgb(234, 234, 234);
+    letter-spacing: 3px;
+}
+
 /*Mobile queries*/
 
 /*Mobile media query - 360px to 798px*/
