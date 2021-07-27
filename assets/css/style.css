@@ -125,7 +125,7 @@ body {
 
 .visitor-center {
     font-family: 'Roboto Condensed', sans-serif;
-    background-color: rgb(221, 110, 66);
+    background-color: rgba(79, 109, 122);
     color: rgba(234, 234, 234);
 }
 
@@ -160,11 +160,11 @@ body {
 }
 
 .visitor-center .tabs ul a:hover {
-    background-color:#735238;
+   
 }
 
 .active-tab {
-    background-color: #735238;
+    
 }
 
 /*Quiz section*/
@@ -193,9 +193,13 @@ body {
     background-color: rgb(234, 234, 234);
 }
 
+.location-result .container {
+    color: rgb(234, 234, 234);
+}
+
 .location-result .title {
    font-size: 80px;
-   color:rgb(234, 234, 234);
+   color: #4F6D7A;
 }
 
 .location-result .subtitle {
@@ -231,6 +235,7 @@ body {
     color:rgb(234, 234, 234);
     letter-spacing: 3px;
 }
+
 
 /*Mobile queries*/
 
