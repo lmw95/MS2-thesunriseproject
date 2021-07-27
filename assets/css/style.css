@@ -236,6 +236,13 @@ body {
     letter-spacing: 3px;
 }
 
+.location-facts li {
+  margin: 1em;
+}
+
+.location-facts li i {
+    margin-left: -1.5em;
+}
 
 /*Mobile queries*/
 
