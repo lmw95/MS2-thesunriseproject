@@ -91,9 +91,9 @@ $(".quiz-option").on("click", function() {
       changeTextColour();
     }
   }
-
   function changeTextColour() {
-    
+    $(".quiz-option:not(.clicked)").addClass("faded");
+    $(".quiz-option").off();
   }
 
 });
