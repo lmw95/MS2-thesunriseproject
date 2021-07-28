@@ -33,8 +33,8 @@ function initMap() {
         //Loop through array to get latitude and longitude values and place markers
         for (i = 0; i < locationsL.length; i++) {  
             marker = new google.maps.Marker({
-            position: new google.maps.LatLng(locationsL[i][1], locationsL[i][2]),
-            map: mapL
+                position: new google.maps.LatLng(locationsL[i][1], locationsL[i][2]),
+                map: mapL
             });
         }
 
@@ -58,8 +58,8 @@ function initMap() {
         //Loop through array to get latitude and longitude values and place markers
         for (i = 0; i < locationsY.length; i++) {  
             marker = new google.maps.Marker({
-            position: new google.maps.LatLng(locationsY[i][1], locationsY[i][2]),
-            map: mapY
+                position: new google.maps.LatLng(locationsY[i][1], locationsY[i][2]),
+                map: mapY
             });
         }
     
@@ -83,8 +83,8 @@ function initMap() {
         //Loop through array to get latitude and longitude values and place markers
         for (i = 0; i < locationsK.length; i++) {  
             marker = new google.maps.Marker({
-            position: new google.maps.LatLng(locationsK[i][1], locationsK[i][2]),
-            map: mapK
+                position: new google.maps.LatLng(locationsK[i][1], locationsK[i][2]),
+                map: mapK
             });
         }
 
@@ -108,8 +108,15 @@ function initMap() {
         //Loop through array to get latitude and longitude values and place markers
         for (i = 0; i < locationsOB.length; i++) {  
             marker = new google.maps.Marker({
-            position: new google.maps.LatLng(locationsOB[i][1], locationsOB[i][2]),
-            map: mapOB
+                position: new google.maps.LatLng(locationsOB[i][1], locationsOB[i][2]),
+                map: mapOB
             });
         }
+
+
+        // Click events for each marker which will change the HTML in the neighbouring div
+
+
 }
+
+
