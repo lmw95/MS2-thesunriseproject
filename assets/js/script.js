@@ -95,13 +95,12 @@ $(".quiz-option").on("click", function() {
     $(".quiz-option:not(.clicked)").addClass("faded");
     $(".quiz-option").off();
   }
-
 });
-
 
 // Function that resets the quiz
 $("#resetButton").on("click", function() {
   $(".quiz-option").removeClass("clicked");
+  $(".quiz-option").removeClass("faded");
 });
 
 // Function that returns the user's results
