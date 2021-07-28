@@ -1,11 +1,12 @@
  // Google API key
 let APIkey = "AIzaSyAz2AgSP-awt4zaXYsWQWIXLev7StjPLLM";
 
-//Declare global map values
+//Declare global variables
 var mapL;
 var mapY;
 var mapK;
 var mapY;
+var marker;
 
 // Initiates the maps for all location pages
 function initMap() {
@@ -26,9 +27,6 @@ function initMap() {
             zoom: 12,
             center: new google.maps.LatLng(52.4822390273935, 1.753391400138951)
         });
-
-        //Declare marker and locationsL array index
-        var marker, i;
 
         //Loop through array to get latitude and longitude values and place markers
         for (i = 0; i < locationsL.length; i++) {  
@@ -111,12 +109,12 @@ function initMap() {
                 position: new google.maps.LatLng(locationsOB[i][1], locationsOB[i][2]),
                 map: mapOB
             });
-        }
-
-
-        // Click events for each marker which will change the HTML in the neighbouring div
-
-
+            marker.addListener("click", function() {
+                let h2 = document.getElementById("mapLocationTitle");
+                h2.innerHTML = "Hello";
+              });
+        }  
 }
+
 
 
