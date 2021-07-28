@@ -3,6 +3,15 @@ let APIkey = "AIzaSyAz2AgSP-awt4zaXYsWQWIXLev7StjPLLM";
 
 // Initiates the maps for all location pages
 function initMap() {
+
+    //Declare variables for Lowestoft location markers 
+    const maritimeMuseum = { lat: 52.48786916515505, lng: 1.757501231452841 };
+    const transportMuseum = { lat: 52.45279120791381, lng: 1.6877369984663078 };
+    const nessPoint = { lat: 52.48130428977037, lng: 1.762758745215036 };
+    const lowestoftBeach = { lat: 52.463528942398, lng: 1.7441735460103207 };
+    const pleasurewoodHills = { lat: 52.508024832271055, lng: 1.7441718423062194 };
+
+    //Initialise map
     let mapL = new google.maps.Map(document.getElementById("mapLowestoft"), {
         zoom: 13,
         center: {
@@ -10,6 +19,40 @@ function initMap() {
             lng: 1.753391400138951
         }
     });
+
+    //Set markers for each location
+    let marker1 = new google.maps.Marker({
+        position: maritimeMuseum,
+        map: mapL,
+    });
+
+    let marker2 = new google.maps.Marker({
+        poisition: transportMuseum,
+        map: mapL,
+    });
+
+    let marker3 = new google.maps.Marker({
+        position: nessPoint,
+        map: mapL,
+    });
+
+    let marker4 = new google.maps.Marker({
+        position: lowestoftBeach,
+        map: mapL,
+    })
+
+    let marker5 = new google.maps.Marker({
+        position: pleasurewoodHills,
+        map: mapL,
+    })
+
+    var bounds = new google.maps.LatLngBounds(marker1, marker2, marker3, marker4, marker5);
+    mapL.fitBounds(bounds);
+
+}
+
+
+/*
 
     let mapY = new google.maps.Map(document.getElementById("mapYarmouth"), {
         zoom: 13,
@@ -36,12 +79,6 @@ function initMap() {
     });
 
     // Create all locations for each location's top 5 attractions
-    // LOWESTOFT
-    const maritimeMuseum = { lat: 52.48786916515505, lng: 1.757501231452841 };
-    const transportMuseum = { lat: 52.45279120791381, lng: 1.6877369984663078 };
-    const nessPoint = { lat: 52.48130428977037, lng: 1.762758745215036 };
-    const lowestoftBeacH = { lat: 52.463528942398, lng: 1.7441735460103207 };
-    const pleasurewoodHills = { lat: 52.508024832271055, lng: 1.7441718423062194 };
 
     //YARMOUTH
     const pleasureBeach = { lat: 52.595472217209974, lng: 1.735949694382154 };
@@ -49,7 +86,6 @@ function initMap() {
     const raceCourse = { lat: 52.63021460217459, lng: 1.7318343587904275 };
     const yareValley = { lat: 52.60317161849138, lng: 1.6820370627771835 };
     const burghCastle = { lat: 52.583751110675195, lng: 1.6520405685211867 };
-    
 
     //KESSINGLAND
     const africaAlive = { lat: 52.413885514052815, lng: 1.7015960432214932 }
@@ -64,5 +100,5 @@ function initMap() {
     const riverTours = { lat: 52.47482176398323, lng: 1.7103077905291226 };
     const watersports = { lat: 52.472291711185704, lng: 1.7067331167685726 };
     const commodore = { lat: 52.47621693133902, lng: 1.7109530876879453 };
-
-}
+}  
+*/
