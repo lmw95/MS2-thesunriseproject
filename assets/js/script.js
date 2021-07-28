@@ -83,7 +83,16 @@ $(".quiz-option").on("mouseleave", function() {
   $(this).css("border", "4px");
 })
 
-// Function that only allows two quiz option divs to be clicked at one time
+// Function that only allows two quiz option divs to be clicked
+$(".quiz-option").on("click", function() {
+  let clicked = document.getElementsByClassName("clicked");
+  for (let i = 0; i < clicked.length; i++) {
+    if (clicked.length > 1) {
+      console.log("STOP");
+    }
+  }
+});
+
 
 // Function that resets the quiz
 $("#resetButton").on("click", function() {
