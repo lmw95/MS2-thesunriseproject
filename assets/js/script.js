@@ -88,9 +88,14 @@ $(".quiz-option").on("click", function() {
   let clicked = document.getElementsByClassName("clicked");
   for (let i = 0; i < clicked.length; i++) {
     if (clicked.length > 1) {
-      console.log("STOP");
+      changeTextColour();
     }
   }
+
+  function changeTextColour() {
+    
+  }
+
 });
 
 
