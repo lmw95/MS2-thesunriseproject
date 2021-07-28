@@ -1,17 +1,53 @@
  // Google API key
 let APIkey = "AIzaSyAz2AgSP-awt4zaXYsWQWIXLev7StjPLLM";
 
+//Declare global map values
+var mapL;
+var mapY;
+var mapK;
+var mapY;
+
 // Initiates the maps for all location pages
 function initMap() {
 
-    //Declare variables for Lowestoft location markers 
-    const maritimeMuseum = { lat: 52.48786916515505, lng: 1.757501231452841 };
-    const transportMuseum = { lat: 52.45279120791381, lng: 1.6877369984663078 };
-    const nessPoint = { lat: 52.48130428977037, lng: 1.762758745215036 };
-    const lowestoftBeach = { lat: 52.463528942398, lng: 1.7441735460103207 };
-    const pleasurewoodHills = { lat: 52.508024832271055, lng: 1.7441718423062194 };
+    //LOWESTOFT MAP
 
-    //Initialise map
+        //Declare variables for Lowestoft location markers 
+        var locationsL = [
+            [ 'Maritime Museum', 52.48786916515505, 1.757501231452841 ],
+            [ 'Transport Museum', 52.45279120791381,1.6877369984663078 ],
+            [ 'Ness Point', 52.48130428977037, 1.762758745215036 ],
+            [ 'Lowestoft Beach', 52.463528942398, 1.7441735460103207 ],
+            [ 'Pleasurewood Hills', 52.508024832271055, 1.7441718423062194 ]
+        ];
+
+        //Initialise Lowestoft map and center it
+        mapL = new google.maps.Map(document.getElementById("mapLowestoft"), {
+            zoom: 12,
+            center: new google.maps.LatLng(52.4822390273935, 1.753391400138951),
+        });
+
+        //Declare marker and locationsL array index
+        var marker, i;
+
+        //Loop through array to get latitude and longitude values
+        for (i = 0; i < locationsL.length; i++) {  
+            marker = new google.maps.Marker({
+            position: new google.maps.LatLng(locationsL[i][1], locationsL[i][2]),
+            map: mapL
+            });
+        }
+}
+
+
+    /*
+    const maritimeMuseum = new google.maps.LatLng(52.48786916515505,1.757501231452841);
+    const transportMuseum = new google.maps.LatLng(52.45279120791381,1.6877369984663078);
+    const nessPoint = new google.maps.LatLng(52.48130428977037,1.762758745215036);
+    const lowestoftBeach = new google.maps.LatLng(52.463528942398,1.7441735460103207);
+    const pleasurewoodHills = new google.maps.LatLng(52.508024832271055,1.7441718423062194);
+
+    //Initialise map and center on location
     let mapL = new google.maps.Map(document.getElementById("mapLowestoft"), {
         zoom: 13,
         center: {
@@ -39,16 +75,12 @@ function initMap() {
     let marker4 = new google.maps.Marker({
         position: lowestoftBeach,
         map: mapL,
-    })
+    });
 
     let marker5 = new google.maps.Marker({
         position: pleasurewoodHills,
         map: mapL,
-    })
-
-    var bounds = new google.maps.LatLngBounds(marker1, marker2, marker3, marker4, marker5);
-    mapL.fitBounds(bounds);
-
+    });
 }
 
 
