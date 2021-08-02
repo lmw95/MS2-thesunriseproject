@@ -1,12 +1,43 @@
  // Google API key
 let APIkey = "AIzaSyAz2AgSP-awt4zaXYsWQWIXLev7StjPLLM";
 
+
+function initMap() {
+
+    var mapL = new google.maps.Map(document.getElementById("mapLowestoft"), {
+        zoom: 12,
+        center: LatLng(52.4822390273935, 1.753391400138951)
+    });
+
+    var labels = "ABCDE";
+
+    var locationsL = [
+        { lat: 52.48786916515505, lng: 1.757501231452841 },
+        { lat: 52.45279120791381, lng: 1.6877369984663078 },
+        { lat: 52.48130428977037, lng: 1.762758745215036 },
+        { lat: 52.463528942398, lng: 1.7441735460103207 },
+        { lat: 52.508024832271055, lng: 1.7441718423062194 }
+    ];
+
+    var markersL = locationsL.map(function(location, i) {
+        return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length]
+        });
+    });
+    
+}
+
+/*
 //Declare global variables
 var mapL;
 var mapY;
 var mapK;
 var mapY;
-var marker;
+var markersL;
+var markersY;
+var markersK
+var markersOB;
 
 // Initiates the maps for all location pages
 function initMap() {
@@ -30,7 +61,7 @@ function initMap() {
 
         //Loop through array to get latitude and longitude values and place markers
         for (i = 0; i < locationsL.length; i++) {  
-            marker = new google.maps.Marker({
+            markersL = new google.maps.Marker({
                 position: new google.maps.LatLng(locationsL[i][1], locationsL[i][2]),
                 map: mapL
             });
@@ -55,7 +86,7 @@ function initMap() {
 
         //Loop through array to get latitude and longitude values and place markers
         for (i = 0; i < locationsY.length; i++) {  
-            marker = new google.maps.Marker({
+            markersY = new google.maps.Marker({
                 position: new google.maps.LatLng(locationsY[i][1], locationsY[i][2]),
                 map: mapY
             });
@@ -80,7 +111,7 @@ function initMap() {
 
         //Loop through array to get latitude and longitude values and place markers
         for (i = 0; i < locationsK.length; i++) {  
-            marker = new google.maps.Marker({
+            markersK = new google.maps.Marker({
                 position: new google.maps.LatLng(locationsK[i][1], locationsK[i][2]),
                 map: mapK
             });
@@ -105,16 +136,9 @@ function initMap() {
 
         //Loop through array to get latitude and longitude values and place markers
         for (i = 0; i < locationsOB.length; i++) {  
-            marker = new google.maps.Marker({
+            markersOB = new google.maps.Marker({
                 position: new google.maps.LatLng(locationsOB[i][1], locationsOB[i][2]),
                 map: mapOB
             });
-            marker.addListener("click", function() {
-                let h2 = document.getElementById("mapLocationTitle");
-                h2.innerHTML = "Hello";
-              });
-        }  
-}
-
-
-
+        }
+    )}; */
