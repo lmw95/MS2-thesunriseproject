@@ -1,34 +1,6 @@
  // Google API key
 let APIkey = "AIzaSyAz2AgSP-awt4zaXYsWQWIXLev7StjPLLM";
 
-
-function initMap() {
-
-    var mapL = new google.maps.Map(document.getElementById("mapLowestoft"), {
-        zoom: 12,
-        center: LatLng(52.4822390273935, 1.753391400138951)
-    });
-
-    var labels = "ABCDE";
-
-    var locationsL = [
-        { lat: 52.48786916515505, lng: 1.757501231452841 },
-        { lat: 52.45279120791381, lng: 1.6877369984663078 },
-        { lat: 52.48130428977037, lng: 1.762758745215036 },
-        { lat: 52.463528942398, lng: 1.7441735460103207 },
-        { lat: 52.508024832271055, lng: 1.7441718423062194 }
-    ];
-
-    var markersL = locationsL.map(function(location, i) {
-        return new google.maps.Marker({
-            position: location,
-            label: labels[i % labels.length]
-        });
-    });
-    
-}
-
-/*
 //Declare global variables
 var mapL;
 var mapY;
@@ -64,8 +36,7 @@ function initMap() {
             markersL = new google.maps.Marker({
                 position: new google.maps.LatLng(locationsL[i][1], locationsL[i][2]),
                 map: mapL
-            });
-        }
+            }); 
 
     //GREAT YARMOUTH MAP
 
@@ -141,4 +112,5 @@ function initMap() {
                 map: mapOB
             });
         }
-    )}; */
+    }; 
+}
