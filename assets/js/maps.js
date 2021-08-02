@@ -39,6 +39,7 @@ function initMap() {
                 map: mapL,
                 label: labels[i % labels.length]
             });
+        }
 
     //GREAT YARMOUTH MAP
 
@@ -117,5 +118,4 @@ function initMap() {
                 label: labels[i % labels.length]
             });
         }
-    }; 
-}
+    };
