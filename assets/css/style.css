@@ -29,6 +29,11 @@ body {
     color: #eaeaea;
 }
 
+.faded {
+    color: transparent;
+    text-shadow: 0 0 8px #4F6D7A;
+}
+
 /*Carousel subtitle 1 - fixed in position*/
 
 .overlay-higher {
