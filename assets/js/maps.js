@@ -15,7 +15,7 @@ var markersOB;
 function initMap() {
 
     //LOWESTOFT
-        var labels = ["A", "B", "C", "D", "E"];
+        var labelsL = ["A", "B", "C", "D", "E"];
 
         //Declare variables for Lowestoft location markers 
         var locationsL = [
@@ -37,17 +37,19 @@ function initMap() {
             markersL = new google.maps.Marker({
                 position: new google.maps.LatLng(locationsL[i][1], locationsL[i][2]),
                 map: mapL,
-                label: labels[i % labels.length]
+                label: labelsL[i % labelsL.length]
             });
         }
 
     //GREAT YARMOUTH MAP
 
+        var labelsY = ["F", "G", "H", "I", "J"];
+
         //Declare variables for Great Yarmouth location markers 
         var locationsY = [
             [ 'Pleasure Beach', 52.595472217209974, 1.735949694382154 ],
             [ 'Redwings', 52.554241310046464, 1.6474202363498287 ],
-            [ 'Yarmouth Race Course', 52.63021460217459, 1.7318343587904275 ],
+            [ 'Ocean Rooms', 52.57100281960958, 1.7330287761391332 ],
             [ 'River Yare Valley', 52.60317161849138, 1.6820370627771835 ],
             [ 'Burgh Castle', 52.583751110675195, 1.6520405685211867 ]
         ];
@@ -63,11 +65,13 @@ function initMap() {
             markersY = new google.maps.Marker({
                 position: new google.maps.LatLng(locationsY[i][1], locationsY[i][2]),
                 map: mapY,
-                label: labels[i % labels.length]
+                label: labelsY[i % labelsY.length]
             });
         }
     
     //KESSINGLAND
+
+        var labelsK = ["K", "L", "M", "N", "O"];
 
         //Declare variables for Lowestoft location markers 
         var locationsK = [
@@ -89,11 +93,13 @@ function initMap() {
             markersK = new google.maps.Marker({
                 position: new google.maps.LatLng(locationsK[i][1], locationsK[i][2]),
                 map: mapK,
-                label: labels[i % labels.length]
+                label: labelsK[i % labelsK.length]
             });
         }
 
     //OULTON BROAD
+
+        var labelsOB = ["P", "Q", "R", "S", "T"];
 
         //Declare variables for Oulton Broad location markers 
         var locationsOB = [
@@ -115,7 +121,7 @@ function initMap() {
             markersOB = new google.maps.Marker({
                 position: new google.maps.LatLng(locationsOB[i][1], locationsOB[i][2]),
                 map: mapOB,
-                label: labels[i % labels.length]
+                label: labelsOB[i % labelsOB.length]
             });
         }
     };
