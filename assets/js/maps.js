@@ -15,6 +15,7 @@ var markersOB;
 function initMap() {
 
     //LOWESTOFT
+        var labels = ["A", "B", "C", "D", "E"];
 
         //Declare variables for Lowestoft location markers 
         var locationsL = [
@@ -35,8 +36,9 @@ function initMap() {
         for (i = 0; i < locationsL.length; i++) {  
             markersL = new google.maps.Marker({
                 position: new google.maps.LatLng(locationsL[i][1], locationsL[i][2]),
-                map: mapL
-            }); 
+                map: mapL,
+                label: labels[i % labels.length]
+            });
 
     //GREAT YARMOUTH MAP
 
@@ -59,7 +61,8 @@ function initMap() {
         for (i = 0; i < locationsY.length; i++) {  
             markersY = new google.maps.Marker({
                 position: new google.maps.LatLng(locationsY[i][1], locationsY[i][2]),
-                map: mapY
+                map: mapY,
+                label: labels[i % labels.length]
             });
         }
     
@@ -84,7 +87,8 @@ function initMap() {
         for (i = 0; i < locationsK.length; i++) {  
             markersK = new google.maps.Marker({
                 position: new google.maps.LatLng(locationsK[i][1], locationsK[i][2]),
-                map: mapK
+                map: mapK,
+                label: labels[i % labels.length]
             });
         }
 
@@ -109,7 +113,8 @@ function initMap() {
         for (i = 0; i < locationsOB.length; i++) {  
             markersOB = new google.maps.Marker({
                 position: new google.maps.LatLng(locationsOB[i][1], locationsOB[i][2]),
-                map: mapOB
+                map: mapOB,
+                label: labels[i % labels.length]
             });
         }
     }; 
