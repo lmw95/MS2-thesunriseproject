@@ -34,6 +34,14 @@ body {
     text-shadow: 0 0 8px #4F6D7A;
 }
 
+.hidden {
+    display: none;
+}
+
+.shown {
+    display: block;
+}
+
 /*Carousel subtitle 1 - fixed in position*/
 
 .overlay-higher {
@@ -215,25 +223,25 @@ body {
 .location-img-l {
     background: url(/assets/images/lowestoft.jpg) no-repeat center center; 
     background-size: cover; 
-    height: 200px;
+    height: 400px;
 }
 
 .location-img-g {
     background: url(/assets/images/gorleston.jpg) no-repeat center center;
     background-size: cover;
-    height: 200px;
+    height: 400px;
 }
 
 .location-img-k {
     background: url(/assets/images/kessingland-2.jpg) no-repeat center center;
     background-size: cover;
-    height: 200px;
+    height: 400px;
 }
 
 .location-img-ob {
     background: url(/assets/images/ob.jpg) no-repeat center center;
     background-size: cover;
-    height: 200px;
+    height: 400px;
 }
 
 .enjoy {
