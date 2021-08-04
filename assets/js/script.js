@@ -155,13 +155,16 @@ $("#resetButton").on("click", function() {
   location.reload();
 }); 
 
+// Function that toggles ALL locations
+
 //Function toggles the accordions next to Google Maps
 $("div.ah").on("click", function() {
   $(this).next("div").slideToggle();
 
   var otherItems = $("div.ah").not($(this)).next("div");
   otherItems.slideUp();
-}
+});
 
-)
+// Function that toggles Bulma tabs
+
 });
