@@ -232,31 +232,27 @@ body {
 }
 
 .location-img-l {
-    background: url(/assets/images/lowestoft.jpg) no-repeat center center; 
+    background: url(/assets/images/lowestoft-harbour.jpg) no-repeat center center; 
     background-size: cover; 
     height: 400px;
-    border-radius: 50px;
 }
 
-.location-img-g {
-    background: url(/assets/images/gorleston.jpg) no-repeat center center;
+.location-img-y {
+    background: url(/assets/images/pleasure-beach.jpg) no-repeat center center;
     background-size: cover;
     height: 400px;
-    border-radius: 50px;
 }
 
 .location-img-k {
-    background: url(/assets/images/kessingland-2.jpg) no-repeat center center;
+    background: url(/assets/images/kessingland-zoo.jpg) no-repeat center center;
     background-size: cover;
     height: 400px;
-    border-radius: 50px;
 }
 
 .location-img-ob {
     background: url(/assets/images/ob.jpg) no-repeat center center;
     background-size: cover;
     height: 400px;
-    border-radius: 50px;
 }
 
 .enjoy {
