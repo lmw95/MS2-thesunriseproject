@@ -72,7 +72,7 @@ $(this).css("cursor", "pointer");
 
 // Function that changes the border colour of the quiz options when mouseover
 $(".quiz-option").on("mouseover", function() {
-  $(this).css("border", "solid 4px rgb(243, 189, 69, 0.3)");
+  $(this).css("border", "solid 4px rgb(96, 190, 134, 0.3)");
 });
 
 $(".quiz-option").on("mouseleave", function() {
