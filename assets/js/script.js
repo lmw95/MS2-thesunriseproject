@@ -93,14 +93,54 @@ $(".quiz-option").on("click", function() {
   }
 });
 
-/*
-// Functions that toggles the location pages when selected
-$(".quiz-option").click(function(event) {
-  var target = $(event.target);
-  if (target.is("#history") && target.is("#fun")) {
-    $("#lowestoft").slideToggle();
+// Function that toggles the location pages when selected
+$(".quiz-option").on("click", function() {
+  $(this).hasClass("clicked", true);
+  if ($("#history").hasClass("clicked") && $("#walking").hasClass("clicked")) {
+    $("#lowestoft").slideToggle(3000);
+    $(".fade-in").fadeIn(3000);
   }
-}); */
+  else if ($("#history").hasClass("clicked") && $("#nature").hasClass("clicked")) {
+    $("#yarmouth").slideToggle(3000);
+    $(".fade-in").fadeIn(3000);
+  }
+  else if ($("#history").hasClass("clicked") && $("#broads").hasClass("clicked")) {
+    $("#yarmouth").slideToggle(3000);
+    $(".fade-in").fadeIn(3000);
+  }
+  else if ($("#history").hasClass("clicked") && $("#fun").hasClass("clicked")) {
+    $("#lowestoft").slideToggle(3000);
+    $(".fade-in").fadeIn(3000);
+  }
+  else if ($("#history").hasClass("clicked") && $("#nightlife").hasClass("clicked")) {
+    $("#yarmouth").slideToggle(3000);
+    $(".fade-in").fadeIn(3000);
+  }
+  else if ($("#nature").hasClass("clicked") && $("#walking").hasClass("clicked")) {
+    $("#kessingland").slideToggle(3000);
+    $(".fade-in").fadeIn(3000);
+  }
+  else if ($("#nature").hasClass("clicked") && $("#broads").hasClass("clicked")) {
+    $("#oultonBroad").slideToggle(3000);
+    $(".fade-in").fadeIn(3000);
+  }
+  else if ($("#nature").hasClass("clicked") && $("#fun").hasClass("clicked")) {
+    $("#yarmouth").slideToggle(3000);
+    $(".fade-in").fadeIn(3000);
+  }
+  else if ($("#walking").hasClass("clicked") && $("#broads").hasClass("clicked")) {
+    $("#oultonBroad").slideToggle(3000);
+    $(".fade-in").fadeIn(3000);
+  }
+  else if ($("#walking").hasClass("clicked") && $("#fun").hasClass("clicked")) {
+    $("#lowestoft").slideToggle(3000);
+    $(".fade-in").fadeIn(3000);
+  }
+  else if ($("#walking").hasClass("clicked") && $("#nightlife").hasClass("clicked")) {
+    $("#oultonBroad").slideToggle(3000);
+    $(".fade-in").fadeIn(3000);
+  }
+});
   
 // Function that resets the quiz
 $("#resetButton").on("click", function() {
