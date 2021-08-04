@@ -72,7 +72,7 @@ $(this).css("cursor", "pointer");
 
 // Function that changes the border colour of the quiz options when mouseover
 $(".quiz-option").on("mouseover", function() {
-  $(this).css("border", "solid 4px rgb(221, 110, 66, 0.3)");
+  $(this).css("border", "solid 4px rgb(243, 189, 69, 0.3)");
 });
 
 $(".quiz-option").on("mouseleave", function() {
@@ -93,12 +93,21 @@ $(".quiz-option").on("click", function() {
   }
 });
 
+/*
+// Functions that toggles the location pages when selected
+$(".quiz-option").click(function(event) {
+  var target = $(event.target);
+  if (target.is("#history") && target.is("#fun")) {
+    $("#lowestoft").slideToggle();
+  }
+}); */
+  
 // Function that resets the quiz
 $("#resetButton").on("click", function() {
   location.reload();
-});
+}); 
 
-//Function toggles the accordions nexr to Google Maps
+//Function toggles the accordions next to Google Maps
 $("div.ah").on("click", function() {
   $(this).next("div").slideToggle();
 
