@@ -17,7 +17,7 @@ body {
     cursor: pointer;
 }
 
-/*Navbar scrolling jQuery class*/
+/*jQuery classes*/
 
 .navbar.scrolled {
     background-color: rgb(0, 109, 143) !important;
@@ -40,6 +40,10 @@ body {
 
 .shown {
     display: block;
+}
+
+.active-tab {
+    
 }
 
 /*Carousel subtitle 1 - fixed in position*/
@@ -139,6 +143,7 @@ body {
 .visitor-center {
     font-family: 'Roboto Condensed', sans-serif;
     color: rgb(33, 29, 28);
+    background-color: rgba(0, 109, 143, 0.2);;
 }
 
 .visitor-center .title,
@@ -178,15 +183,14 @@ body {
    
 }
 
-.active-tab {
-    
-}
+
 
 /*Quiz section*/
 
 .quiz-section {
     font-family: 'Roboto Condensed', sans-serif;
     color: rgb(33, 29, 28);
+    background-color: rgba(243, 189, 69, 0.2);;
 }
 
 .quiz-section .quiz-option {
@@ -218,36 +222,36 @@ body {
 }
 
 .location-result .subtitle {
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     color:rgb(33, 29, 28);
 }
 
 .location-img-l {
-    background: url(/assets/images/lowestoft-harbour.jpg) no-repeat center center; 
+    background: url(/assets/images/lowestoft-harbour.jpg) no-repeat center center fixed; 
     background-size: cover; 
     height: 400px;
 }
 
 .location-img-y {
-    background: url(/assets/images/pleasure-beach.jpg) no-repeat center center;
+    background: url(/assets/images/pleasure-beach.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 400px;
 }
 
 .location-img-k {
-    background: url(/assets/images/africa-alive.jpg) no-repeat center center;
+    background: url(/assets/images/africa-alive.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 400px;
 }
 
 .location-img-ob {
-    background: url(/assets/images/ob.jpg) no-repeat center center;
+    background: url(/assets/images/ob.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 400px;
 }
 
 .enjoy {
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     color:rgb(33, 29, 28);
 }
 
@@ -259,6 +263,17 @@ body {
 .location-facts li i {
     margin-left: -1.5em;
 } */
+
+.footer {
+    background: url(/assets/images/kessingland.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.footer-overlay {
+    background-color:rgba(33, 29, 28, 0.7);
+    height: 100%;
+    width: 100%;
+}
 
 /*Mobile queries*/
 
