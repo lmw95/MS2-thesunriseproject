@@ -99,8 +99,8 @@
                 <!--Navbar brand logo-->
                 <div class="navbar-brand">
                     <a class="navbar-item" href="#">
-                        <img src="assets/flaticon/icon-samples/sunrise (11).png" class="mr-3 ml-1" style="max-height: 60px; width: 60px;">
-                        <h1 class="is-size-3 is-uppercase">The Sunrise Project</h1>
+                        <img src="assets/flaticon/icon-samples/sunrise (12).png" class="mr-3 ml-1" style="max-height: 60px; width: 60px;">
+                        <h1 class="is-size-3 is-uppercase" style="color: rgb(243, 189, 69);">The Sunrise Project</h1>
                     </a>
                     <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
                         <span aria-hidden="true"></span>
@@ -114,10 +114,10 @@
                     </div>
                     <!--Nav-end with navbar menu-->
                     <div class="navbar-end is-uppercase is-size-5 is-text-weight-semibold">
-                        <a class="navbar-item hvr-push">Home</a>
-                        <a class="navbar-item hvr-push">Online tour guide</a>
-                        <a class="navbar-item hvr-push">Visitor center</a>
-                        <a class="navbar-item hvr-push" id="toggleModal">Contact</a>
+                        <a class="navbar-item hvr-push" style="color: rgb(243, 189, 69);">Home</a>
+                        <a class="navbar-item hvr-push" style="color: rgb(243, 189, 69);">Online tour guide</a>
+                        <a class="navbar-item hvr-push" style="color: rgb(243, 189, 69);">Visitor center</a>
+                        <a class="navbar-item hvr-push" style="color: rgb(243, 189, 69);" id="toggleModal">Contact</a>
                     </div>
                 </div>
             </nav>
@@ -129,12 +129,12 @@
         <div class="columns mb-0">
             <div class="column is-full pt-5 pb-0 has-text-centered is-flex is-justify-content-center is-align-items-center" style="flex-direction: column;">
                 <span class="icon is-large">
-                    <i class="fas fa-map-signs fa-3x"></i>
+                    <i class="fas fa-map-signs fa-3x" style="color: rgb(0, 109, 143);"></i>
                 </span>
                 <h1 class="title is-size-1 pt-3 mb-0">The Sunrise Project's Tour Guide</h1>
                 <p class="welcome is-size-5 p-5 has-text-centered" style="max-width: 1000px;">
                     
-                    This little online guide will help you to make the most of your trip around The Sunrise Coast. Simply choose one of your favourite activities from the selection below, filter by the criteria provided and it will provide you with a perfect location for your day out. </p>
+                    This little online guide will help you to make the most of your trip around The Sunrise Coast. Simply choose one of your favourite activities from the selection below and it will provide you with a perfect location for your day out. </p>
               </div>
           </div>
         <div class="block quiz-scroll has-text-centered">
@@ -149,8 +149,8 @@
           </span>
       </div>
         <div class="columns">
-          <div class="column is-full">
-            <p class="is-size-5 is-uppercase has-text-weight-bold pb-3">Choose two of your favourites...</p>
+          <div class="column is-full mt-6">
+            <p class="is-size-3 has-text-weight-bold pb-3 has-text-centered" style="font-family: 'Caveat', cursive;">Choose two of your favourites... (one for the morning, one for the afternoon!)</p>
           </div>
         </div>
         <div class="columns">
@@ -194,9 +194,11 @@
         </div>
         <div class="columns">
           <div class="column is-full is-flex is-justify-content-center is-align-items-center pt-6">
-            <button class="p-2 is-uppercase is-size-5" id="resetButton">Reset</button>
+            <button class="p-3 is-uppercase is-size-5 mr-3" id="resetButton">Reset</button>
+            <button class="p-3 is-uppercase is-size-5" id="showAllButton">Show all</button>
           </div>
         </div>
+        <hr class="mt-6" style="background-color: rgba(243, 189, 69, 0.2);">
     </section>
     
     <!--Toggled location pages-->
@@ -212,22 +214,21 @@
             </h1>
           </div>
           <div class="column is-half is-flex is-justify-content-center is-align-items-center">
-            <p class="subtitle is-size-6 p-2 is-uppercase has-text-right">Once a busy fishing town, Lowestoft holds an abundance of maritime history and culture connected to the sea</p>
+            <p class="subtitle is-size-5 p-2 is-uppercase has-text-right">Once a busy fishing town, Lowestoft holds an abundance of maritime history and culture connected to the sea</p>
           </div>
         </div>
         <div class="columns">
           <div class="column is-full location-img-l"></div>
         </div>
-        <hr style="opacity: 0.2;">
 
         <!--Google Maps section-->
-        <div class="columns">
+        <div class="columns pt-4 pl-4 pr-4" style="background-color: rgb(243, 189, 69);">
           <div class="column is-full">
-            <h1 class="title is-size-3 has-text-centered is-uppercase">Our top 5 local attractions</h1>
+            <h1 class="title is-size-1 has-text-centered">Our top 5 local attractions</h1>
             <p class="subtitle is-size-6 is-uppercase has-text-centered">Click on a location to see more information</p>
           </div>
         </div>
-        <div class="columns">
+        <div class="columns p-4" style="background-color: rgb(243, 189, 69);">
           <div class="column is-two-thirds">
             <!--In this section, Google Maps with markers which will allude to accordian-->
             <div class="container is-fluid" id="mapLowestoft" style="height: 400px;"></div>
@@ -328,9 +329,9 @@
           </div>
         </div>
         <div class="columns">
-          <div class="column is-full location-img-g"></div>
+          <div class="column is-full location-img-y mb-6">
+          </div>
         </div>
-        <hr style="opacity: 0.2;">
 
         <!--Google Maps section-->
         <div class="columns">
@@ -441,9 +442,8 @@
           </div>
         </div>
         <div class="columns">
-          <div class="column is-full location-img-k"></div>
+          <div class="column is-full location-img-k mb-6"></div>
         </div>
-        <hr style="opacity: 0.2;">
 
         <!--Google Maps section-->
         <div class="columns">
@@ -555,9 +555,8 @@
           </div>
         </div>
         <div class="columns">
-          <div class="column is-full location-img-ob"></div>
+          <div class="column is-full location-img-ob mb-6"></div>
         </div>
-        <hr style="opacity: 0.2;">
 
         <!--Google Maps section-->
         <div class="columns">
@@ -672,8 +671,9 @@
                   days out in Lowestoft, Oulton Broad, Kessingland and Great Yarmouth, and enjoy your time 
                   in our little corner of the country. In the Visitor Center, you can find all 
                   the information you need about the local area, including history, a little bit 
-                  about us and inspiration for your days out! If you haven't already, use our <span class="is-text-weight-bold">Interactive Guide</span> to help
-                  you make the most of your stay. </p>
+                  about us and inspiration for your days out! 
+                  <div class="block">If you haven't already, use our <span class="is-text-weight-bold">Interactive Guide</span> to help
+                    you make the most of your stay.</div></p>
 
           </div>
       </div>
