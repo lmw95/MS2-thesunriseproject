@@ -97,47 +97,55 @@ $(".quiz-option").on("click", function() {
 $(".quiz-option").on("click", function() {
   $(this).hasClass("clicked", true);
   if ($("#history").hasClass("clicked") && $("#walking").hasClass("clicked")) {
-    $("#lowestoft").slideToggle(3000);
+    $("#lowestoft").slideToggle(2500);
     $(".fade-in").fadeIn(3000);
   }
   else if ($("#history").hasClass("clicked") && $("#nature").hasClass("clicked")) {
-    $("#yarmouth").slideToggle(3000);
+    $("#yarmouth").slideToggle(2500);
     $(".fade-in").fadeIn(3000);
   }
   else if ($("#history").hasClass("clicked") && $("#broads").hasClass("clicked")) {
-    $("#yarmouth").slideToggle(3000);
+    $("#yarmouth").slideToggle(2500);
     $(".fade-in").fadeIn(3000);
   }
   else if ($("#history").hasClass("clicked") && $("#fun").hasClass("clicked")) {
-    $("#lowestoft").slideToggle(3000);
+    $("#lowestoft").slideToggle(2500);
     $(".fade-in").fadeIn(3000);
   }
   else if ($("#history").hasClass("clicked") && $("#nightlife").hasClass("clicked")) {
-    $("#yarmouth").slideToggle(3000);
+    $("#yarmouth").slideToggle(2500);
     $(".fade-in").fadeIn(3000);
   }
   else if ($("#nature").hasClass("clicked") && $("#walking").hasClass("clicked")) {
-    $("#kessingland").slideToggle(3000);
+    $("#kessingland").slideToggle(2500);
     $(".fade-in").fadeIn(3000);
   }
   else if ($("#nature").hasClass("clicked") && $("#broads").hasClass("clicked")) {
-    $("#oultonBroad").slideToggle(3000);
+    $("#oultonBroad").slideToggle(2500);
     $(".fade-in").fadeIn(3000);
   }
   else if ($("#nature").hasClass("clicked") && $("#fun").hasClass("clicked")) {
-    $("#yarmouth").slideToggle(3000);
+    $("#yarmouth").slideToggle(2500);
     $(".fade-in").fadeIn(3000);
   }
   else if ($("#walking").hasClass("clicked") && $("#broads").hasClass("clicked")) {
-    $("#oultonBroad").slideToggle(3000);
+    $("#oultonBroad").slideToggle(2500);
     $(".fade-in").fadeIn(3000);
   }
   else if ($("#walking").hasClass("clicked") && $("#fun").hasClass("clicked")) {
-    $("#lowestoft").slideToggle(3000);
+    $("#lowestoft").slideToggle(2500);
     $(".fade-in").fadeIn(3000);
   }
   else if ($("#walking").hasClass("clicked") && $("#nightlife").hasClass("clicked")) {
-    $("#oultonBroad").slideToggle(3000);
+    $("#oultonBroad").slideToggle(2500);
+    $(".fade-in").fadeIn(3000);
+  }
+  else if ($("#broads").hasClass("clicked") && $("#fun").hasClass("clicked")) {
+    $("#oultonBroad").slideToggle(2500);
+    $(".fade-in").fadeIn(3000);
+  }
+  else if ($("broads").hasClass("clicked") && $("#nightlife").hasClass("clicked")) {
+    $("oultonBroad").slideToggle(2500);
     $(".fade-in").fadeIn(3000);
   }
 });
