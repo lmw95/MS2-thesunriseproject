@@ -101,6 +101,9 @@ $("#resetButton").on("click", function() {
 //Function toggles the accordions nexr to Google Maps
 $("div.ah").on("click", function() {
   $(this).next("div").slideToggle();
+
+  var otherItems = $("div.ah").not($(this)).next("div");
+  otherItems.slideUp();
 }
 
 )
