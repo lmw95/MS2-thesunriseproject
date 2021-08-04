@@ -20,19 +20,18 @@ body {
 /*Navbar scrolling jQuery class*/
 
 .navbar.scrolled {
-    /*
-    background-color: !important; */
-    transition: background-color 400ms linear;
+    background-color: rgb(0, 109, 143) !important;
+    transition: background-color 200ms linear;
   }
 
 .clicked {
-    /*
-    color: ; */
+    background-color: rgb(243, 189, 69);
+    border: 4px solid rgb(243, 189, 69);
 }
 
 .faded {
     color: transparent;
-    text-shadow: 0 0 8px #000;
+    text-shadow: 0 0 8px rgba(33, 29, 28);
 }
 
 .hidden {
@@ -67,7 +66,7 @@ body {
 
 .overlay-higher .subtitle,
 .overlay-lower .subtitle {
-
+    color: rgb(243, 189, 69);
 }
 
 /*Carousel overlay 3 - fixed in position*/
@@ -83,14 +82,12 @@ body {
 
 .overlay-social-media i {
     transition: all 0.1s ease-in-out;
-    /*
-    color: ; */
+    color: rgba(243, 189, 69, 0.3);
 }
 
 .overlay-social-media i:hover {
     transform: scale(1.5);
-    /*
-    color:; */
+    color: rgb(243, 189, 69);
     cursor: pointer;
 }
 
@@ -101,14 +98,12 @@ body {
     z-index: 12;
     top: 92.5%;
     width: 100%;
-    /*
-    color: ; */
+    color: rgba(243, 189, 69, 0.3);
     transition: all 0.2s ease-in-out;
 }
 
 .overlay-scroll:hover {
-    /*
-    color: ; */
+    color: rgb(243, 189, 69);
     cursor: pointer;
 }
 
@@ -120,8 +115,7 @@ body {
     display: flex;
     justify-content: left;
     align-items: center;
-    /*
-    background-color: rgba(33, 29, 28, 0.7); */
+    background-color: rgba(33, 29, 28, 0.7);
 }
 
 /*Individual carousel cells*/
@@ -135,8 +129,7 @@ body {
 
 .cell-overlay .title {
     font-size: 110px;
-    /*
-    color: ; */
+    color: rgb(0, 109, 143);
     font-weight: 400;
     font-family: 'Caveat', cursive;
 }
@@ -145,15 +138,12 @@ body {
 
 .visitor-center {
     font-family: 'Roboto Condensed', sans-serif;
-    /*
-    background-color: rgba(79, 109, 122);
-    color: rgba(234, 234, 234); */
+    color: rgb(33, 29, 28);
 }
 
 .visitor-center .title,
 .quiz-section .title {
-    /*
-    color: #211D1C; */
+    color: rgb(33, 29, 28);
 }
 
 .visitor-center .welcome {
@@ -196,21 +186,22 @@ body {
 
 .quiz-section {
     font-family: 'Roboto Condensed', sans-serif;
-    /*
-    background-color: rgba(234, 234, 234);
-    color: rgba(79, 109, 122); */
+    color: rgb(33, 29, 28);
+}
+
+.quiz-section .quiz-option {
+    border: solid 4px transparent;
 }
 
 .quiz-section button {
-    /*
-    color: rgba(234, 234, 234);
-    background-color: rgba(221, 110, 66, 0.8);
-    border: none; */
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(33, 29, 28);
+    background-color: rgba(243, 189, 69, 0.7);
+    border: none;
 }
 
 .quiz-section button:hover {
-    /*
-    background-color: rgb(221, 110, 66); */
+    background-color: rgba(243, 189, 69);
     cursor: pointer;
 }
 
@@ -218,17 +209,17 @@ body {
 
 .location-result {
     font-family: "Roboto Condensed", sans-serif;
-    /*
-    background-color: rgb(234, 234, 234); */
 }
 
 .location-result .title {
-   font-size: 85px;
+   font-size: 90px;
    font-family: 'Caveat', cursive;
+   color: rgb(0, 109, 143);
 }
 
 .location-result .subtitle {
     letter-spacing: 1px;
+    color:rgb(33, 29, 28);
 }
 
 .location-img-l {
@@ -257,15 +248,17 @@ body {
 
 .enjoy {
     letter-spacing: 3px;
+    color:rgb(33, 29, 28);
 }
 
+/*
 .location-facts li {
   margin: 1em;
 }
 
 .location-facts li i {
     margin-left: -1.5em;
-}
+} */
 
 /*Mobile queries*/
 
