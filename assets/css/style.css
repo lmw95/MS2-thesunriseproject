@@ -43,7 +43,7 @@ body {
 }
 
 .active-tab {
-    
+    background-color: rgb(0, 109, 143);
 }
 
 /*Carousel subtitle 1 - fixed in position*/
@@ -153,6 +153,7 @@ body {
 
 .visitor-center .welcome {
     font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(33, 29, 28);
 }
 
 /*Text that takes user to scroll to quiz*/
@@ -178,12 +179,6 @@ body {
     border-bottom-style: none;
     letter-spacing: 1px;
 }
-
-.visitor-center .tabs ul a:hover {
-   
-}
-
-
 
 /*Quiz section*/
 
