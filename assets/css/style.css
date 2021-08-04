@@ -20,18 +20,19 @@ body {
 /*Navbar scrolling jQuery class*/
 
 .navbar.scrolled {
-    background-color: rgba(79, 109, 122, 0.8) !important;
+    /*
+    background-color: !important; */
     transition: background-color 400ms linear;
   }
 
 .clicked {
-    background-color:rgb(221, 110, 66);
-    color: #eaeaea;
+    /*
+    color: ; */
 }
 
 .faded {
     color: transparent;
-    text-shadow: 0 0 8px #4F6D7A;
+    text-shadow: 0 0 8px #000;
 }
 
 .hidden {
@@ -66,7 +67,7 @@ body {
 
 .overlay-higher .subtitle,
 .overlay-lower .subtitle {
-    color: rgb(221, 110, 66);
+
 }
 
 /*Carousel overlay 3 - fixed in position*/
@@ -82,12 +83,14 @@ body {
 
 .overlay-social-media i {
     transition: all 0.1s ease-in-out;
-    color: rgba(221, 110, 66, 0.2);
+    /*
+    color: ; */
 }
 
 .overlay-social-media i:hover {
     transform: scale(1.5);
-    color:rgb(221, 110, 66);
+    /*
+    color:; */
     cursor: pointer;
 }
 
@@ -98,12 +101,14 @@ body {
     z-index: 12;
     top: 92.5%;
     width: 100%;
-    color: rgba(221, 110, 66, 0.2);
+    /*
+    color: ; */
     transition: all 0.2s ease-in-out;
 }
 
 .overlay-scroll:hover {
-    color: rgb(221, 110, 66);
+    /*
+    color: ; */
     cursor: pointer;
 }
 
@@ -115,7 +120,8 @@ body {
     display: flex;
     justify-content: left;
     align-items: center;
-    background-color: rgba(33, 29, 28, 0.7);
+    /*
+    background-color: rgba(33, 29, 28, 0.7); */
 }
 
 /*Individual carousel cells*/
@@ -129,7 +135,8 @@ body {
 
 .cell-overlay .title {
     font-size: 110px;
-    color: rgba(234, 234, 234);
+    /*
+    color: ; */
     font-weight: 400;
     font-family: 'Caveat', cursive;
 }
@@ -138,13 +145,15 @@ body {
 
 .visitor-center {
     font-family: 'Roboto Condensed', sans-serif;
+    /*
     background-color: rgba(79, 109, 122);
-    color: rgba(234, 234, 234);
+    color: rgba(234, 234, 234); */
 }
 
 .visitor-center .title,
 .quiz-section .title {
-    color: #211D1C;
+    /*
+    color: #211D1C; */
 }
 
 .visitor-center .welcome {
@@ -154,19 +163,22 @@ body {
 /*Text that takes user to scroll to quiz*/
 
 .quiz-scroll {
-    color: rgba(79, 109, 122, 0.5);
+    /*
+    color: rgba(79, 109, 122, 0.5); */
     transition: all 0.2s ease-in-out;
 }
 
 .quiz-scroll:hover {
     cursor: pointer;
-    color: rgb(79, 109, 122);
+    /*
+    color: rgb(79, 109, 122); */
 }
 
 /*Bulma tabs*/
 
 .visitor-center .tabs ul a {
-    color: rgb(234, 234, 234);
+    /*
+    color: rgb(234, 234, 234); */
     transition: all 0.1s ease-in-out;
     border-bottom-style: none;
     letter-spacing: 1px;
@@ -184,18 +196,21 @@ body {
 
 .quiz-section {
     font-family: 'Roboto Condensed', sans-serif;
+    /*
     background-color: rgba(234, 234, 234);
-    color: rgba(79, 109, 122);
+    color: rgba(79, 109, 122); */
 }
 
 .quiz-section button {
+    /*
     color: rgba(234, 234, 234);
     background-color: rgba(221, 110, 66, 0.8);
-    border: none;
+    border: none; */
 }
 
 .quiz-section button:hover {
-    background-color: rgb(221, 110, 66);
+    /*
+    background-color: rgb(221, 110, 66); */
     cursor: pointer;
 }
 
@@ -203,7 +218,8 @@ body {
 
 .location-result {
     font-family: "Roboto Condensed", sans-serif;
-    background-color: rgb(234, 234, 234);
+    /*
+    background-color: rgb(234, 234, 234); */
 }
 
 .location-result .title {
