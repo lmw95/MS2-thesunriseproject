@@ -221,25 +221,25 @@ body {
 }
 
 .location-img-l {
-    background: url(/assets/images/lowestoft-harbour.jpg) no-repeat center center fixed; 
+    background: url(/assets/images/lowestoft-harbour.jpg) no-repeat center center; 
     background-size: cover; 
     height: 400px;
 }
 
 .location-img-y {
-    background: url(/assets/images/pleasure-beach.jpg) no-repeat center center fixed;
+    background: url(/assets/images/pleasure-beach.jpg) no-repeat center center;
     background-size: cover;
     height: 400px;
 }
 
 .location-img-k {
-    background: url(/assets/images/africa-alive.jpg) no-repeat center center fixed;
+    background: url(/assets/images/africa-alive.jpg) no-repeat center center;
     background-size: cover;
     height: 400px;
 }
 
 .location-img-ob {
-    background: url(/assets/images/ob.jpg) no-repeat center center fixed;
+    background: url(/assets/images/ob.jpg) no-repeat center center;
     background-size: cover;
     height: 400px;
 }
