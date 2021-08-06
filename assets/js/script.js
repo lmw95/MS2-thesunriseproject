@@ -15,7 +15,7 @@ $(function () {
   });
 
 //Function that allows modal to open
-$("#toggleModal").click(function() {
+$("#toggleModal, #toggleModalOption").click(function() {
   $(".modal").addClass("is-active", "is-clipped");
 });
 
@@ -193,5 +193,10 @@ $("div.ah").on("click", function() {
 });
 
 // Function that toggles Bulma tabs
+
+// Function that adds effects to link that opens modal
+$("#toggleModalOption").on("mouseover", function() {
+  $(this).css("cursor", "pointer");
+});
 
 });
