@@ -29,24 +29,57 @@ $(".modal-background").click(function() {
   $(".modal").removeClass("is-active", "is-clipped");
 });
 
-// Function that toggles different sections in visitor center
-$("#projectToggleButton").click(function() {
+//Functions that will toggle the Bulma tabs
+$("#projectToggleButton").on("click", function() {
   $(this).addClass("active-tab");
-  $("#historyToggleButton").removeClass("active-tab");
-  $("#inspoToggleButton").removeClass("active-tab");
+  $("#projectToggle").slideDown();
+  if ($("#historyToggleButton").hasClass("#active-tab") || $("#inspoToggleButton").hasClass("active-tab")) {
+    $("#historyToggleButton").removeClass("active-tab") && $("#inspoToggleButton").removeClass("active-tab");
+  }
 });
 
-$("#historyToggleButton").click(function() {
+$("#historyToggleButton").on("click", function() {
   $(this).addClass("active-tab");
-  $("#projectToggleButton").removeClass("active-tab");
-  $("#inspoToggleButton").removeClass("active-tab");
+  $("#historyToggle").slideDown();
+  if ($("#projectToggleButton").hasClass("active-tab") || $("#inspoToggleButton").hasClass("active-tab")) {
+    $("#projectToggleButton").removeClass("active-tab") && $("#inspoToggleButton").removeClass("active-tab");
+  }
 });
 
-$("#inspoToggleButton").click(function() {
+$("#inspoToggleButton").on("click", function() {
   $(this).addClass("active-tab");
-  $("#projectToggleButton").removeClass("active-tab");
-  $("#historyToggleButton").removeClass("active-tab");
+  $("#inspoToggle").slideDown();
+  if ($("#projectToggleButton").hasClass("active-tab") || $("#historyToggleButton").hasClass("active-tab")) {
+    $("#projectToggleButton").removeClass("active-tab") && $("#historyToggleButton").removeClass("active-tab");
+  }
 });
+
+/*
+
+// Function that toggles Bulma tabs 
+$(".tab-button").on("click", function() {
+  $(this).hasClass("active-tab", true);
+  if ($("#projectToggleButton").hasClass("active-tab")) {
+    $("#projectToggle").slideToggle(500);
+    if ($("#historyToggleButton").hasClass("active-tab") || $("#inspoToggleButton").hasClass("active-tab")) {
+      $("#historyToggleButton").removeClass("active-tab") || $("#inspoToggleButton").removeClass("active-tab");
+    }
+  }
+  else if ($("#historyToggleButton").hasClass("active-tab")) {
+    $("#historyToggle").slideToggle(500);
+    if ($("#projectToggleButton").hasClass("active-tab") || $("#inspoToggleButton").hasClass("active-tab")) {
+      $("#historyToggleButton").removeClass("active-tab") || $("#inspoToggleButton").removeClass("active-tab");
+    }
+  }
+  else if ($("#inspoToggleButton").hasClass("active-tab")) {
+    $("#inspoToggle").slideToggle(500);
+    if ($("#projectToggleButton").hasClass("active-tab") || $("#historyToggleButton").hasClass("active-tab")) {
+      $("#projectToggleButton").removeClass("active-tab") || $("historyToggleButton").removeClass("active-tab");
+    }
+  }
+});
+
+*/
 
 // Function that allows the user to scroll to next section of the page from the Visitor's Center section
 $("#clickToScrollQuiz").click(function() {
