@@ -250,6 +250,14 @@ body {
     color:rgb(45, 47, 57);
 }
 
+.toggle-section {
+    background-color: rgb(96, 190, 134);
+}
+
+.toggle-section .box {
+    background-color: rgb(245, 245, 245);
+}
+
 /* Brochure / get in touch section */
 
 .contact-section {
