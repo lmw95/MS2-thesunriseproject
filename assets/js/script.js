@@ -33,7 +33,7 @@ $(".modal-background").click(function() {
 $("#projectToggleButton").on("click", function() {
   $(this).addClass("active-tab");
   $("#projectToggle").slideDown();
-  if ($("#historyToggleButton").hasClass("#active-tab") || $("#inspoToggleButton").hasClass("active-tab")) {
+  if ($("#historyToggleButton").hasClass("active-tab") || $("#inspoToggleButton").hasClass("active-tab")) {
     $("#historyToggleButton").removeClass("active-tab") && $("#inspoToggleButton").removeClass("active-tab");
   }
 });
