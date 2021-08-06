@@ -32,26 +32,32 @@ $(".modal-background").click(function() {
 //Functions that will toggle the Bulma tabs
 $("#projectToggleButton").on("click", function() {
   $(this).addClass("active-tab");
-  $("#projectToggle").slideDown();
+  $("#projectToggle").slideDown(1000);
   if ($("#historyToggleButton").hasClass("active-tab") || $("#inspoToggleButton").hasClass("active-tab")) {
     $("#historyToggleButton").removeClass("active-tab") && $("#inspoToggleButton").removeClass("active-tab");
   }
+  $("#historyToggle").css("display", "none");
+  $("#inspoToggle").css("display", "none");
 });
 
 $("#historyToggleButton").on("click", function() {
   $(this).addClass("active-tab");
-  $("#historyToggle").slideDown();
+  $("#historyToggle").slideDown(1000);
   if ($("#projectToggleButton").hasClass("active-tab") || $("#inspoToggleButton").hasClass("active-tab")) {
     $("#projectToggleButton").removeClass("active-tab") && $("#inspoToggleButton").removeClass("active-tab");
   }
+  $("#projectToggle").css("display", "none");
+  $("#inspoToggle").css("display", "none");
 });
 
 $("#inspoToggleButton").on("click", function() {
   $(this).addClass("active-tab");
-  $("#inspoToggle").slideDown();
+  $("#inspoToggle").slideDown(1000);
   if ($("#projectToggleButton").hasClass("active-tab") || $("#historyToggleButton").hasClass("active-tab")) {
     $("#projectToggleButton").removeClass("active-tab") && $("#historyToggleButton").removeClass("active-tab");
   }
+  $("#projectToggle").css("display", "none");
+  $("#historyToggle").css("display", "none");
 });
 
 /*
