@@ -38,10 +38,6 @@ body {
     display: none;
 }
 
-.shown {
-    display: block;
-}
-
 .active-tab {
     background-color: rgb(255,255,255);
 }
@@ -144,10 +140,12 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     color: rgb(45, 47, 57);
     background-color: rgba(229, 208, 204);
+    border-top:rgb(245, 245, 245);
 }
 
 .visitor-center .title,
-.quiz-section .title {
+.quiz-section .title,
+.contact-section .title {
     color: rgb(45, 47, 57);
 }
 
@@ -248,6 +246,17 @@ body {
     letter-spacing: 4px;
     color:rgb(45, 47, 57);
 }
+
+/* Brochure / get in touch section */
+
+.contact-section {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: rgba(229, 208, 204, 0.3);
+}
+
+
+
+/* Footer */
 
 .footer {
     background: url(/assets/images/kessingland.jpg) no-repeat center center fixed;
