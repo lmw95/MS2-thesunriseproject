@@ -247,21 +247,6 @@ body {
 }
 
 /*Tab toggle sections*/
-.toggle-section {
-    background: url(/assets/images/kessingland.jpg) no-repeat center center fixed;
-    background-size: cover;
-}
-
-.bg-overlay {
-    height: 100%;
-    width: 100%;
-    background-color: rgba(33, 29, 28, 0.4);
-}
-
-.toggle-section .box {
-    background-color: rgb(245, 245, 245);
-}
-
 .first-light {
     background: url(/assets/images/first-light.jpg) no-repeat center center; 
     background-size: cover; 
