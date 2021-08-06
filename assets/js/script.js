@@ -40,6 +40,7 @@ $("#projectToggleButton").on("click", function() {
   $("#inspoToggle").css("display", "none");
 });
 
+// Function that toggles the Visitor Center menu to reveal their sections
 $("#historyToggleButton").on("click", function() {
   $(this).addClass("active-tab");
   $("#historyToggle").slideDown(1000);
@@ -59,33 +60,6 @@ $("#inspoToggleButton").on("click", function() {
   $("#projectToggle").css("display", "none");
   $("#historyToggle").css("display", "none");
 });
-
-/*
-
-// Function that toggles Bulma tabs 
-$(".tab-button").on("click", function() {
-  $(this).hasClass("active-tab", true);
-  if ($("#projectToggleButton").hasClass("active-tab")) {
-    $("#projectToggle").slideToggle(500);
-    if ($("#historyToggleButton").hasClass("active-tab") || $("#inspoToggleButton").hasClass("active-tab")) {
-      $("#historyToggleButton").removeClass("active-tab") || $("#inspoToggleButton").removeClass("active-tab");
-    }
-  }
-  else if ($("#historyToggleButton").hasClass("active-tab")) {
-    $("#historyToggle").slideToggle(500);
-    if ($("#projectToggleButton").hasClass("active-tab") || $("#inspoToggleButton").hasClass("active-tab")) {
-      $("#historyToggleButton").removeClass("active-tab") || $("#inspoToggleButton").removeClass("active-tab");
-    }
-  }
-  else if ($("#inspoToggleButton").hasClass("active-tab")) {
-    $("#inspoToggle").slideToggle(500);
-    if ($("#projectToggleButton").hasClass("active-tab") || $("#historyToggleButton").hasClass("active-tab")) {
-      $("#projectToggleButton").removeClass("active-tab") || $("historyToggleButton").removeClass("active-tab");
-    }
-  }
-});
-
-*/
 
 // Function that allows the user to scroll to next section of the page from the Visitor's Center section
 $("#clickToScrollQuiz").click(function() {
@@ -212,6 +186,12 @@ $(".quiz-option").on("click", function() {
     $("oultonBroad").slideToggle(1500);
     $(".fade-in").fadeIn(3000);
     var position = $("#oultonBroad").position();
+    scroll(0,position.top);
+  }
+  else if ($("#fun").hasClass("clicked") && $("#nightlife").hasClass("clicked")) {
+    $("#yarmouth").slideToggle(1500);
+    $(".fade-in").fadeIn(3000);
+    var position = $("#yarmouth").position();
     scroll(0,position.top);
   }
 });
