@@ -39,8 +39,7 @@ body {
 }
 
 .active-tab {
-    color:rgb(45, 47, 57);
-    border-left: 4px solid rgb(96, 190, 134);
+    color:rgb(96, 190, 134) !important;
 }
 
 /*Carousel subtitle 1 - fixed in position*/
