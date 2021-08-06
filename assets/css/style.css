@@ -286,6 +286,12 @@ body {
     flex-direction: column;
 }
 
+.wildlife-club {
+    background: url(/assets/images/kids-nature.jpg) no-repeat center center;
+    background-size: cover;
+    flex-direction: column;
+}
+
 /* Brochure / get in touch section */
 .contact-section {
     font-family: 'Roboto Condensed', sans-serif;
