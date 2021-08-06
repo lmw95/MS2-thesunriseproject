@@ -39,7 +39,8 @@ body {
 }
 
 .active-tab {
-    background-color: rgb(255,255,255);
+    color:rgb(45, 47, 57);
+    border-left: 4px solid rgb(96, 190, 134);
 }
 
 /*Carousel subtitle 1 - fixed in position*/
@@ -174,6 +175,11 @@ body {
     transition: all 0.1s ease-in-out;
     border-bottom-style: none;
     letter-spacing: 1px;
+    color:rgb(45, 47, 57);
+}
+
+.visitor-center .tabs ul a:hover {
+    
 }
 
 /*Quiz section*/
