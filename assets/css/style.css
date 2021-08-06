@@ -139,8 +139,8 @@ body {
 .visitor-center {
     font-family: 'Roboto Condensed', sans-serif;
     color: rgb(45, 47, 57);
-    background-color: rgba(229, 208, 204);
     border-top:rgb(245, 245, 245);
+    background-color: rgb(245,245,245);
 }
 
 .visitor-center .title,
@@ -251,10 +251,13 @@ body {
 
 .contact-section {
     font-family: 'Roboto Condensed', sans-serif;
-    background-color: rgba(229, 208, 204, 0.3);
+    background-color: rgba(229, 208, 204);
+    color: rgb(45, 47, 57);
 }
 
-
+.contact-section .subtitle {
+    color: rgb(45, 47, 57);
+}
 
 /* Footer */
 
