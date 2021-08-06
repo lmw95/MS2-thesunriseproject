@@ -194,6 +194,19 @@ $(".quiz-option").on("click", function() {
     var position = $("#yarmouth").position();
     scroll(0,position.top);
   }
+  else if ($("#broads").hasClass("clicked") && $("#nightlife").hasClass("clicked")) {
+    $("#oultonBroad").slideToggle(1500);
+    $(".fade-in").fadeIn(3000);
+    var position = $("#oultonBroad").position();
+    scroll(0,position.top);
+  }
+  else if ($("#nature").hasClass("clicked") && $("#nightlife").hasClass("clicked")) {
+    $("#yarmouth").slideToggle(1500);
+    $(".fade-in").fadeIn(3000);
+    var position = $("#yarmouth").position();
+    scroll(0,position.top);
+  }
+  
 });
   
 // Function that resets the quiz
