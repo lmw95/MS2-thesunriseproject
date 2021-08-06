@@ -262,8 +262,31 @@ body {
     background-color: rgb(245, 245, 245);
 }
 
-/* Brochure / get in touch section */
+.first-light {
+    background: url(/assets/images/first-light.jpg) no-repeat center center; 
+    background-size: cover; 
+    flex-direction: column;
+}
 
+.latitude {
+    background: url(/assets/images/latitude.jpg) no-repeat center center;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.oulton-races {
+    background: url(/assets/images/powerboat.jpg) no-repeat center center;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.horse-racing {
+    background: url(/assets/images/horse-racing.jpg) no-repeat center center;
+    background-size: cover;
+    flex-direction: column;
+}
+
+/* Brochure / get in touch section */
 .contact-section {
     font-family: 'Roboto Condensed', sans-serif;
     background-color: rgba(229, 208, 204);
