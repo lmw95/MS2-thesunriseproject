@@ -233,25 +233,25 @@ body {
 }
 
 .location-img-l {
-    background: url(/assets/images/lowestoft-harbour.jpg) no-repeat center center; 
+    background: url(../images/lowestoft-harbour.jpg) no-repeat center center; 
     background-size: cover; 
     height: 400px;
 }
 
 .location-img-y {
-    background: url(/assets/images/pleasure-beach.jpg) no-repeat center center;
+    background: url(../images/pleasure-beach.jpg) no-repeat center center;
     background-size: cover;
     height: 400px;
 }
 
 .location-img-k {
-    background: url(/assets/images/africa-alive.jpg) no-repeat center center;
+    background: url(../images/africa-alive.jpg) no-repeat center center;
     background-size: cover;
     height: 400px;
 }
 
 .location-img-ob {
-    background: url(/assets/images/ob.jpg) no-repeat center center;
+    background: url(../images/ob.jpg) no-repeat center center;
     background-size: cover;
     height: 400px;
 }
@@ -263,37 +263,37 @@ body {
 
 /*Tab toggle sections*/
 .first-light {
-    background: url(/assets/images/first-light.jpg) no-repeat center center; 
+    background: url(../images/first-light.jpg) no-repeat center center; 
     background-size: cover; 
     flex-direction: column;
 }
 
 .latitude {
-    background: url(/assets/images/latitude.jpg) no-repeat center center;
+    background: url(../images/latitude.jpg) no-repeat center center;
     background-size: cover;
     flex-direction: column;
 }
 
 .oulton-races {
-    background: url(assets/images/powerboat.jpg) no-repeat center center;
+    background: url(../images/powerboat.jpg) no-repeat center center;
     background-size: cover;
     flex-direction: column;
 }
 
 .horse-racing {
-    background: url(assets/images/horse-racing.jpg) no-repeat center center;
+    background: url(../images/horse-racing.jpg) no-repeat center center;
     background-size: cover;
     flex-direction: column;
 }
 
 .wildlife-club {
-    background: url(assets/images/kids-nature.jpg) no-repeat center center;
+    background: url(../images/kids-nature.jpg) no-repeat center center;
     background-size: cover;
     flex-direction: column;
 }
 
 .nearly-festival {
-    background: url(assets/images/tribute-band.jpg) no-repeat center center;
+    background: url(../images/tribute-band.jpg) no-repeat center center;
     background-size: cover;
     flex-direction: column;
 }
