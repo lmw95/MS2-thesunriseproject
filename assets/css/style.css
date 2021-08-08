@@ -140,6 +140,31 @@ body {
     height: 100vh;
   }
 
+.carousel-cell:nth-of-type(1) {
+    background: url(../images/kessingland.jpg) no-repeat center center; 
+    background-size: cover;
+}
+
+.carousel-cell:nth-of-type(2) {
+    background: url(../images/rollercoaster.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.carousel-cell:nth-of-type(3) {
+    background: url(../images/dunwich.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.carousel-cell:nth-of-type(4) {
+    background: url(../images/harrier.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.carousel-cell:nth-of-type(5) {
+    background: url(../images/sailing.jpg) no-repeat center center; 
+    background-size: cover;
+}
+
 /*Carousel main titles - scroll with carousel*/
 
 .cell-overlay .title {
@@ -262,6 +287,38 @@ body {
 }
 
 /*Tab toggle sections*/
+.staff-profiles .profile-pic:nth-of-type(1) {
+    background: url(../images/employee1.jpg) no-repeat center center; 
+    background-size: cover; 
+    height: 150px; 
+    width: 150px; 
+    border-radius: 50%;
+}
+
+.staff-profiles .profile-pic:nth-of-type(2) {
+    background: url(../images/employee2.jpg) no-repeat center center; 
+    background-size: cover; 
+    height: 150px; 
+    width: 150px; 
+    border-radius: 50%;
+}
+
+.staff-profiles .profile-pic:nth-of-type(3) {
+    background: url(../images/employee3.jpg) no-repeat center center;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.staff-profiles .profile-pic:nth-of-type(4) {
+    background: url(../images/employee4.jpg) no-repeat center center; 
+    background-size: cover; 
+    height: 150px; 
+    width: 150px; 
+    border-radius: 50%;
+}
+
 .first-light {
     background: url(../images/first-light.jpg) no-repeat center center; 
     background-size: cover; 
