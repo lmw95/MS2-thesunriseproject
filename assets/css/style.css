@@ -38,6 +38,10 @@ body {
     display: none;
 }
 
+.hover-option {
+    cursor: pointer;
+}
+
 .active-tab {
     color:rgb(96, 190, 134) !important;
 }
