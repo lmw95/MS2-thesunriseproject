@@ -46,6 +46,16 @@ body {
     color:rgb(96, 190, 134) !important;
 }
 
+/*Navbar*/
+.navbar-brand {
+    align-items: center;
+}
+
+.navbar .navbar-burger span {
+    color: rgb(96, 190, 134);
+
+}
+
 /*Carousel subtitle 1 - fixed in position*/
 
 .overlay-higher {
@@ -352,6 +362,11 @@ body {
 
 /*Mobile media query - 360px to 798px*/
 @media (min-width: 360px) and (max-width: 798px) {
+
+    .navbar-brand h1 {
+        font-size: 0.8rem;
+    }
+
     .cell-overlay {
         justify-content: center;
         align-items: center;
