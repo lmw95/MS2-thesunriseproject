@@ -103,7 +103,7 @@ $(".quiz-option").on("click", function() {
   function changeTextColour() {
     $(".quiz-option:not(.clicked)").addClass("faded");
     $(".quiz-option").off();
-    $(".quiz-option").removeClass("hover-option");
+    $(".quiz-option:not(.clicked)").off("hover-option");
   }
 });
 
