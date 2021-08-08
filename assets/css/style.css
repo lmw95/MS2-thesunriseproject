@@ -282,7 +282,7 @@ body {
 }
 
 .nearly-festival {
-    background: url(/assets/images/band.jpg) no-repeat center center;
+    background: url(/assets/images/tribute-band.jpg) no-repeat center center;
     background-size: cover;
     flex-direction: column;
 }
