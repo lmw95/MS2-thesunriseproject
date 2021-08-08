@@ -312,7 +312,7 @@ body {
 /* Footer */
 
 .footer {
-    background: url(../assets/images/kessingland.jpg) no-repeat center center fixed;
+    background: url(../images/kessingland.jpg) no-repeat center center fixed;
     background-size: cover;
     font-family: 'Roboto Condensed', sans-serif;
 }
