@@ -57,6 +57,11 @@ body {
     color: rgb(96, 190, 134);
 }
 
+.overlay-higher, .overlay-lower,
+    .overlay-social-media, .overlay-scroll {
+        position: absolute !important;
+    }
+
 /*Carousel subtitle 1 - fixed in position*/
 
 .overlay-higher {
@@ -461,7 +466,6 @@ body {
     .overlay-higher, .overlay-lower,
     .overlay-social-media, .overlay-scroll {
         text-align: center;
-        position: absolute !important;
     }
 
     .overlay-higher {
