@@ -80,7 +80,7 @@ $(this).addClass("clicked");
 
 // Function that changes the cursor to a pointer when mouseover
 $(".quiz-option").on("mouseover", function() {
-$(this).css("cursor", "pointer");
+$(this).addClass("hover-option");
 });
 
 // Function that changes the border colour of the quiz options when mouseover
@@ -103,6 +103,7 @@ $(".quiz-option").on("click", function() {
   function changeTextColour() {
     $(".quiz-option:not(.clicked)").addClass("faded");
     $(".quiz-option").off();
+    $(".quiz-option").removeClass("hover-option");
   }
 });
 
