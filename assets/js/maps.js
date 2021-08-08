@@ -20,7 +20,7 @@ function initMap() {
         //Declare variables for Lowestoft location markers 
         var locationsL = [
             [ 'Maritime Museum', 52.48786916515505, 1.757501231452841 ],
-            [ 'Transport Museum', 52.45279120791381,1.6877369984663078 ],
+            [ 'Marina Theatre', 52.476160107028896, 1.7534854694519173 ],
             [ 'Ness Point', 52.48130428977037, 1.762758745215036 ],
             [ 'Lowestoft Beach', 52.463528942398, 1.7441735460103207 ],
             [ 'Pleasurewood Hills', 52.508024832271055, 1.7441718423062194 ]
