@@ -277,6 +277,12 @@ body {
     flex-direction: column;
 }
 
+.nearly-festival {
+    background: url(/assets/images/band.jpg) no-repeat center center;
+    background-size: cover;
+    flex-direction: column;
+}
+
 /* Brochure / get in touch section */
 .contact-section {
     font-family: 'Roboto Condensed', sans-serif;
