@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@300;400;500;600&display=swap');
 
+
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden !important;
 }
 
 body {
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 /*Navbar items hover effect*/
@@ -53,7 +55,6 @@ body {
 
 .navbar .navbar-burger span {
     color: rgb(96, 190, 134);
-
 }
 
 /*Carousel subtitle 1 - fixed in position*/
@@ -232,25 +233,25 @@ body {
 }
 
 .location-img-l {
-    background: url(/assets/images/lowestoft-harbour.jpg) no-repeat center center; 
+    background: url(../assets/images/lowestoft-harbour.jpg) no-repeat center center; 
     background-size: cover; 
     height: 400px;
 }
 
 .location-img-y {
-    background: url(/assets/images/pleasure-beach.jpg) no-repeat center center;
+    background: url(../assets/images/pleasure-beach.jpg) no-repeat center center;
     background-size: cover;
     height: 400px;
 }
 
 .location-img-k {
-    background: url(/assets/images/africa-alive.jpg) no-repeat center center;
+    background: url(../assets/images/africa-alive.jpg) no-repeat center center;
     background-size: cover;
     height: 400px;
 }
 
 .location-img-ob {
-    background: url(/assets/images/ob.jpg) no-repeat center center;
+    background: url(../assets/images/ob.jpg) no-repeat center center;
     background-size: cover;
     height: 400px;
 }
@@ -262,37 +263,37 @@ body {
 
 /*Tab toggle sections*/
 .first-light {
-    background: url(/assets/images/first-light.jpg) no-repeat center center; 
+    background: url(../assets/images/first-light.jpg) no-repeat center center; 
     background-size: cover; 
     flex-direction: column;
 }
 
 .latitude {
-    background: url(/assets/images/latitude.jpg) no-repeat center center;
+    background: url(../assets/images/latitude.jpg) no-repeat center center;
     background-size: cover;
     flex-direction: column;
 }
 
 .oulton-races {
-    background: url(/assets/images/powerboat.jpg) no-repeat center center;
+    background: url(../assets/images/powerboat.jpg) no-repeat center center;
     background-size: cover;
     flex-direction: column;
 }
 
 .horse-racing {
-    background: url(/assets/images/horse-racing.jpg) no-repeat center center;
+    background: url(../assets/images/horse-racing.jpg) no-repeat center center;
     background-size: cover;
     flex-direction: column;
 }
 
 .wildlife-club {
-    background: url(/assets/images/kids-nature.jpg) no-repeat center center;
+    background: url(../assets/images/kids-nature.jpg) no-repeat center center;
     background-size: cover;
     flex-direction: column;
 }
 
 .nearly-festival {
-    background: url(/assets/images/tribute-band.jpg) no-repeat center center;
+    background: url(../assets/images/tribute-band.jpg) no-repeat center center;
     background-size: cover;
     flex-direction: column;
 }
@@ -311,7 +312,7 @@ body {
 /* Footer */
 
 .footer {
-    background: url(/assets/images/kessingland.jpg) no-repeat center center fixed;
+    background: url(../assets/images/kessingland.jpg) no-repeat center center fixed;
     background-size: cover;
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -361,10 +362,29 @@ body {
 /*Mobile queries*/
 
 /*Mobile media query - 360px to 798px*/
+@media (max-width: 420px) {
+    .navbar .navbar-brand a.navbar-item h1 {
+        display: none;
+    }
+}
+
 @media (min-width: 360px) and (max-width: 798px) {
 
-    .navbar-brand h1 {
-        font-size: 0.8rem;
+    html, body {
+        width: 100vw;
+        overflow-x: hidden !important;
+    }
+
+    .navbar {
+        width: 100vw;
+    }
+
+    .navbar .navbar-brand a.navbar-item h1 {
+        font-size: 1.2rem !important;
+    }
+
+    .navbar-burger {
+        margin-right: 10px;
     }
 
     .cell-overlay {
@@ -390,12 +410,24 @@ body {
         top: 49%;
     }
 
+    .overlay-higher p {
+        margin-left: 0 !important;
+    }
+
     .overlay-lower {
         top: 74%;
     }
 
+    .overlay-lower p {
+        margin-left: 0 !important;
+    }
+
     .overlay-social-media {
         top: 85%;
+    }
+
+    .overlay-social-media span:nth-of-type(1) {
+        margin-left: 0 !important;
     }
 
     /*Sorting the responsive tab issue code - https://github.com/buefy/buefy/issues/364#issuecomment-408530192*/
@@ -419,5 +451,26 @@ body {
       
     .tabs li {
         transition: flex-grow 1s ease;
+    }
+
+    /*Footer*/
+
+    .footer-contact {
+        text-align: center;
+    }
+
+    .footer-logo {
+        padding-top: 48px;
+    }
+
+    .footer-social-media {
+        margin-top: 0 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-social-media span:nth-of-type(1) {
+        margin-left: 0 !important;
     }
 }
