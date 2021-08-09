@@ -424,7 +424,10 @@ body {
 
 /*Mobile queries*/
 
+
+
 /*Mobile media query - 360px to 798px*/
+/*
 @media only screen 
 and (device-width: 420px) {
     .navbar .navbar-brand a.navbar-item h1 {
@@ -497,7 +500,7 @@ and (device-width: 798px) {
     }
 
     /*Sorting the responsive tab issue code - https://github.com/buefy/buefy/issues/364#issuecomment-408530192*/
-
+/*
     li:not(.is-active) > a > span:not(.icon) {
         visibility: hidden;
         position:  absolute;
@@ -520,7 +523,7 @@ and (device-width: 798px) {
     }
 
     /*Footer*/
-
+/*
     .footer-contact {
         text-align: center;
     }
