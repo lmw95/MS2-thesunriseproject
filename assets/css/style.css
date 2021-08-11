@@ -562,112 +562,10 @@ and (min-width: 320px) and (max-width: 426px) {
     .footer-social-media span:nth-of-type(1) {
         margin-left: 0 !important;
     }
-
-}
-
-
-
-
-/*
-
-
-@media only screen 
-and (min-width: 320px) and (max-width: 480px) {
-
-    .cell-overlay {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .overlay-higher, .overlay-lower,
-    .overlay-social-media, .overlay-scroll {
-        text-align: center;
-    }
-
-    .overlay-higher {
-        top: 53vh;
-    }
-
-    .overlay-higher p {
-        margin-left: 0 !important;
-    }
-
-    .overlay-lower {
-        top: 75vh;
-    }
-
-    .overlay-social-media {
-        top: 85vh;
-    }
-
-    .overlay-scroll {
-        top: 92vh;
-    }
-
-    .quiz-section .welcome {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-        text-align: justify !important;
-    }
-
-    .visitor-center .welcome {
-        text-align: justify !important;
-    }
-
-    .location-result {
-        padding: 1em !important;
-    }
-
-    .location-result .container {
-        padding: 1em !important;
-    }
-
-    .location-result .container .title {
-        font-size: 3em !important;
-        padding-top: 10px;
-    }
-
-    .location-result .container .subtitle {
-        padding-top: 12px;
-    }
-
-    .location-result h1 {
-        font-size: 60px !important;
-        text-align: center !important;
-    }
-
-    .location-result .enjoy {
-        padding-bottom: 10px;
-        text-align: center;
-    }
-
-    .location-result .description {
-        text-align: center !important;
-    }
-
-    .footer-contact {
-        text-align: center;
-    }
-
-    .footer-logo {
-        padding-top: 48px;
-        margin-top: 30px;
-    }
-
-    .footer .footer-social-media {
-        margin-top: 0 !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .footer-social-media span:nth-of-type(1) {
-        margin-left: 0 !important;
-    }
 }
 
 @media only screen
-and (min-width: 769px) and (max-width: 1100px) {
+and (min-width: 768px) and (max-width: 1100px) {
     .container.history .columns {
         display: flex;
         flex-direction: column;
@@ -676,10 +574,11 @@ and (min-width: 769px) and (max-width: 1100px) {
     .container.history .column {
         width: 100% !important;
     }
-}
 
-@media only screen 
-and (min-width: 769px) {
+    #projectToggle .card {
+        justify-content: space-evenly !important;
+    }
+
     .contact-section .column.is-offset-3 {
         margin-left: 0 !important;
     }
@@ -689,96 +588,13 @@ and (min-width: 769px) {
     }
 }
 
-/*
-
 @media only screen 
-and (device-width: 360px) 
-and (device-width: 798px) {
-
-    html, body {
-        width: 100vw;
-        overflow-x: hidden !important;
-    }
-
-    .navbar {
-        width: 100vw;
-    }
-
-    .navbar .navbar-brand a.navbar-item h1 {
-        font-size: 1.2rem !important;
-    }
-
-    .navbar-burger {
-        margin-right: 10px;
-    }
-
-    .cell-overlay {
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .cell-overlay .title {
-        font-size: 11vw;
-        line-height: 50px;
-        margin-left: 0 !important;
-        margin-top: 230px;
-        text-align: center;
-        padding: 0.5em;
-    }
-
-    .overlay-higher, .overlay-lower,
-    .overlay-social-media, .overlay-scroll {
-        text-align: center;
-    }
-
-    .overlay-higher {
-        top: 49%;
-    }
-
-    .overlay-higher p {
+and (min-width: 1101px) {
+    .contact-section .column.is-offset-3 {
         margin-left: 0 !important;
     }
 
-    .overlay-lower {
-        top: 74%;
+    .contact-section .contact-col {
+        width: 33% !important;
     }
-
-    .overlay-lower p {
-        margin-left: 0 !important;
-    }
-
-    .overlay-social-media {
-        top: 85%;
-    }
-
-    .overlay-social-media span:nth-of-type(1) {
-        margin-left: 0 !important;
-    }
-
-    /*Sorting the responsive tab issue code - https://github.com/buefy/buefy/issues/364#issuecomment-408530192*/
-/*
-    li:not(.is-active) > a > span:not(.icon) {
-        visibility: hidden;
-        position:  absolute;
-    }
-      
-    nav.tabs li:not(.is-active) {
-        -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-        flex-grow: 0;
-        -ms-flex-negative: 1;
-        flex-shrink: 1;
-    }
-      
-    .tabs .icon {
-        margin-left: 0.5em;
-    }
-      
-    .tabs li {
-        transition: flex-grow 1s ease;
-    }
-
-    /*Footer*/
-/*
-    
 }
