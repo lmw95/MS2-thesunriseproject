@@ -519,10 +519,11 @@ and (min-width: 320px) and (max-width: 480px) {
 
     .footer-logo {
         padding-top: 48px;
+        margin-top: 30px;
     }
 
-    .footer-social-media {
-        margin-top: 0 !important;
+    .footer .footer-social-media {
+        margin-top: 0px !important;
         display: flex;
         justify-content: center;
         align-items: center;
