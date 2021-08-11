@@ -11,7 +11,7 @@ html {
 body {
     padding: 0;
     margin: 0;
-    overflow: hidden !important;
+    overflow-x: hidden !important;
 }
 
 /*Navbar items hover effect*/
@@ -523,7 +523,7 @@ and (min-width: 320px) and (max-width: 480px) {
     }
 
     .footer .footer-social-media {
-        margin-top: 0px !important;
+        margin-top: 0 !important;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -532,12 +532,29 @@ and (min-width: 320px) and (max-width: 480px) {
     .footer-social-media span:nth-of-type(1) {
         margin-left: 0 !important;
     }
-
 }
 
 @media only screen
-and (min-width: 429px) and (max-width: 798px) {
+and (min-width: 769px) and (max-width: 1000px) {
+    .container.history .columns {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .container.history .column {
+        width: 100% !important;
+    }
+}
+
+@media only screen 
+and (min-width: 769px) {
+    .contact-section .column.is-offset-3 {
+        margin-left: 0 !important;
+    }
+
+    .contact-section .contact-col {
+        width: 33% !important;
+    }
 }
 
 /*
