@@ -424,7 +424,7 @@ body {
 
 /* Media queries according to Google Dev tools */
 @media only screen 
-and (min-width: 320px) and (max-width: 375px) {
+and (min-width: 320px) and (max-width: 426px) {
 
     .navbar .navbar-brand a.navbar-item h1 {
         font-size: 1em !important;
@@ -440,7 +440,7 @@ and (min-width: 320px) and (max-width: 375px) {
     }
 
     .overlay-higher {
-        top: 50vh !important;
+        top: 52vh !important;
     }
 
     .overlay-lower {
