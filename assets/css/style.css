@@ -535,7 +535,17 @@ and (min-width: 320px) and (max-width: 480px) {
 }
 
 @media only screen
-and (min-width: 769px) and (max-width: 1000px) {
+and (min-width: 769px) and (max-width: 1100px) {
+    .hero-body .subtitle,
+    .hero-body .title {
+        text-align: center;
+    }
+
+    .hero-body .overlay-social-media {
+        display: flex;
+        justify-content: center !important;
+    }
+
     .container.history .columns {
         display: flex;
         flex-direction: column;
