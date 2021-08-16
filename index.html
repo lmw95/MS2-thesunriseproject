@@ -35,7 +35,7 @@
                     <img src="assets/flaticon/icon-samples/sunrise (15).png" class="mr-3 ml-1" style="max-height: 60px; width: 60px;" id="navLogo">
                     <h1 class="is-size-3 is-uppercase" style="color: rgb(229, 208, 204);">The Sunrise Project</h1>
                 </a>
-                <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" id="navBurger" onclick="toggleBurger()">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -1123,6 +1123,18 @@
       </div>
 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAz2AgSP-awt4zaXYsWQWIXLev7StjPLLM&callback=initMap"></script>
+    <script>
+      // Function that toggles nav burger - https://stackoverflow.com/a/47756956
+          function toggleBurger() {
+            var burger = $('.navbar-burger');
+            var menu = $('.navbar-menu');
+            var end = $('.navbar-end');
+            burger.toggleClass('is-active');
+            menu.toggleClass('is-active');
+            menu.css("background-color", "transparent");
+            menu.css("text-align", "center");
+          }
+    </script>
 
 </body>
 </html>
