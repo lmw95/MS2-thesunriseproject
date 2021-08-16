@@ -63,6 +63,7 @@ body {
         position: absolute !important;
     }
 
+
 /*Carousel subtitle 1 - fixed in position*/
 
 .overlay-higher {
@@ -576,7 +577,7 @@ and (min-width: 602px) and (max-width: 766px) {
     }
 
     .location-result h1 {
-        font-fize: 4em !important;
+        font-size: 4em !important;
     }
 }
 
@@ -587,9 +588,10 @@ and (min-width: 767px) and (max-width: 1100px) {
         text-align: center !important;
     }
 
-    .location-result h1 {
+    .location-result h1.title {
         text-align: center !important;
         padding-top: 10px;
+        font-size: 50px;
     }
 
     .location-result p.description {
