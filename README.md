@@ -43,6 +43,12 @@ This website is the company's primary marketing method, and offers a fun and wel
         * [Interactive quiz]()
         * [Location page toggling]()
     * [v. Location pages]()
+    * [Possible future features]()
+* [Responsive design]()
+* [Accessibility]()
+* [Testing]()
+* [Issues & improvements]()
+* [Credits & acknowledgements]()
 
 
 
