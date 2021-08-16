@@ -22,7 +22,7 @@ body {
 
 /*jQuery classes*/
 
-.navbar.scrolled {
+nav.navbar.scrolled {
     background-color: rgb(45, 47, 57);
     transition: background-color 200ms linear;
   }
@@ -45,7 +45,7 @@ body {
     cursor: pointer;
 }
 
-.active-tab {
+.visitor-center .tabs ul a.active-tab {
     color:rgb(96, 190, 134);
 }
 
@@ -58,8 +58,8 @@ body {
     color: rgb(96, 190, 134);
 }
 
-.overlay-higher, .overlay-lower,
-    .overlay-social-media, .overlay-scroll {
+div.overlay-higher, div.overlay-lower,
+    div.overlay-social-media, div.overlay-scroll {
         position: absolute;
     }
 
@@ -428,10 +428,10 @@ body {
 and (min-width: 319px) and (max-width: 766px) {
 
     .navbar .navbar-brand a.navbar-item h1 {
-        font-size: 1em;
+        font-size: 1em !important;
     }
 
-    .navbar-brand {
+    nav.navbar.navbar-brand {
         align-items: center;
     }
 
@@ -440,22 +440,16 @@ and (min-width: 319px) and (max-width: 766px) {
         align-items: center;
     }
 
-    .overlay-higher {
+    div.overlay-higher {
         top: 52vh;
     }
 
-    .overlay-lower {
+    div.overlay-lower {
         top: 75vh;
-    }
-
-    .overlay-higher .subtitle,
-    .overlay-lower .subtitle {
-        margin-left: 0;
     }
 
     .cell-overlay .title {
         font-size: 50px;
-        margin-left: 0;
         padding: 10px;
         text-align: center;
         margin-top: 35vh;
@@ -474,7 +468,7 @@ and (min-width: 319px) and (max-width: 766px) {
         text-align: center;
     }
 
-    .quiz-section .welcome {
+    .quiz-section p.welcome {
         padding-left: 0;
         padding-right: 0;
         text-align: justify;
