@@ -4,14 +4,14 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden !important;
+    overflow-x: hidden;
     width: 100vw;
 }
 
 body {
     padding: 0;
     margin: 0;
-    overflow-x: hidden !important;
+    overflow-x: hidden;
 }
 
 /*Navbar items hover effect*/
@@ -23,7 +23,7 @@ body {
 /*jQuery classes*/
 
 .navbar.scrolled {
-    background-color: rgb(45, 47, 57) !important;
+    background-color: rgb(45, 47, 57);
     transition: background-color 200ms linear;
   }
 
@@ -46,7 +46,7 @@ body {
 }
 
 .active-tab {
-    color:rgb(96, 190, 134) !important;
+    color:rgb(96, 190, 134);
 }
 
 /*Navbar*/
@@ -60,7 +60,7 @@ body {
 
 .overlay-higher, .overlay-lower,
     .overlay-social-media, .overlay-scroll {
-        position: absolute !important;
+        position: absolute;
     }
 
 
@@ -428,11 +428,11 @@ body {
 and (min-width: 319px) and (max-width: 766px) {
 
     .navbar .navbar-brand a.navbar-item h1 {
-        font-size: 1em !important;
+        font-size: 1em;
     }
 
     .navbar-brand {
-        align-items: center !important;
+        align-items: center;
     }
 
     .cell-overlay {
@@ -441,7 +441,7 @@ and (min-width: 319px) and (max-width: 766px) {
     }
 
     .overlay-higher {
-        top: 52vh !important;
+        top: 52vh;
     }
 
     .overlay-lower {
@@ -450,12 +450,12 @@ and (min-width: 319px) and (max-width: 766px) {
 
     .overlay-higher .subtitle,
     .overlay-lower .subtitle {
-        margin-left: 0 !important;
+        margin-left: 0;
     }
 
     .cell-overlay .title {
         font-size: 50px;
-        margin-left: 0 !important;
+        margin-left: 0;
         padding: 10px;
         text-align: center;
         margin-top: 35vh;
@@ -475,21 +475,21 @@ and (min-width: 319px) and (max-width: 766px) {
     }
 
     .quiz-section .welcome {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-        text-align: justify !important;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: justify;
     }
 
     .location-result {
-        padding: 0.5em !important;
+        padding: 0.5em;
     }
 
     .location-result .container {
-        padding: 1em !important;
+        padding: 1em;
     }
 
     .location-result .container .title {
-        font-size: 3em !important;
+        font-size: 3em;
         padding-top: 10px;
     }
 
@@ -498,8 +498,8 @@ and (min-width: 319px) and (max-width: 766px) {
     }
 
     .location-result h1 {
-        font-size: 60px !important;
-        text-align: center !important;
+        font-size: 60px;
+        text-align: center;
     }
 
     .location-result .enjoy {
@@ -508,15 +508,15 @@ and (min-width: 319px) and (max-width: 766px) {
     }
 
     .location-result .description {
-        text-align: center !important;
+        text-align: center;
     }
 
     .tabs span:nth-of-type(2) {
-        font-size: 15px !important;
+        font-size: 15px;
     }
 
     #projectToggle {
-        padding: 0.5em !important;
+        padding: 0.5em;
     }
 
     #projectToggle .subtitle {
@@ -528,18 +528,18 @@ and (min-width: 319px) and (max-width: 766px) {
     }
 
     .container.history {
-        padding: 0 !important;
-        padding-top: 20px !important;
+        padding: 0;
+        padding-top: 20px;
     }
 
     .contact-section .contact-col {
-        padding-top: 40px !important;
-        padding-bottom: 40px !important;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
     .contact-section .contact-col:nth-last-of-type(2) {
-        border-left: none !important;
-        border-right: none !important;
+        border-left: none;
+        border-right: none;
         border-top: 2px solid rgb(245,245,245);
         border-bottom: 2px solid rgb(245,245,245);
     }
@@ -554,14 +554,14 @@ and (min-width: 319px) and (max-width: 766px) {
     }
 
     .footer .footer-social-media {
-        margin-top: 0 !important;
+        margin-top: 0;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
     .footer-social-media span:nth-of-type(1) {
-        margin-left: 0 !important;
+        margin-left: 0;
     }
 }
 
@@ -577,7 +577,7 @@ and (min-width: 602px) and (max-width: 766px) {
     }
 
     .location-result h1 {
-        font-size: 4em !important;
+        font-size: 4em;
     }
 }
 
@@ -585,18 +585,18 @@ and (min-width: 602px) and (max-width: 766px) {
 and (min-width: 767px) and (max-width: 1100px) {
 
     .location-result p.enjoy {
-        text-align: center !important;
+        text-align: center;
     }
 
     .location-result h1.title {
-        text-align: center !important;
+        text-align: center;
         padding-top: 10px;
         font-size: 50px;
     }
 
     .location-result p.description {
-        text-align: center !important;
-        padding: 0 !important;
+        text-align: center;
+        padding: 0;
         margin-bottom: 10px;
     }
 
@@ -606,24 +606,24 @@ and (min-width: 767px) and (max-width: 1100px) {
     }
 
     .container.history .column {
-        width: 100% !important;
+        width: 100%;
     }
 
     #projectToggle .card {
-        justify-content: space-evenly !important;
+        justify-content: space-evenly;
     }
 
     .columns.contact {
         display: flex;
-        flex-direction: row !important;
+        flex-direction: row;
     }
 
     .contact-section .column.is-offset-3 {
-        margin-left: 0 !important;
+        margin-left: 0;
     }
 
     .contact-section .contact-col {
-        width: 33% !important;
+        width: 33%;
     }
 
     .footer-contact {
@@ -636,24 +636,24 @@ and (min-width: 767px) and (max-width: 1100px) {
     }
 
     .footer .footer-social-media {
-        margin-top: 0 !important;
+        margin-top: 0;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
     .footer-social-media span:nth-of-type(1) {
-        margin-left: 0 !important;
+        margin-left: 0;
     }
 }
 
 @media only screen 
 and (min-width: 1101px) {
     .contact-section .column.is-offset-3 {
-        margin-left: 0 !important;
+        margin-left: 0;
     }
 
     .contact-section .contact-col {
-        width: 33% !important;
+        width: 33%;
     }
 }
