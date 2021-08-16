@@ -134,14 +134,18 @@ I narrowed down the scope to the final interactive features which would be inclu
 * Key using Google Map markers with attraction info (accordian)
 
 *VISITOR CENTER*
+* Toggleable tabs for each sub-section (company info, history and events)
+
+*CONTACT MODAL*
+* Submissable enquiry to owner
+* Clickable submit button 
+
+### Limitations
+I realised that I would need to keep the scope quite tight due to time constraints and my JavaScript / jQuery abilities, but this helps to keep the website to the the most important components that users will require. I also only have one previous experience building a website, so there may be limitations in terms of user experience and desgin combined with interactive elements.
+
+## iv. Structure
 
 
-
-
-
-
-
-### Requirements
 
 
 
