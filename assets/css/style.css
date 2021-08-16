@@ -186,7 +186,7 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     color: rgb(45, 47, 57);
     border-top:rgb(245, 245, 245);
-    background-color: rgb(245,245,245);
+    background-color: rgb(245, 245, 245);
 }
 
 .visitor-center .title,
@@ -293,7 +293,7 @@ body {
 }
 
 /*Tab toggle sections*/
-.staff-profiles:nth-of-type(1) .profile-pic {
+.profile-pic-1 {
     background: url(../images/employee1.jpg) no-repeat center center; 
     background-size: cover; 
     height: 150px; 
@@ -301,7 +301,7 @@ body {
     border-radius: 50%;
 }
 
-.staff-profiles:nth-of-type(2) .profile-pic {
+.profile-pic-2 {
     background: url(../images/employee2.jpg) no-repeat center center; 
     background-size: cover; 
     height: 150px; 
@@ -309,7 +309,7 @@ body {
     border-radius: 50%;
 }
 
-.staff-profiles:nth-of-type(3) .profile-pic {
+.profile-pic-3 {
     background: url(../images/employee3.jpg) no-repeat center center;
     background-size: cover;
     height: 150px;
@@ -317,7 +317,7 @@ body {
     border-radius: 50%;
 }
 
-.staff-profiles:nth-of-type(4) .profile-pic {
+.profile-pic-4 {
     background: url(../images/employee4.jpg) no-repeat center center; 
     background-size: cover; 
     height: 150px; 
