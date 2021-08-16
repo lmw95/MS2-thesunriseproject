@@ -144,6 +144,18 @@ I narrowed down the scope to the final interactive features which would be inclu
 I realised that I would need to keep the scope quite tight due to time constraints and my JavaScript / jQuery abilities, but this helps to keep the website to the the most important components that users will require. I also only have one previous experience building a website, so there may be limitations in terms of user experience and desgin combined with interactive elements.
 
 ## iv. Structure
+### Architecture
+
+*INFORMATION ARCHITECTURE*
+* The original idea for this website was to have the location pages on separate pages, but after speaking with my mentor, it became apparent that it would be more efficient and sleeker to have the location pages toggled when the activities were selected by the user. Therefore, the website is contained to one page, with static and dynamic display of content depending on user interaction.
+
+*ORGANISATION ARCHITECTURE*
+* Header: 
+* Interactive guide:
+* Visitor center:
+* Contact:
+* Footer: 
+
 
 
 
