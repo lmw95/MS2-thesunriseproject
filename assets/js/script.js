@@ -215,8 +215,6 @@ $("#resetButton").on("click", function() {
   location.reload();
 }); 
 
-// Function that toggles ALL locations
-
 //Function toggles the accordions next to Google Maps
 $("div.ah").on("click", function() {
   $(this).next("div").slideToggle();
@@ -224,8 +222,6 @@ $("div.ah").on("click", function() {
   var otherItems = $("div.ah").not($(this)).next("div");
   otherItems.slideUp();
 });
-
-// Function that toggles Bulma tabs
 
 // Function that adds effects to link that opens modal
 $("#toggleModalOption").on("mouseover", function() {
