@@ -14,9 +14,7 @@
 <body>
 
   <!--Header section-->
-  <header class="hero">
-    <!--Overlay to darken header background-->
-    <div class="hero-overlay">
+  <header class="hero is-fullheight">
       <!--Navbar-->
       <nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
         <!--Company logo-->
@@ -57,7 +55,7 @@
             </div>
             <div class="columns">
               <div class="column is-full pl-6 pr-6">
-                <p class="subtitle hero-subtitle is-uppercase has-text-centered has-text-weight-light">Visit Britain's most easterly place and <span class="has-text-weight-bold">discover...</span></h1>
+                <p class="subtitle hero-subtitle is-uppercase has-text-centered has-text-weight-light">Visit, explore and <span class="has-text-weight-bold">discover...</span></h1>
               </div>
             </div>
             <div class="columns">
@@ -71,14 +69,23 @@
               </div>
             </div>
             <div class="columns">
-              <div class="column is-one-third hero-link p-5">
-                <p class="hero-info has-text-centered has-text-weight-bold" >Use the guide</p>
+              <div class="column is-one-third hero-link p-5 has-text-centered">
+                <span class="icon is-small">
+                  <i class="fas fa-map-signs"></i>
+                </span>
+                <p class="hero-guide has-text-centered has-text-weight-bold">Use the guide</p>
               </div>
-              <div class="column is-one-third hero-link p-5">
-                <p class="hero-guide has-text-centered has-text-weight-bold">Explore the area</p>
+              <div class="column is-one-third hero-link p-5 has-text-centered">
+                <span class="icon is-small">
+                  <i class="fas fa-map-marked-alt"></i>
+                </span>
+                <p class="hero-explore has-text-centered has-text-weight-bold">Explore the area</p>
               </div>
-              <div class="column is-one-third hero-link p-5">
-                <p class="hero-guide has-text-centered has-text-weight-bold">Get to know us</p>
+              <div class="column is-one-third hero-link p-5 has-text-centered">
+                <span class="icon is-small">
+                  <i class="fas fa-handshake"></i>
+                </span>
+                <p class="hero-know has-text-centered has-text-weight-bold">Get to know us</p>
               </div>
             </div>
           </div>
@@ -86,7 +93,7 @@
         <!--Social media links-->
         <div class="columns">
           <div class="column is-full social-media-icons has-text-centered">
-          <p class="p-3 follow-us is-uppercase">Support a local business</p>
+          <p class="p-3 follow-us is-uppercase">Support this local business</p>
             <span class="icon is-medium mr-2">
               <a href="https://www.facebook.com/" target="_blank">
                   <i class="fab fa-facebook-square fa-2x"></i>
@@ -110,11 +117,98 @@
           </div>
         </div>
       </div>
-    </div>
   </header>
+  <!--Header section end-->
 
+  <!--Online guide section-->
+  <section class="section online-guide p-5 fade-in">
+    <!--Online guide titles-->
+    <div class="columns">
+      <div class="column is-full online-guide-wrapper">
+        <h1 class="title online-guide-title">The Sunrise Project Online Guide</h1>
+        <h2 class="subtitle online-guide-subtitle pt-1">Make the most of your time with us by choosing your favourite activities below, and we'll do the tricky bits!</h1>
+      </div>
+    </div>
+    <!--First line of activity options-->
+    <div class="columns mb-0 is-mobile is-multiline activity-wrapper">
+      <div class="column activity is-2 p-6 is-flex is-justify-content-center is-align-items-center">
+        <span class="icon is-medium pb-3">
+          <i class="fas fa-route fa-2x hvr-wobble-horizontal"></i>
+        </span>
+        <p class="is-uppercase mt-2 has-text-weight-bold has-text-centered">Walks</p>
+      </div>
+      <div class="column activity is-2 p-6 is-flex is-justify-content-center is-align-items-center">
+        <span class="icon is-medium pb-3">
+          <i class="fab fa-pagelines fa-2x hvr-wobble-horizontal"></i>
+        </span>
+        <p class="is-uppercase mt-2 has-text-weight-bold has-text-centered">Nature</p>
+      </div>
+      <div class="column activity is-2 p-6 is-flex is-justify-content-center is-align-items-center">
+        <span class="icon is-medium pb-3">
+          <i class="fas fa-hand-holding-heart fa-2x hvr-wobble-horizontal"></i>
+        </span>
+        <p class="is-uppercase mt-2 has-text-weight-bold has-text-centered">Conservation</p>
+      </div>
+      <div class="column activity is-2 p-6 is-flex is-justify-content-center is-align-items-center">
+        <span class="icon is-medium pb-3">
+          <i class="fas fa-child fa-2x hvr-wobble-horizontal"></i>
+        </span>
+        <p class="is-uppercase mt-2 has-text-weight-bold has-text-centered">Family fun</p>
+      </div>
+      <div class="column activity is-2 p-6 is-flex is-justify-content-center is-align-items-center">
+        <span class="icon is-medium pb-3">
+          <i class="fas fa-heartbeat fa-2x hvr-wobble-horizontal"></i>
+        </span>
+        <p class="is-uppercase mt-2 has-text-weight-bold has-text-centered">Thrillseekers</p>
+      </div>
+      <div class="column activity is-2 p-6 is-flex is-justify-content-center is-align-items-center">
+        <span class="icon is-medium pb-3">
+          <i class="fas fa-landmark fa-2x hvr-wobble-horizontal"></i>
+        </span>
+        <p class="is-uppercase mt-2 has-text-weight-bold has-text-centered">History</p>
+      </div>
+      <div class="column activity is-2 p-6 is-flex is-justify-content-center is-align-items-center">
+        <span class="icon is-medium pb-3">
+          <i class="fas fa-hiking fa-2x hvr-wobble-horizontal"></i>
+        </span>
+        <p class="is-uppercase mt-2 has-text-weight-bold has-text-centered">The Broads</p>
+      </div>
+      <div class="column activity is-2 p-6 is-flex is-justify-content-center is-align-items-center">
+        <span class="icon is-medium pb-3">
+          <i class="fas fa-palette fa-2x hvr-wobble-horizontal"></i>
+        </span>
+        <p class="is-uppercase mt-2 has-text-weight-bold has-text-centered">Music & art</p>
+      </div>
+      <div class="column activity is-2 p-6 is-flex is-justify-content-center is-align-items-center">
+        <span class="icon is-medium pb-3">
+          <i class="fas fa-cocktail fa-2x hvr-wobble-horizontal"></i>
+        </span>
+        <p class="is-uppercase mt-2 has-text-weight-bold has-text-centered">Nightlife</p>
+      </div>
+      <div class="column activity is-2 p-6 is-flex is-justify-content-center is-align-items-center">
+        <span class="icon is-medium pb-3">
+          <i class="fas fa-gifts fa-2x hvr-wobble-horizontal"></i>
+        </span>
+        <p class="is-uppercase mt-2 has-text-weight-bold has-text-centered">Shopping</p>
+      </div>
+      <div class="column activity is-2 p-6 is-flex is-justify-content-center is-align-items-center">
+        <span class="icon is-medium pb-3">
+          <i class="fas fa-umbrella-beach fa-2x hvr-wobble-horizontal"></i>
+        </span>
+        <p class="is-uppercase mt-2 has-text-weight-bold has-text-centered">Beach days</p>
+      </div>
+      <div class="column activity is-2 p-6 is-flex is-justify-content-center is-align-items-center">
+        <span class="icon is-medium pb-3">
+          <i class="fas fa-anchor fa-2x hvr-wobble-horizontal"></i>
+        </span>
+        <p class="is-uppercase mt-2 has-text-weight-bold has-text-centered">On water</p>
+      </div>
+    </div>
+  </section>
+  <!--Online guide section end-->
 
-  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 </body>
