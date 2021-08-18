@@ -395,7 +395,7 @@ let markers = [];
 function initMap(chosenDestinations) {
     map = new google.maps.Map(document.getElementById("map"), {
         zoom: 10,
-        center: new google.maps.LatLng(52.4822390273935, 1.753391400138951)
+        center: new google.maps.LatLng(52.51582061982711, 1.743778460969181)
     });
 
     let labels = ['A', 'B', 'C', 'D', 'E'];
