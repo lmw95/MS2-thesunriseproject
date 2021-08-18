@@ -1,7 +1,8 @@
  // Google API key
-let APIkey = "AIzaSyAz2AgSP-awt4zaXYsWQWIXLev7StjPLLM";
+//let APIkey = "AIzaSyAz2AgSP-awt4zaXYsWQWIXLev7StjPLLM";
 
 //Declare global variables
+/*
 var mapL;
 var mapY;
 var mapK;

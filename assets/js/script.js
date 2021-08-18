@@ -1,4 +1,4 @@
-jQuery(document).ready(function() {
+/*jQuery(document).ready(function() {
 
 // Function which takes the user to the next section from header - code https://stackoverflow.com/a/8143318
 $("#clickToScroll").click(function(){
