@@ -9,7 +9,7 @@ let labels = ['A', 'B', 'C', 'D', 'E'];
 //Initiates the map
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 10.5,
+        zoom: 10,
         center: new google.maps.LatLng(52.4822390273935, 1.753391400138951)
     });
 
@@ -41,7 +41,17 @@ function initMap() {
         [ 'Benacre Nature Reserve', 52.3836188698611, 1.701525476619970 ],
         [ 'Berney Marshes', 52.58713398373798, 1.6365220566284384 ]
     ]
+    activityNature.addEventListener("click", function() {
+        for (i = 0; i < locationsNature.length; i++) {  
+            markers = new google.maps.Marker({
+                position: new google.maps.LatLng(locationsNature[i][1], locationsNature[i][2]),
+                map: map,
+                label: labels[i % labels.length]
+            });
+        }
+    });
 
+    let activityConservation = document.getElementById("activityConservation");
     let locationsConservation = [
         [ 'Africa Alive', 52.413885514052815, 1.7015960432214932 ],
         [ 'Redwings', 52.554241310046464, 1.6474202363498287 ],
@@ -49,7 +59,17 @@ function initMap() {
         [ 'Pettits Animal Adventure Park', 52.56991832767232, 1.5780622191626201 ],
         [ 'SeaLife', 52.601002375867395, 1.7364748490458481 ]
     ]
+    activityConservation.addEventListener("click", function() {
+        for (i = 0; i < locationsConservation.length; i++) {  
+            markers = new google.maps.Marker({
+                position: new google.maps.LatLng(locationsConservation[i][1], locationsConservation[i][2]),
+                map: map,
+                label: labels[i % labels.length]
+            });
+        }
+    });
 
+    let activityFamily = document.getElementById("activityFamily");
     let locationsFamily = [
         [ 'Pleasurewood Hills', 52.508024832271055, 1.7441718423062194 ],
         [ 'Pleasure Beach', 52.595472217209974, 1.735949694382154 ],
@@ -57,7 +77,17 @@ function initMap() {
         [ 'Africa Alive', 52.413885514052815, 1.7015960432214932 ],
         [ 'Joyland Childrens Fun Park', 52.609054772153904, 1.7376054518090684 ]
     ]
+    activityFamily.addEventListener("click", function() {
+        for (i = 0; i < locationsFamily.length; i++) {  
+            markers = new google.maps.Marker({
+                position: new google.maps.LatLng(locationsFamily[i][1], locationsFamily[i][2]),
+                map: map,
+                label: labels[i % labels.length]
+            });
+        }
+    });
 
+    let activityThrills = document.getElementById("activityThrills");
     let locationsThrills = [
         [ 'Pleasurewood Hills', 52.508024832271055, 1.7441718423062194 ],
         [ 'Pleasure Beach', 52.595472217209974, 1.735949694382154 ],
@@ -65,7 +95,17 @@ function initMap() {
         [ 'Prestige Escape Rooms', 52.48506018063326, 1.7564538121270539 ],
         [ 'Ellough Go Karting', 52.44184134766564, 1.6028291447370862 ]
     ]
+    activityThrills.addEventListener("click", function() {
+        for (i = 0; i < locationsThrills.length; i++) {  
+            markers = new google.maps.Marker({
+                position: new google.maps.LatLng(locationsThrills[i][1], locationsThrills[i][2]),
+                map: map,
+                label: labels[i % labels.length]
+            });
+        }
+    });
 
+    let activityHistory = document.getElementById("activityHistory");
     let locationsHistory = [
         [ 'Burgh Castle', 52.583751110675195, 1.6520405685211867 ],
         [ 'Maritime Museum', 52.48786916515505, 1.757501231452841 ],
@@ -73,7 +113,17 @@ function initMap() {
         [ 'National Trust Elizabethan House', 52.60944715108201, 1.7258494494042143 ],
         [ 'Lowestoft Museum', 52.47616014344233, 1.7064895970139302 ]
     ]
+    activityHistory.addEventListener("click", function() {
+        for (i = 0; i < locationsHistory.length; i++) {  
+            markers = new google.maps.Marker({
+                position: new google.maps.LatLng(locationsHistory[i][1], locationsHistory[i][2]),
+                map: map,
+                label: labels[i % labels.length]
+            });
+        }
+    });
 
+    let activityBroads = document.getElementById("activityBroads");
     let locationsBroads = [
         [ 'The Norfolk Broads', 52.60455007585693, 1.606962272050122 ],
         [ 'Waveney River Center', 52.48436404767674, 1.669898801169207 ],
@@ -81,31 +131,71 @@ function initMap() {
         [ 'Oulton Broad Watersports Center', 52.47217387174025, 1.70679854630566 ],
         [ 'Breydon Water', 52.60261231260812, 1.6818637854118503 ]
     ]
+    activityBroads.addEventListener("click", function() {
+        for (i = 0; i < locationsBroads.length; i++) {  
+            markers = new google.maps.Marker({
+                position: new google.maps.LatLng(locationsBroads[i][1], locationsBroads[i][2]),
+                map: map,
+                label: labels[i % labels.length]
+            });
+        }
+    });
 
-    let locationMusic = [
+    let activityMusic = document.getElementById("activityMusic");
+    let locationsMusic = [
         [ 'Latitude Festival', 52.33835187750651, 1.6000265707292998 ],
         [ 'Marina Theatre', 52.476160107028896, 1.7534854694519173  ],
         [ 'First Lights Festival', 52.46364777632944, 1.7442255790112735 ],
         [ 'Lowestoft Players', 52.475500658720186, 1.7536388108125185 ],
         [ 'Hippodrome Circus', 52.60492435352424, 1.7359257171956493 ]
     ]
+    activityMusic.addEventListener("click", function() {
+        for (i = 0; i < locationsMusic.length; i++) {  
+            markers = new google.maps.Marker({
+                position: new google.maps.LatLng(locationsMusic[i][1], locationsMusic[i][2]),
+                map: map,
+                label: labels[i % labels.length]
+            });
+        }
+    });
 
-    let locationNightlife = [
+    let activityNightlife = document.getElementById("activityNightlife");
+    let locationsNightlife = [
         [ 'Ocean Rooms', 52.57100281960958, 1.7330287761391332 ],
         [ 'The Commodore', 52.47657739053018, 1.7109636377713318 ],
         [ 'Iconic Bar', 52.4730167674014, 1.749305229887624 ],
         [ 'Broadview Wine Bar', 52.475119348264386, 1.7100462277306123],
         [ 'The Hotel Hatfield', 52.46846444363252, 1.7468426271224402 ]
     ]
+    activityNightlife.addEventListener("click", function() {
+        for (i = 0; i < locationsNightlife.length; i++) {  
+            markers = new google.maps.Marker({
+                position: new google.maps.LatLng(locationsNightlife[i][1], locationsNightlife[i][2]),
+                map: map,
+                label: labels[i % labels.length]
+            });
+        }
+    });
 
-    let locationsOddities = [
+    let activityLocal = document.getElementById("activityLocal");
+    let locationsLocal = [
         [ 'Kessingland Car Boot', 52.41577308083052, 1.703570440794497 ],
         [ 'Corton Car Boot', 52.51180491401297, 1.7481962223133396 ],
         [ 'Lound Plant Center', 52.535749880262394, 1.7173005489329447 ],
         [ 'Yarmouth Market', 52.60837685330005, 1.7268673694566699 ],
         [ 'Upper Wood Farm Shop', 52.6585056993711, 1.6886565622926037 ]
     ]
+    activityLocal.addEventListener("click", function() {
+        for (i = 0; i < locationsLocal.length; i++) {  
+            markers = new google.maps.Marker({
+                position: new google.maps.LatLng(locationsLocal[i][1], locationsLocal[i][2]),
+                map: map,
+                label: labels[i % labels.length]
+            });
+        }
+    });
 
+    let activityBeach = document.getElementById("activityBeach");
     let locationsBeach = [
         [ 'Lowestoft Beach', 52.463528942398, 1.7441735460103207 ],
         [ 'Great Yarmouth Beach', 52.60639302326283, 1.7381536439944512 ],
@@ -113,14 +203,33 @@ function initMap() {
         [ 'Kessingland Beach', 52.41312737470827, 1.726270528821981 ],
         [ 'Pakefield Beach', 52.45805938018954, 1.7387002795530795 ]
     ]
+    activityBeach.addEventListener("click", function() {
+        for (i = 0; i < locationsBeach.length; i++) {  
+            markers = new google.maps.Marker({
+                position: new google.maps.LatLng(locationsBeach[i][1], locationsBeach[i][2]),
+                map: map,
+                label: labels[i % labels.length]
+            });
+        }
+    });
 
+    let activityWater = document.getElementById("activityWater");
     let locationsWater = [
         [ 'Oulton Broad Watersports Center', 52.47217387174025, 1.70679854630566 ],
         [ 'Waveney River Center', 52.48436404767674, 1.669898801169207 ],
         [ 'Oulton Broad Yacht Club', 52.47364701692827, 1.7051126376816224 ],
-        [ 'Seal Trips', 52.66680760655993, 1.7383944588767373 ],
+        [ 'Scroby Sands Boat Trips', 52.60908304108401, 1.7383112160643936 ],
         [ 'Waveney River Tours', 52.47874805388766, 1.7109467675594736 ]
     ]
+    activityWater.addEventListener("click", function() {
+        for (i = 0; i < locationsWater.length; i++) {  
+            markers = new google.maps.Marker({
+                position: new google.maps.LatLng(locationsWater[i][1], locationsWater[i][2]),
+                map: map,
+                label: labels[i % labels.length]
+            });
+        }
+    });
 
 }
 
