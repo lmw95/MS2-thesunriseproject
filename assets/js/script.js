@@ -1,4 +1,53 @@
+
+window.onload = (event) => {
+  console.log('page is fully loaded');
+
+  //Navbar background fades in when user scrolls
+  $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".navbar");
+      $nav.toggleClass('nav-scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
+
+
+  const checkpoint = 150;
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll <= checkpoint) {
+      opacity = 0 - currentScroll / checkpoint;
+    } else {
+      opacity = 1;
+    }
+    document.querySelector(".online-guide").style.opacity = opacity;
+  });
+
+};
+
+
+  /*
+  // Online guide section fades in when user scrolls
+  $(function () {
+    $(document).scroll(function () {
+      var $guide = $(".online-guide");
+      var $breakpoint = $(".scroll-breakpoint");
+      $guide.toggleClass('guide-scrolled', $(this).scrollTop() == $breakpoint.height());
+    });
+  });
+
+  
+};
+
+
 /*jQuery(document).ready(function() {
+  
+  // Function that changes the navbar when the user scrolls down - code https://stackoverflow.com/a/41037394
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
 
 // Function which takes the user to the next section from header - code https://stackoverflow.com/a/8143318
 $("#clickToScroll").click(function(){
@@ -228,4 +277,4 @@ $("#toggleModalOption").on("mouseover", function() {
   $(this).css("cursor", "pointer");
 });
 
-});
+)};*/
