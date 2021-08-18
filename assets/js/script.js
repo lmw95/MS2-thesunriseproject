@@ -2,15 +2,15 @@
 window.onload = (event) => {
   console.log('page is fully loaded');
 
-  //Navbar background fades in when user scrolls
+  //Navbar background fades in when user scrolls - https://stackoverflow.com/a/41037394
   $(function () {
     $(document).scroll(function () {
-      var $nav = $(".navbar");
+      let $nav = $(".navbar");
       $nav.toggleClass('nav-scrolled', $(this).scrollTop() > $nav.height());
     });
   });
 
-
+  // Function that allows online guide to fade in and out when user scrolls - https://webdesign.tutsplus.com/tutorials/simple-fade-effect-on-scroll--cms-35166
   const checkpoint = 150;
   window.addEventListener("scroll", () => {
     const currentScroll = window.pageYOffset;
@@ -22,46 +22,36 @@ window.onload = (event) => {
     document.querySelector(".online-guide").style.opacity = opacity;
   });
 
-};
-
-
+  // CLICK EVENTS on activity buttons
+ 
   /*
-  // Online guide section fades in when user scrolls
   $(function () {
-    $(document).scroll(function () {
-      var $guide = $(".online-guide");
-      var $breakpoint = $(".scroll-breakpoint");
-      $guide.toggleClass('guide-scrolled', $(this).scrollTop() == $breakpoint.height());
-    });
+    let $activityButton = $(".activity");
+    for(i=0;i<$activityButton.length;i++) {
+      $activityButton.click(function() {
+        $(this).css("background-color", "#2d2f39");
+        $(this).css("color", "#f5f5f5");
+      }
+    )}
+    function removeClicked() {
+      $(".activity:not(.clicked)").addClass("clicked");
+      $(".quiz-option").removeClass("clicked");
+    }
   });
+    
 
-  
+  // Function that changes colour of background of activity selections when clicked
+  // Function that scrolls the user down to map when activity selections are clicked
+  // Function that opens modal
+  // Function that closes modal (background and cancel button)
+
 };
-
-
-/*jQuery(document).ready(function() {
-  
-  // Function that changes the navbar when the user scrolls down - code https://stackoverflow.com/a/41037394
-$(function () {
-  $(document).scroll(function () {
-    var $nav = $(".navbar");
-    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-  });
-});
 
 // Function which takes the user to the next section from header - code https://stackoverflow.com/a/8143318
 $("#clickToScroll").click(function(){
     var position = $("#visitorCenter").position();
     scroll(0,position.top);
 });
-
-// Function that changes the navbar when the user scrolls down - code https://stackoverflow.com/a/41037394
-$(function () {
-    $(document).scroll(function () {
-      var $nav = $(".navbar");
-      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-    });
-  });
 
 //Function that allows modal to open
 $("#toggleModal, #toggleModalOption").click(function() {
@@ -277,4 +267,4 @@ $("#toggleModalOption").on("mouseover", function() {
   $(this).css("cursor", "pointer");
 });
 
-)};*/
+)};*/}
