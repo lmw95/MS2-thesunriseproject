@@ -1,16 +1,130 @@
- // Google API key
-//let APIkey = "AIzaSyAz2AgSP-awt4zaXYsWQWIXLev7StjPLLM";
-
+ //Google API key
+ let apiKey = "AIzaSyAz2AgSP-awt4zaXYsWQWIXLev7StjPLLM";
+ 
 //Declare global variables
+let map;
+let markers = [];
+let labels = ['A', 'B', 'C', 'D', 'E'];
+
+//Initiates the map
+function initMap() {
+    map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 10.5,
+        center: new google.maps.LatLng(52.4822390273935, 1.753391400138951)
+    });
+
+    // Function that places markers for walks when walk activity button is clicked
+    let activityWalks = document.getElementById("activityWalks");
+    let locationsWalks = [
+        [ 'Yare Valley', 52.570964914134606, 1.6164365115490809 ],
+        [ 'Suffolk Coast Path', 52.41244492746119, 1.727733211662086 ],
+        [ 'Carlton Marshes', 52.46844639791714, 1.6924854514230112 ],
+        [ 'Blunderston to Flixton', 52.504425395383315, 1.6946567319033825 ],
+        [ 'Benacre Nature Reserve', 52.38465376750189, 1.7007969578473394 ]
+    ]
+    activityWalks.addEventListener("click", function() {
+        for (i = 0; i < locationsWalks.length; i++) {  
+            markers = new google.maps.Marker({
+                position: new google.maps.LatLng(locationsWalks[i][1], locationsWalks[i][2]),
+                map: map,
+                label: labels[i % labels.length]
+            });
+        }
+    });
+
+    // Function that places markers for nature
+    let activityNature = document.getElementById("activityNature");
+    let locationsNature = [
+        [ 'The Norfolk Broads', 52.60455007585693, 1.606962272050122 ],
+        [ 'Carlton Marshes', 52.46844639791714, 1.6924854514230112 ],
+        [ 'North Cove Nature Reserve', 52.45829960600791, 1.6358439674500105 ],
+        [ 'Benacre Nature Reserve', 52.3836188698611, 1.701525476619970 ],
+        [ 'Berney Marshes', 52.58713398373798, 1.6365220566284384 ]
+    ]
+
+    let locationsConservation = [
+        [ 'Africa Alive', 52.413885514052815, 1.7015960432214932 ],
+        [ 'Redwings', 52.554241310046464, 1.6474202363498287 ],
+        [ 'Carlton Marshes', 52.46844639791714, 1.6924854514230112 ],
+        [ 'Pettits Animal Adventure Park', 52.56991832767232, 1.5780622191626201 ],
+        [ 'SeaLife', 52.601002375867395, 1.7364748490458481 ]
+    ]
+
+    let locationsFamily = [
+        [ 'Pleasurewood Hills', 52.508024832271055, 1.7441718423062194 ],
+        [ 'Pleasure Beach', 52.595472217209974, 1.735949694382154 ],
+        [ 'Pettits Animal Adventure Park', 52.56991832767232, 1.5780622191626201 ],
+        [ 'Africa Alive', 52.413885514052815, 1.7015960432214932 ],
+        [ 'Joyland Childrens Fun Park', 52.609054772153904, 1.7376054518090684 ]
+    ]
+
+    let locationsThrills = [
+        [ 'Pleasurewood Hills', 52.508024832271055, 1.7441718423062194 ],
+        [ 'Pleasure Beach', 52.595472217209974, 1.735949694382154 ],
+        [ 'Quasar Great Yarmouth', 52.60487794938296, 1.7363555728396223 ],
+        [ 'Prestige Escape Rooms', 52.48506018063326, 1.7564538121270539 ],
+        [ 'Ellough Go Karting', 52.44184134766564, 1.6028291447370862 ]
+    ]
+
+    let locationsHistory = [
+        [ 'Burgh Castle', 52.583751110675195, 1.6520405685211867 ],
+        [ 'Maritime Museum', 52.48786916515505, 1.757501231452841 ],
+        [ 'Time and Tide Museum', 52.603253824438475, 1.7310108009596652 ],
+        [ 'National Trust Elizabethan House', 52.60944715108201, 1.7258494494042143 ],
+        [ 'Lowestoft Museum', 52.47616014344233, 1.7064895970139302 ]
+    ]
+
+    let locationsBroads = [
+        [ 'The Norfolk Broads', 52.60455007585693, 1.606962272050122 ],
+        [ 'Waveney River Center', 52.48436404767674, 1.669898801169207 ],
+        [ 'Nicholas Everitt Park', 52.47459243329394, 1.7072134383271722],
+        [ 'Oulton Broad Watersports Center', 52.47217387174025, 1.70679854630566 ],
+        [ 'Breydon Water', 52.60261231260812, 1.6818637854118503 ]
+    ]
+
+    let locationMusic = [
+        [ 'Latitude Festival', 52.33835187750651, 1.6000265707292998 ],
+        [ 'Marina Theatre', 52.476160107028896, 1.7534854694519173  ],
+        [ 'First Lights Festival', 52.46364777632944, 1.7442255790112735 ],
+        [ 'Lowestoft Players', 52.475500658720186, 1.7536388108125185 ],
+        [ 'Hippodrome Circus', 52.60492435352424, 1.7359257171956493 ]
+    ]
+
+    let locationNightlife = [
+        [ 'Ocean Rooms', 52.57100281960958, 1.7330287761391332 ],
+        [ 'The Commodore', 52.47657739053018, 1.7109636377713318 ],
+        [ 'Iconic Bar', 52.4730167674014, 1.749305229887624 ],
+        [ 'Broadview Wine Bar', 52.475119348264386, 1.7100462277306123],
+        [ 'The Hotel Hatfield', 52.46846444363252, 1.7468426271224402 ]
+    ]
+
+    let locationsOddities = [
+        [ 'Kessingland Car Boot', 52.41577308083052, 1.703570440794497 ],
+        [ 'Corton Car Boot', 52.51180491401297, 1.7481962223133396 ],
+        [ 'Lound Plant Center', 52.535749880262394, 1.7173005489329447 ],
+        [ 'Yarmouth Market', 52.60837685330005, 1.7268673694566699 ],
+        [ 'Upper Wood Farm Shop', 52.6585056993711, 1.6886565622926037 ]
+    ]
+
+    let locationsBeach = [
+        [ 'Lowestoft Beach', 52.463528942398, 1.7441735460103207 ],
+        [ 'Great Yarmouth Beach', 52.60639302326283, 1.7381536439944512 ],
+        [ 'Gorleston Beach', 52.574998738621645, 1.7316959505477176 ],
+        [ 'Kessingland Beach', 52.41312737470827, 1.726270528821981 ],
+        [ 'Pakefield Beach', 52.45805938018954, 1.7387002795530795 ]
+    ]
+
+    let locationsWater = [
+        [ 'Oulton Broad Watersports Center', 52.47217387174025, 1.70679854630566 ],
+        [ 'Waveney River Center', 52.48436404767674, 1.669898801169207 ],
+        [ 'Oulton Broad Yacht Club', 52.47364701692827, 1.7051126376816224 ],
+        [ 'Seal Trips', 52.66680760655993, 1.7383944588767373 ],
+        [ 'Waveney River Tours', 52.47874805388766, 1.7109467675594736 ]
+    ]
+
+}
+
 /*
-var mapL;
-var mapY;
-var mapK;
-var mapY;
-var markersL;
-var markersY;
-var markersK
-var markersOB;
 
 // Initiates the maps for all location pages
 function initMap() {
@@ -125,4 +239,4 @@ function initMap() {
                 label: labelsOB[i % labelsOB.length]
             });
         }
-    };
+    }; */
