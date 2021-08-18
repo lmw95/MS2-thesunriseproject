@@ -27,13 +27,10 @@ nav.navbar.nav-scrolled {
     transition: opacity 400ms ease-in-out;
 } 
 
-.activity-clicked {
+.clicked {
     background-color: #2d2f39;
-    color: #f5f5f5;
-    margin: 3px 0;
 }
-
-/*UNIVERSAL STYLING (FONT AND COLOUR)
+/*UNIVERSAL STYLING (FONT AND COLOUR);
 
     /*Font family*/
         div.hero,
@@ -43,6 +40,7 @@ nav.navbar.nav-scrolled {
         .follow-us,
         .column.hero-link,
         .online-guide,
+        .contact,
         .footer {
             font-family: 'Roboto Condensed', sans-serif;
         }
@@ -59,7 +57,9 @@ nav.navbar.nav-scrolled {
         .navbar-end .navbar-item:hover,
         .title.online-guide-title
         .subtitle.online-guide-subtitle,
-        .column.activity p {
+        .column.activity p,
+        .title.contact-title,
+        .subtitle.contact-subtitle {
             color: #2d2f39;
         }
 
@@ -91,11 +91,9 @@ nav.navbar.nav-scrolled {
             background-color:rgba(45, 47, 57, 0.7);
         }
 
-
     /*Hover effects*/
         .navbar-end .navbar-item:hover,
         .column.social-media-icons a:hover,
-        .column.hero-link:hover,
         .column.activity {
             cursor: pointer;
         }
@@ -107,6 +105,11 @@ nav.navbar.nav-scrolled {
         .column.social-media-icons a:hover {
             color: #f5f5f5;
             transform: scale(1.5);
+        }
+
+        .column.acitivity:hover {
+            background-color: #2d2f39;
+            color: #f5f5f5;
         }
 
 
@@ -166,6 +169,19 @@ nav.navbar.nav-scrolled {
     }
 
     .column.activity {
+        flex-direction: column;
+    }
+
+    /*Google Map*/
+    .map {
+        height: 500px;
+    }
+
+    .card-wrapper {
+        height: 300px;
+    }
+
+    .card.locaion-profile {
         flex-direction: column;
     }
 
@@ -248,15 +264,6 @@ and (min-width: 768px) and (max-width: 1024px) {
 
 
 /*
-nav.navbar.scrolled {
-    background-color: rgb(45, 47, 57);
-    transition: background-color 200ms linear;
-  }
-
-.clicked {
-    background-color: rgb(96, 190, 134);
-    border: 4px solid rgb(96, 190, 134);
-}
 
 .faded {
     color: transparent;
@@ -271,79 +278,6 @@ nav.navbar.scrolled {
     cursor: pointer;
 }
 
-.visitor-center .tabs ul a.active-tab {
-    color:rgb(96, 190, 134);
-}
-
-div.overlay-higher, div.overlay-lower,
-    div.overlay-social-media, div.overlay-scroll {
-        position: absolute;
-    }
-
-/*Visitor Center section
-
-.visitor-center {
-    font-family: 'Roboto Condensed', sans-serif;
-    color: rgb(45, 47, 57);
-    border-top:rgb(245, 245, 245);
-    background-color: rgb(245, 245, 245);
-}
-
-.visitor-center .title,
-.quiz-section .title,
-.contact-section .title {
-    color: rgb(45, 47, 57);
-}
-
-.visitor-center .welcome {
-    font-family: 'Roboto Condensed', sans-serif;
-    color: rgb(45, 47, 57);
-}
-
-/*Text that takes user to scroll to quiz
-
-.quiz-scroll {
-    color: rgba(45, 47, 57, 0.5);
-    transition: all 0.2s ease-in-out;
-}
-
-.quiz-scroll:hover {
-    cursor: pointer;
-    color: rgb(45, 47, 57);
-}
-
-/*Bulma tabs
-
-.visitor-center .tabs ul a {
-    transition: all 0.1s ease-in-out;
-    border-bottom-style: none;
-    letter-spacing: 1px;
-    color:rgb(45, 47, 57);
-} 
-
-/*Quiz section
-
-.quiz-section {
-    font-family: 'Roboto Condensed', sans-serif;
-    color: rgb(45, 47, 57);
-    background-color: rgba(229, 208, 204);
-}
-
-.quiz-section .quiz-option {
-    border: solid 4px transparent;
-}
-
-.quiz-section button {
-    font-family: 'Roboto Condensed', sans-serif;
-    color: rgb(45, 47, 57);
-    background-color: rgba(96, 190, 134, 0.7);
-    border: none;
-}
-
-.quiz-section button:hover {
-    background-color: rgba(96, 190, 134);
-    cursor: pointer;
-}
 
 /*Location result pages
 
