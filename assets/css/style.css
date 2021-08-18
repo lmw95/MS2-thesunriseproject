@@ -12,57 +12,74 @@ body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    background: url(/assets/images/kessingland.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
+
+/*JQUERY/JAVASCRIPT CLASSES*/
+nav.navbar.nav-scrolled {
+    background-color: #60be86;
+    transition: background-color 200ms ease-in-out;
+  }
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 400ms ease-in-out;
+} 
 
 /*UNIVERSAL STYLING (FONT AND COLOUR)
 
     /*Font family*/
-    div.hero,
-    nav.navbar,
-    .title.hero-title,
-    .subtitle.hero-subtitle,
-    .follow-us,
-    .column.hero-link {
-        font-family: 'Roboto Condensed', sans-serif;
-    }
+        div.hero,
+        nav.navbar,
+        .title.hero-title,
+        .subtitle.hero-subtitle,
+        .follow-us,
+        .column.hero-link,
+        .online-guide {
+            font-family: 'Roboto Condensed', sans-serif;
+        }
 
-    .company-name,
-    .title.hero-title {
-        font-family: 'Caveat', cursive;
-    }
+        .company-name,
+        .title.hero-title {
+            font-family: 'Caveat', cursive;
+        }
 
-    /*Colours*/
-    .company-name,
-    .navbar-start span,
-    .navbar-end .navbar-item,
-    .navbar-end .navbar-item:hover {
-        color: #324C42;
-    }
+    /*Font & background colours*/
+        .company-name,
+        .navbar-start span,
+        .navbar-end .navbar-item,
+        .navbar-end .navbar-item:hover,
+        .title.online-guide-title
+        .subtitle.online-guide-subtitle,
+        .column.activity p {
+            color: #2d2f39;
+        }
 
-    .title.hero-title {
-        color: #60be86;
-    }
+        .title.hero-title,
+        .column.activity i {
+            color: #60be86;
+        }
 
-    .subtitle.hero-subtitle,
-    .follow-us,
-    .column.hero-link {
-        color: #F5F5F5;
-    }
+        .subtitle.hero-subtitle,
+        .follow-us,
+        .column.hero-link {
+            color: #F5F5F5;
+        }
 
-    .column.social-media-icons a {
-        color: rgba(245, 245, 245, 0.3);
-        transition: all 0.1s ease-in-out;
-    }
+        .column.social-media-icons a {
+            color: rgba(245, 245, 245, 0.3);
+        }
 
-    .hero-background {
-        background-color: rgba(45, 47, 57, 0.9);
-    }
+        .hero-background {
+            background-color: rgba(45, 47, 57, 0.7);
+        }
 
-    /*Overlays*/
-    .hero-overlay {
-        height: 100%;
-        background-color: rgba(45, 47, 57, 0.2);
-    }
+        .online-guide {
+            background-color:rgb(245, 245, 245);
+            opacity: 0;
+        }
+
 
     /*Hover effects*/
     .navbar-end .navbar-item:hover,
@@ -71,30 +88,20 @@ body {
         cursor: pointer;
     }
 
+    .column.column.social-media-icons a {
+        transition: all 0.1s ease-in-out;
+    }
+
     .column.social-media-icons a:hover {
         color: rgb(245, 245, 245);
         transform: scale(1.5);
     }
 
     /*Background images*/
-    .hero {
-        background: url('/assets/images/kessingland.jpg') no-repeat center center fixed;
-        background-size: cover;
-    }
 
-
-/*DARK MODE*/
-    .hero-dark {
-        background: url('/assets/images/dunwich.jpg') no-repeat center center;
-        background-size: cover;
-    }
 
 /*SPECIFIC SECTION STYLING
     /*Header/hero image*/
-    .hero {
-        height: 100vh;
-    }
-
     .hero-body {
         height: 100%;
         display: flex;
@@ -116,6 +123,7 @@ body {
 
     .column.hero-link {
         border-top: 2px solid #60be86;
+        flex-direction: column;
     }
 
     /*Navigation menu*/
@@ -132,37 +140,70 @@ body {
         letter-spacing: 1px;
     }
 
-
-@media only screen 
-and (min-width: 320px) and (max-width: 768px) {
-    .hero {
-        height: 0;
+    /*Online guide*/
+    .column.online-guide-wrapper {
+        border-bottom: 3px solid #60be86;
     }
 
-    div.hero-body {
-        margin-top: 2rem;
-        padding: 0;
+    .subtitle.online-guide-subtitle {
+        font-size: 1rem;
+    }
+
+    .columns.activity-wrapper.is-mobile {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-evenly;
+    }
+
+    .column.activity {
+        flex-direction: column;
+    }
+
+
+
+@media only screen
+and (min-width: 320px) and (max-width: 375px) {
+    .company-name {
+        font-size: 1.5rem;
     }
 
     .title.hero-title {
         font-size: 2rem;
     }
 
+    .title.online-guide-title,
+    .subtitle.online-guide-subtitle {
+        text-align: center;
+    }
+
+    .activity p {
+        font-size: 0.7rem;
+    }
 }
 
-@media only screen
-and (min-width: 375px) and (max-width: 425px) {
+@media only screen 
+and (min-width: 375px) and (max-width: 768px) {
+    div.hero-body {
+        margin-top: 3rem;
+    }
 
-}
+    .title.online-guide-title,
+    .subtitle.online-guide-subtitle {
+        text-align: center;
+    }
 
-@media only screen
-and (min-width: 425px) and (max-width: 768px) {
+    .title.hero-title {
+        font-size: 2.4rem;
+    }
 
+    .activity p {
+        font-size: 0.9rem;
+    }
 }
 
 @media only screen
 and (min-width: 768px) and (max-width: 1024px) {
-
+  
 }
 
 
@@ -199,59 +240,6 @@ div.overlay-higher, div.overlay-lower,
     div.overlay-social-media, div.overlay-scroll {
         position: absolute;
     }
-
-
-/*Main carousel overlay
-
-.cell-overlay {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    background-color: rgba(33, 29, 28, 0.7);
-}
-
-/*Individual carousel cells
-
-.carousel-cell {
-    width: 100%;
-    height: 100vh;
-  }
-
-.carousel-cell:nth-of-type(1) {
-    background: url(../images/kessingland.jpg) no-repeat center center; 
-    background-size: cover;
-}
-
-.carousel-cell:nth-of-type(2) {
-    background: url(../images/rollercoaster.jpg) no-repeat center center;
-    background-size: cover;
-}
-
-.carousel-cell:nth-of-type(3) {
-    background: url(../images/dunwich.jpg) no-repeat center center;
-    background-size: cover;
-}
-
-.carousel-cell:nth-of-type(4) {
-    background: url(../images/harrier.jpg) no-repeat center center;
-    background-size: cover;
-}
-
-.carousel-cell:nth-of-type(5) {
-    background: url(../images/sailing.jpg) no-repeat center center; 
-    background-size: cover;
-}
-
-/*Carousel main titles - scroll with carousel
-
-.cell-overlay .title {
-    font-size: 110px;
-    color: rgb(96, 190, 134);
-    font-weight: 400;
-    font-family: 'Caveat', cursive;
-}
 
 /*Visitor Center section
 
