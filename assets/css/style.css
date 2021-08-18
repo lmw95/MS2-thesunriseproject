@@ -1,11 +1,11 @@
+/*Import Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@300;400;500;600;700&display=swap');
 
-
+/*HTML*/
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
-    width: 100vw;
 }
 
 body {
@@ -14,14 +14,150 @@ body {
     overflow-x: hidden;
 }
 
-/*Navbar items hover effect*/
+/*UNIVERSAL STYLING (FONT AND COLOUR)
 
-.navbar .nav-end .navbar-item a:hover {
-    cursor: pointer;
+    /*Font family*/
+    div.hero,
+    nav.navbar,
+    .title.hero-title,
+    .subtitle.hero-subtitle,
+    .follow-us,
+    .column.hero-link {
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .company-name,
+    .title.hero-title {
+        font-family: 'Caveat', cursive;
+    }
+
+    /*Colours*/
+    .company-name,
+    .navbar-start span,
+    .navbar-end .navbar-item,
+    .navbar-end .navbar-item:hover {
+        color: #324C42;
+    }
+
+    .title.hero-title {
+        color: #60be86;
+    }
+
+    .subtitle.hero-subtitle,
+    .follow-us,
+    .column.hero-link {
+        color: #F5F5F5;
+    }
+
+    .column.social-media-icons a {
+        color: rgba(245, 245, 245, 0.3);
+        transition: all 0.1s ease-in-out;
+    }
+
+    .hero-background {
+        background-color: rgba(45, 47, 57, 0.9);
+    }
+
+    /*Overlays*/
+    .hero-overlay {
+        height: 100%;
+        background-color: rgba(45, 47, 57, 0.2);
+    }
+
+    /*Hover effects*/
+    .navbar-end .navbar-item:hover,
+    .column.social-media-icons a:hover,
+    .column.hero-link:hover {
+        cursor: pointer;
+    }
+
+    .column.social-media-icons a:hover {
+        color: rgb(245, 245, 245);
+        transform: scale(1.5);
+    }
+
+    /*Background images*/
+    .hero {
+        background: url('/assets/images/kessingland.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+
+/*DARK MODE*/
+    .hero-dark {
+        background: url('/assets/images/dunwich.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
+/*SPECIFIC SECTION STYLING
+    /*Header/hero image*/
+    .hero {
+        height: 100vh;
+    }
+
+    .hero-body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+
+    .title.hero-title {
+        font-size: 85px;
+    }
+
+    .follow-us {
+        letter-spacing: 1px;
+    }
+
+    .columns.hero-images {
+        flex-direction: row;
+    }
+
+    .column.hero-link {
+        border-top: 2px solid #60be86;
+    }
+
+    /*Navigation menu*/
+    .company-logo {
+        max-height: 0px;
+    }
+
+    .company-name {
+        font-size: 2rem;
+    }
+
+    .navbar-end .navbar-item {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+
+@media only screen 
+and (min-width: 320px) and (max-width: 375px) {
+    div.hero-body {
+        padding-top: 30rem;
+    }
 }
 
-/*jQuery classes*/
+@media only screen
+and (min-width: 375px) and (max-width: 425px) {
 
+}
+
+@media only screen
+and (min-width: 425px) and (max-width: 768px) {
+
+}
+
+@media only screen
+and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+
+
+/*
 nav.navbar.scrolled {
     background-color: rgb(45, 47, 57);
     transition: background-color 200ms linear;
@@ -49,87 +185,13 @@ nav.navbar.scrolled {
     color:rgb(96, 190, 134);
 }
 
-/*Navbar*/
-.navbar-brand {
-    align-items: center;
-}
-
-.navbar .navbar-burger span {
-    color: rgb(96, 190, 134);
-}
-
 div.overlay-higher, div.overlay-lower,
     div.overlay-social-media, div.overlay-scroll {
         position: absolute;
     }
 
 
-/*Carousel subtitle 1 - fixed in position*/
-
-.overlay-higher {
-    position: absolute;
-    z-index: 12;
-    top: 37.5%;
-    width: 100%;
-    text-align: left;
-}
-
-/*Carousel subtitle 2 - fixed in position*/
-
-.overlay-lower {
-    position: absolute;
-    z-index: 12;
-    top: 58.5%;
-    width: 100%;
-    text-align: left;
-}
-
-/*Subtitle colouring*/
-
-.overlay-higher .subtitle,
-.overlay-lower .subtitle {
-    color: rgb(229, 208, 204);
-}
-
-/*Carousel overlay 3 - fixed in position*/
-
-.overlay-social-media {
-    position: absolute;
-    z-index: 12;
-    top: 65%;
-    width: 100%;
-}
-
-/*Hover effect over social media icons*/
-
-.overlay-social-media i {
-    transition: all 0.1s ease-in-out;
-    color: rgba(229, 208, 204, 0.3);
-}
-
-.overlay-social-media i:hover {
-    transform: scale(1.5);
-    color: rgb(229, 208, 204);
-    cursor: pointer;
-}
-
-/*Carousel overlay 4 - fixed in position*/
-
-.overlay-scroll {
-    position: absolute;
-    z-index: 12;
-    top: 92.5%;
-    width: 100%;
-    color: rgba(96, 190, 134, 0.3);
-    transition: all 0.2s ease-in-out;
-}
-
-.overlay-scroll:hover {
-    color: rgb(96, 190, 134);
-    cursor: pointer;
-}
-
-/*Main carousel overlay*/
+/*Main carousel overlay
 
 .cell-overlay {
     height: 100%;
@@ -140,7 +202,7 @@ div.overlay-higher, div.overlay-lower,
     background-color: rgba(33, 29, 28, 0.7);
 }
 
-/*Individual carousel cells*/
+/*Individual carousel cells
 
 .carousel-cell {
     width: 100%;
@@ -172,7 +234,7 @@ div.overlay-higher, div.overlay-lower,
     background-size: cover;
 }
 
-/*Carousel main titles - scroll with carousel*/
+/*Carousel main titles - scroll with carousel
 
 .cell-overlay .title {
     font-size: 110px;
@@ -181,7 +243,7 @@ div.overlay-higher, div.overlay-lower,
     font-family: 'Caveat', cursive;
 }
 
-/*Visitor Center section*/
+/*Visitor Center section
 
 .visitor-center {
     font-family: 'Roboto Condensed', sans-serif;
@@ -201,7 +263,7 @@ div.overlay-higher, div.overlay-lower,
     color: rgb(45, 47, 57);
 }
 
-/*Text that takes user to scroll to quiz*/
+/*Text that takes user to scroll to quiz
 
 .quiz-scroll {
     color: rgba(45, 47, 57, 0.5);
@@ -213,7 +275,7 @@ div.overlay-higher, div.overlay-lower,
     color: rgb(45, 47, 57);
 }
 
-/*Bulma tabs*/
+/*Bulma tabs
 
 .visitor-center .tabs ul a {
     transition: all 0.1s ease-in-out;
@@ -222,7 +284,7 @@ div.overlay-higher, div.overlay-lower,
     color:rgb(45, 47, 57);
 } 
 
-/*Quiz section*/
+/*Quiz section
 
 .quiz-section {
     font-family: 'Roboto Condensed', sans-serif;
@@ -246,7 +308,7 @@ div.overlay-higher, div.overlay-lower,
     cursor: pointer;
 }
 
-/*Location result pages*/
+/*Location result pages
 
 .location-result {
     font-family: "Roboto Condensed", sans-serif;
@@ -293,7 +355,7 @@ div.overlay-higher, div.overlay-lower,
     color:rgb(45, 47, 57);
 }
 
-/*Tab toggle sections*/
+/*Tab toggle sections
 .profile-pic-1 {
     background: url(../images/employee1.jpg) no-repeat center center; 
     background-size: cover; 
@@ -362,7 +424,7 @@ div.overlay-higher, div.overlay-lower,
     flex-direction: column;
 }
 
-/* Brochure / get in touch section */
+/* Brochure / get in touch section 
 .contact-section {
     font-family: 'Roboto Condensed', sans-serif;
     background-color: rgba(229, 208, 204);
@@ -373,7 +435,7 @@ div.overlay-higher, div.overlay-lower,
     color: rgb(45, 47, 57);
 }
 
-/* Footer */
+/* Footer 
 
 .footer {
     background: url(../images/kessingland.jpg) no-repeat center center fixed;
@@ -414,7 +476,7 @@ div.overlay-higher, div.overlay-lower,
     transform: scale(1.2);
 }
 
-/*Modal*/
+/*Modal
 .modal input,
 .modal button,
 .modal .select,
@@ -423,7 +485,7 @@ div.overlay-higher, div.overlay-lower,
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-/* Media queries according to Google Dev tools */
+/* Media queries according to Google Dev tools 
 @media only screen 
 and (min-width: 319px) and (max-width: 766px) {
 
@@ -651,3 +713,6 @@ and (min-width: 1101px) {
         width: 33%;
     }
 }
+
+
+
