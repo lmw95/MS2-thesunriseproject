@@ -1,11 +1,15 @@
  //Google API key
  let apiKey = "AIzaSyAz2AgSP-awt4zaXYsWQWIXLev7StjPLLM";
  
+
 //Declare global variables
+
 let map;
 let markers = [];
 
+
 // 'Walks' locations
+
     let walkLocations = [{
             coordinates: { // Yare Valley
                 lat: 52.570964914134606,
@@ -37,7 +41,9 @@ let markers = [];
             }
     }];
 
+
     // 'Nature' locations
+
     let natureLocations = [{
             coordinates: { // The Norfolk Broads
                 lat: 52.60455007585693, 
@@ -69,7 +75,9 @@ let markers = [];
             }
     }];
 
+
     // 'Conservation' locations
+
     let conservationLocations = [{
             coordinates: { // Africa Alive
                 lat: 52.413885514052815, 
@@ -101,7 +109,9 @@ let markers = [];
             }
     }];
 
+
     // 'Family' locations
+
     let familyLocations = [{
             coordinates: { // Pleasurewood Hills
                 lat: 52.508024832271055, 
@@ -133,7 +143,9 @@ let markers = [];
             }
     }];
 
+
     // 'Thrill-seeker' locations
+
     let thrillLocations = [{
             coordinates: { // Pleasurewood Hills
                 lat: 52.508024832271055, 
@@ -165,7 +177,9 @@ let markers = [];
             }
     }];
 
+
     // 'History' locations
+
     let historyLocations = [{
             coordinates: { // Burgh Castle
                 lat: 52.583751110675195, 
@@ -197,7 +211,9 @@ let markers = [];
             }
     }];
 
+
     // 'Broads' locations
+
     let broadsLocations = [{
             coordinates: { // The Norfolk Broads
                 lat: 52.60455007585693, 
@@ -230,7 +246,9 @@ let markers = [];
 
     }];
 
+
     // 'Music & art' locations
+
     let musicLocations = [{
             coordinates: { // Latitude Festival
                 lat: 52.33835187750651, 
@@ -262,7 +280,9 @@ let markers = [];
             }
     }];
 
+
     // 'Nightlife' locations
+
     let nightlifeLocations = [{
             coordinates: { // Ocean Rooms
                 lat: 52.57100281960958, 
@@ -294,7 +314,9 @@ let markers = [];
             }
     }];
 
+
     // 'Local oddities' locations
+
     let odditiesLocations = [{
             coordinates: { // Kessingland Car Boot
                 lat: 52.41577308083052, 
@@ -327,7 +349,9 @@ let markers = [];
 
     }];
 
+
     // 'Beach days' locations
+
     let beachLocations = [{
             coordinates: { // Lowestoft Beach
                 lat: 52.463528942398, 
@@ -359,7 +383,9 @@ let markers = [];
             }
     }];
 
+
     // 'On the water' locations
+
     let waterLocations = [{
             coordinates: { // Oulton Broad Watersports Center
                 lat: 52.47217387174025, 
@@ -391,7 +417,9 @@ let markers = [];
             }
     }];
 
+
 //Initiates the map
+
 function initMap(chosenDestinations) {
     map = new google.maps.Map(document.getElementById("map"), {
         zoom: 10,
@@ -400,7 +428,9 @@ function initMap(chosenDestinations) {
 
     let labels = ['A', 'B', 'C', 'D', 'E'];
 
+
     //Loop through array to get latitude and longitude values and place markers
+
     if (chosenDestinations) {
         for (i = 0; i < chosenDestinations.length; i++) {  
             markers = new google.maps.Marker({
@@ -413,7 +443,9 @@ function initMap(chosenDestinations) {
     }
 }
 
+
 // jQuery to contain all click events for activity buttons
+
 $(document).ready(function() {
 
     $(function () {
