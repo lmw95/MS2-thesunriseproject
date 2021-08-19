@@ -1,7 +1,7 @@
 
 window.onload = (event) => {
 
-// All click events 
+// All click events / jQuery code
   //Navbar background fades in when user scrolls - https://stackoverflow.com/a/41037394
   $(function () {
     $(document).scroll(function () {
@@ -33,21 +33,20 @@ window.onload = (event) => {
       var position = $("#map").position();
       scroll(0,position.top);
     });
-
-  });
-
-  // Function that allows online guide to fade in and out when user scrolls - https://webdesign.tutsplus.com/tutorials/simple-fade-effect-on-scroll--cms-35166
-  const checkpoint = 150;
-  window.addEventListener("scroll", () => {
-    const currentScroll = window.pageYOffset;
-    if (currentScroll <= checkpoint) {
-      opacity = 0 - currentScroll / checkpoint;
-    } else {
-      opacity = 1;
-    }
-    document.querySelector(".online-guide").style.opacity = opacity;
   });
 }
+
+// Event listener that allows online guide to fade in and out when user scrolls - https://webdesign.tutsplus.com/tutorials/simple-fade-effect-on-scroll--cms-35166
+const checkpoint = 150;
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll <= checkpoint) {
+    opacity = 0 - currentScroll / checkpoint;
+  } else {
+    opacity = 1;
+  }
+  document.querySelector(".online-guide").style.opacity = opacity;
+});
 
 // Changes content for 'walks'
 let walks = document.getElementById("activityWalks");
