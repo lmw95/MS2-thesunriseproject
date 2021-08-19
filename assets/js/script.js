@@ -48,7 +48,11 @@ window.onload = (event) => {
     // Click event that allows map locations to show
 
     $(".activity").on("click", function() {
-      $("#activityWrapper").css("display", "flex");
+      if (window.screen.width < 768 ) {
+        $("#activityWrapper").css("display", "block");
+      } else {
+        $("#activityWrapper").css("display", "flex");
+      }
     });
 
   });
