@@ -42,7 +42,7 @@ let markers = [];
     }];
 
 
-    // 'Nature' locations
+// 'Nature' locations
 
     let natureLocations = [{
             coordinates: { // The Norfolk Broads
@@ -76,7 +76,7 @@ let markers = [];
     }];
 
 
-    // 'Conservation' locations
+// 'Conservation' locations
 
     let conservationLocations = [{
             coordinates: { // Africa Alive
@@ -110,7 +110,7 @@ let markers = [];
     }];
 
 
-    // 'Family' locations
+// 'Family' locations
 
     let familyLocations = [{
             coordinates: { // Pleasurewood Hills
@@ -144,7 +144,7 @@ let markers = [];
     }];
 
 
-    // 'Thrill-seeker' locations
+// 'Thrill-seeker' locations
 
     let thrillLocations = [{
             coordinates: { // Pleasurewood Hills
@@ -178,7 +178,7 @@ let markers = [];
     }];
 
 
-    // 'History' locations
+// 'History' locations
 
     let historyLocations = [{
             coordinates: { // Burgh Castle
@@ -212,7 +212,7 @@ let markers = [];
     }];
 
 
-    // 'Broads' locations
+// 'Broads' locations
 
     let broadsLocations = [{
             coordinates: { // The Norfolk Broads
@@ -247,7 +247,7 @@ let markers = [];
     }];
 
 
-    // 'Music & art' locations
+// 'Music & art' locations
 
     let musicLocations = [{
             coordinates: { // Latitude Festival
@@ -281,7 +281,7 @@ let markers = [];
     }];
 
 
-    // 'Nightlife' locations
+// 'Nightlife' locations
 
     let nightlifeLocations = [{
             coordinates: { // Ocean Rooms
@@ -315,7 +315,7 @@ let markers = [];
     }];
 
 
-    // 'Local oddities' locations
+// 'Local oddities' locations
 
     let odditiesLocations = [{
             coordinates: { // Kessingland Car Boot
@@ -350,7 +350,7 @@ let markers = [];
     }];
 
 
-    // 'Beach days' locations
+// 'Beach days' locations
 
     let beachLocations = [{
             coordinates: { // Lowestoft Beach
@@ -384,7 +384,7 @@ let markers = [];
     }];
 
 
-    // 'On the water' locations
+// 'On the water' locations
 
     let waterLocations = [{
             coordinates: { // Oulton Broad Watersports Center
