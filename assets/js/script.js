@@ -324,8 +324,8 @@ beach.addEventListener("click", function() {
 
 // Change content for 'on the water'
 
-let water = document.getElementById("activityWate");
-beach.addEventListener("click", function() {
+let water = document.getElementById("activityWater");
+water.addEventListener("click", function() {
   let titles = document.getElementsByClassName("location-title");
   for (i = 0; i < titles.length ; i++) {
     titles[0].textContent = "The Watersports Center";
