@@ -2,41 +2,61 @@
 window.onload = (event) => {
 
 // All click events / jQuery code
-  //Navbar background fades in when user scrolls - https://stackoverflow.com/a/41037394
+
+  //Click event where navbar background fades in when user scrolls - https://stackoverflow.com/a/41037394
+
   $(function () {
     $(document).scroll(function () {
       let $nav = $(".navbar");
       $nav.toggleClass('nav-scrolled', $(this).scrollTop() > $nav.height());
     });
 
-    // Function that opens the modal
+
+    // Click event that opens the modal
+
     let $openModal = $("#toggleModal");
     $openModal.on("click", function() {
       $(".modal").addClass("is-active", "is-clipped");
     });
 
-    // Function that allows modal to close by cancel
+
+    // Click event that allows modal to close by cancel
+
     let $closeModalButton = $("#closeModal");
     $closeModalButton.on("click", function(){
       $(".modal").removeClass("is-active", "is-clipped");
     });
 
-    // Function that allows modal to close when background is clicked
+
+    //Click event that allows modal to close when background is clicked
+
     let $closeModalBackground = $(".modal-background");
     $closeModalBackground.on("click", function() {
       $(".modal").removeClass("is-active", "is-clipped");
     });
 
-    // Function which takes the user to the top 5 picks when activity clicked - code https://stackoverflow.com/a/8143318
+
+    // Click event which takes the user to the top 5 picks when activity clicked - code https://stackoverflow.com/a/8143318
+
     let $activity = $(".activity");
     $activity.on("click", function(){
       var position = $("#map").position();
       scroll(0,position.top);
     });
+
+
+    // Click event that allows map locations to show
+
+    $(".activity").on("click", function() {
+      $("#activityWrapper").css("display", "flex");
+    });
+
   });
 }
 
+
 // Event listener that allows online guide to fade in and out when user scrolls - https://webdesign.tutsplus.com/tutorials/simple-fade-effect-on-scroll--cms-35166
+
 const checkpoint = 150;
 window.addEventListener("scroll", () => {
   const currentScroll = window.pageYOffset;
@@ -48,7 +68,9 @@ window.addEventListener("scroll", () => {
   document.querySelector(".online-guide").style.opacity = opacity;
 });
 
+
 // Changes content for 'walks'
+
 let walks = document.getElementById("activityWalks");
 walks.addEventListener("click", function () {
   let titles = document.getElementsByClassName("location-title");
@@ -69,7 +91,9 @@ walks.addEventListener("click", function () {
   }
 });
 
+
 // Changes content for 'nature'
+
 let nature = document.getElementById("activityNature");
 nature.addEventListener("click", function() {
   let titles = document.getElementsByClassName("location-title");
@@ -90,7 +114,9 @@ nature.addEventListener("click", function() {
   }
 });
 
+
 // Changes content for 'conservation'
+
 let conservation = document.getElementById("activityConservation");
 conservation.addEventListener("click", function() {
   let titles = document.getElementsByClassName("location-title");
@@ -111,7 +137,9 @@ conservation.addEventListener("click", function() {
   }
 });
 
+
 // Changes the content for 'family'
+
 let family = document.getElementById("activityFamily");
 family.addEventListener("click", function() {
   let titles = document.getElementsByClassName("location-title");
@@ -132,7 +160,9 @@ family.addEventListener("click", function() {
   }
 });
 
+
 // Changes the content of 'thill-seekers'
+
 let thrills = document.getElementById("activityThrills");
 thrills.addEventListener("click", function() {
   let titles = document.getElementsByClassName("location-title");
@@ -153,7 +183,9 @@ thrills.addEventListener("click", function() {
   }
 });
 
+
 // Changes content of 'history'
+
 let history = document.getElementById("activityHistory");
 history.addEventListener("click", function() {
   let titles = document.getElementsByClassName("location-title");
@@ -174,7 +206,9 @@ history.addEventListener("click", function() {
   }
 });
 
+
 // Changes content of 'The Broads'
+
 let broads = document.getElementById("activityBroads");
 broads.addEventListener("click", function() {
   let titles = document.getElementsByClassName("location-title");
@@ -195,7 +229,9 @@ broads.addEventListener("click", function() {
   }
 });
 
+
 //Changes content of 'music'
+
 let music = document.getElementById("activityMusic");
 music.addEventListener("click", function() {
   let titles = document.getElementsByClassName("location-title");
@@ -216,7 +252,9 @@ music.addEventListener("click", function() {
   }
 });
 
+
 // Change content for 'nightlife'
+
 let nightlife = document.getElementById("activityNightlife");
 nightlife.addEventListener("click", function() {
   let titles = document.getElementsByClassName("location-title");
@@ -237,7 +275,9 @@ nightlife.addEventListener("click", function() {
   }
 });
 
+
 // Change content for 'local oddities'
+
 let local = document.getElementById("activityLocal");
 local.addEventListener("click", function() {
   let titles = document.getElementsByClassName("location-title");
@@ -258,7 +298,9 @@ local.addEventListener("click", function() {
   }
 });
 
+
 // Change the content for 'beach day'
+
 let beach = document.getElementById("activityBeach");
 beach.addEventListener("click", function() {
   let titles = document.getElementsByClassName("location-title");
@@ -279,7 +321,9 @@ beach.addEventListener("click", function() {
   }
 });
 
+
 // Change content for 'on the water'
+
 let water = document.getElementById("activityWate");
 beach.addEventListener("click", function() {
   let titles = document.getElementsByClassName("location-title");
