@@ -10,6 +10,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <title>The Sunrise Project</title>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init("user_i1pF3Igfgj7leN21SoVmw");
+    })();
+  </script>
+
 </head>
 <body>
 
@@ -208,57 +215,48 @@
     <div class="map mt-2 mb-5" id="map"></div>
     <div class="columns">
       <div class="column is-full has-text-centered">
-        <h3 class="title top-picks">Our top 5 picks</h3>
+        <h3 class="title top-picks" id="topPicks">Our top 5 picks</h3>
       </div>
     </div>
-
     <!--Top 5 picks will be hidden until called-->
     <!--Walks-->
-    <div class="columns has-text-centered mt-2">
+    <div class="columns has-text-centered mt-2 activity-wrapper" id="activityWrapper" style="display: none">
       <div class="column is-2 is-offset-1 p-3 map-location mr-1 is-flex">
-        <div class="card is-flex is-align-items-center is-justify-content-center p-2">
-          <div class="location-key is-flex is-align-items-center is-justify-content-center mb-2">
-            <p>A</p>
-          </div>
-          <p class="title location-title pb-4">Placename</p>
-          <a class="location-website p-3" href="#" target="_blank">Explore</a>
+        <div class="location-key is-flex is-align-items-center is-justify-content-center mb-3">
+          <p>A</p>
         </div>
+        <div class="block">
+          <p class="title location-title pb-4">Placename</p>
+        </div>
+        <a class="location-website p-3" href="#" target="_blank">Explore</a>
       </div>
       <div class="column is-2 p-3 map-location ml-1 mr-1 is-flex">
-        <div class="card is-flex is-align-items-center is-justify-content-center p-2">
-          <div class="location-key is-flex is-align-items-center is-justify-content-center mb-2">
-            <p>B</p>
-          </div>
-          <p class="title location-title pb-4">Placename</p>
-          <a class="location-website p-3" href="#" target="_blank">Explore</a>
+        <div class="location-key is-flex is-align-items-center is-justify-content-center mb-3">
+          <p>B</p>
         </div>
+        <p class="title location-title pb-4">Placename</p>
+        <a class="location-website p-3" href="#" target="_blank">Explore</a>
       </div>
       <div class="column is-2 p-3 map-location ml-1 mr-1 is-flex">
-        <div class="card is-flex is-align-items-center is-justify-content-center p-2">
-          <div class="location-key is-flex is-align-items-center is-justify-content-center mb-2">
-            <p>C</p>
-          </div>
-          <p class="title location-title pb-4">Placename</p>
-          <a class="location-website p-3" href="#" target="_blank">Explore</a>
+        <div class="location-key is-flex is-align-items-center is-justify-content-center mb-3">
+          <p>C</p>
         </div>
+        <p class="title location-title pb-4">Placename</p>
+        <a class="location-website p-3" href="#" target="_blank">Explore</a>
       </div>
       <div class="column is-2 p-3 map-location ml-1 mr-1 is-flex">
-        <div class="card is-flex is-align-items-center is-justify-content-center p-2">
-          <div class="location-key is-flex is-align-items-center is-justify-content-center mb-2">
-            <p>D</p>
-          </div>
-          <p class="title location-title pb-4">Placename</p>
-          <a class="location-website p-3" href="#" target="_blank">Explore</a>
+        <div class="location-key is-flex is-align-items-center is-justify-content-center mb-3">
+          <p>D</p>
         </div>
+        <p class="title location-title pb-4">Placename</p>
+        <a class="location-website p-3" href="#" target="_blank">Explore</a>
       </div>
       <div class="column is-2 p-3 map-location ml-1 is-flex">
-        <div class="card is-flex is-align-items-center is-justify-content-center p-2">
-          <div class="location-key is-flex is-align-items-center is-justify-content-center mb-2">
-            <p>E</p>
-          </div>
-          <p class="title location-title pb-4">Placename</p>
-          <a class="location-website p-3" href="#" target="_blank">Explore</a>
+        <div class="location-key is-flex is-align-items-center is-justify-content-center mb-3">
+          <p>E</p>
         </div>
+        <p class="title location-title pb-4">Placename</p>
+        <a class="location-website p-3" href="#" target="_blank">Explore</a>
       </div>
     </div>
   </section>
@@ -314,7 +312,60 @@
     </div>
 </footer>
 
+<!--Modal - only active when contact button clicked-->
+<div class="modal" >
+    <div class="modal-background">
+    </div>
+    <div class="modal-content" style="font-family: 'Roboto Condensed', sans-serif;">
+      <div class="box p-6">
+          <div class="columns">
+              <div class="column is-full">
+                  <h1 class="title modal-title is-size-2" style="color: rgb(45, 47, 57);">Get in touch!</h1>
+              </div>
+          </div>
+        <form onsubmit="return sendMail(this);">
+          <!--Full name input-->
+          <div class="field">
+            <label class="label">Full name</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input" type="text" name="name" placeholder="Enter your full name" required>
+              <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+              </span>
+            </div>
+          </div>
+          <!--Email input-->
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input" type="email" name="emailaddress" placeholder="Enter your email" required>
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+            </div>
+          </div>
+          <!--Message input-->
+          <div class="field">
+            <label class="label">Message</label>
+            <div class="control">
+              <textarea class="textarea" name="message" id="message" placeholder="Your message here" required></textarea>
+            </div>
+          </div>
+          <!--Submission button-->
+          <div class="field is-grouped">
+            <div class="control">
+              <button class="button is-text-weight-semibold" type="submit" id="submitCloseModal">Submit</button>
+            </div>
+            <div class="control">
+              <button class="button is-text-weight-semibold" id="closeModal">Cancel</button>
+            </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="assets/js/sendEmail.js"></script>
   <script src="assets/js/script.js"></script>
   <script src="assets/js/maps.js"></script>
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
@@ -615,83 +666,3 @@
     </div>
   </div>
 </section>
-
-
-<!--Modal - only active when contact button clicked
-<div class="modal" >
-    <div class="modal-background">
-    </div>
-    <div class="modal-content" style="font-family: 'Roboto Condensed', sans-serif;">
-      <div class="box p-6">
-          <div class="columns">
-              <div class="column is-full">
-                  <h1 class="title modal-title is-size-2" style="color: rgb(45, 47, 57);">Get in touch!</h1>
-              </div>
-          </div>
-        <form>
-          <!--Full name input
-          <div class="field">
-            <label class="label">Full name</label>
-            <div class="control has-icons-left has-icons-right">
-              <input class="input" type="text" placeholder="Enter your full name" required>
-              <span class="icon is-small is-left">
-                <i class="fas fa-user"></i>
-              </span>
-            </div>
-          </div>
-          <!--Email input
-          <div class="field">
-            <label class="label">Email</label>
-            <div class="control has-icons-left has-icons-right">
-              <input class="input" type="email" placeholder="Enter your email" required>
-              <span class="icon is-small is-left">
-                <i class="fas fa-envelope"></i>
-              </span>
-            </div>
-          </div>
-          <!--Subject dropdown selection
-          <div class="field">
-            <label class="label">Reason for enquiry</label>
-            <div class="control">
-              <div class="select">
-                <select>
-                  <option>Select...</option>
-                  <option>General enquiry</option>
-                  <option>Technical issues</option>
-                  <option>Accessibility</option>
-                  <option>Local facilities</option>
-                  <option>Transport</option>
-                  <option>Other</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <!--Message input
-          <div class="field">
-            <label class="label">Message</label>
-            <div class="control">
-              <textarea class="textarea" placeholder="Your message here" required></textarea>
-            </div>
-          </div>
-          <!--T&C checkbox
-          <div class="field">
-            <div class="control">
-              <label class="checkbox">
-                <input type="checkbox">
-                I agree to the <a href="#">terms and conditions</a>
-              </label>
-            </div>
-          </div>
-          <!--Submission button
-          <div class="field is-grouped">
-            <div class="control">
-              <button class="button is-text-weight-semibold">Submit</button>
-            </div>
-            <div class="control">
-              <button class="button is-text-weight-semibold" id="closeModal">Cancel</button>
-            </div>
-        </div>
-        </form>
-    </div>
-  </div>
--->
