@@ -12,13 +12,18 @@ window.onload = (event) => {
     });
 
 
-    // Click event that opens the modal
+    // Click event that opens the modal from the nav menu
 
     let $openModal = $("#toggleModal");
     $openModal.on("click", function() {
       $(".modal").addClass("is-active", "is-clipped");
     });
 
+    // Click event that opens to modal from the contact section
+    let $openModalOption = $("#toggleModalOption");
+    $openModalOption.on("click", function() {
+      $(".modal").addClass("is-active", "is-clipped");
+    })
 
     // Click event that allows modal to close by cancel
 
