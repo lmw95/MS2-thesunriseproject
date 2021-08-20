@@ -46,17 +46,18 @@ nav.navbar.nav-scrolled {
         .footer,
         .modal button,
         .modal label,
-        .title.info-title,
         .subtitle.info-subtitle,
         .title.tile-title,
-        .subtitle.tile-subtitle {
+        .subtitle.tile-subtitle,
+        .title.info-title {
             font-family: 'Staatliches', cursive;
         }
 
         .company-name,
         .title.hero-title,
         .title.top-picks,
-        .title.modal-title {
+        .title.modal-title,
+        .title.info-heading {
             font-family: 'Alfa Slab One', cursive;
         }
 
@@ -71,7 +72,9 @@ nav.navbar.nav-scrolled {
         .title.location-title,
         .title.top-picks,
         .title.info-title,
-        .subtitle.info-subtitle {
+        .subtitle.info-subtitle,
+        .title.tile-title,
+        .subtitle.tile-subtitle {
             color: #2d2f39;
         }
 
@@ -93,7 +96,8 @@ nav.navbar.nav-scrolled {
         .footer-contact,
         .footer-logo,
         .footer-menu a,
-        .footer-social-media {
+        .footer-social-media,
+        .tile-icon {
             color: #F5F5F5;
         }
 
@@ -126,7 +130,7 @@ nav.navbar.nav-scrolled {
         }
 
         .tile.notification {
-            background-color: rgba(96, 190, 134, 0.3)
+            background-color: rgba(96, 190, 134, 0.3);
         }
 
         .section.contact {
@@ -213,6 +217,12 @@ nav.navbar.nav-scrolled {
         width: 200px;
         height: 3px;
         margin: 0 auto;
+    }
+
+    .info-hr {
+        background-color: #f5f5f5;
+        width: 100px;
+        height: 3px;
     }
 
     .follow-us {
