@@ -45,7 +45,7 @@ nav.navbar.nav-scrolled {
         .form input,
         .footer,
         .modal button,
-        .modal-label {
+        .modal label {
             font-family: 'Staatliches', cursive;
         }
 
@@ -123,7 +123,8 @@ nav.navbar.nav-scrolled {
         .navbar-end .navbar-item:hover,
         .column.social-media-icons a:hover,
         .column.activity,
-        .map-location a {
+        .map-location a,
+        .toggle-modal {
             cursor: pointer;
         }
 
@@ -138,6 +139,10 @@ nav.navbar.nav-scrolled {
         
         .map-location a:hover {
             color: #f5f5f5;
+        }
+
+        .toggle-modal:hover {
+            color: #60be86;
         }
 
     /*Background images*/
