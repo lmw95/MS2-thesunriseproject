@@ -87,6 +87,19 @@ walks.addEventListener("click", function () {
     titles[3].textContent = "Blunderston to Flixton";
     titles[4].textContent = "Benacre Nature Reserve";
   }
+  let images = document.getElementsByClassName("location-img");
+  for (i = 0; i < images.length; i++) {
+    images[0].src = "assets/images/yare-valley.jpg";
+    images[0].setAttribute("alt", "Yare Valley");
+    images[1].src = "assets/images/suffolk-coast-path.jpg";
+    images[1].setAttribute("alt", "Suffolk Coast Path");
+    images[2].src= "assets/images/harrier.jpg";
+    images[2].setAttribute("alt", "Blunderston to Flixton");
+    images[3].src= "assets/images/blun-to-flix.jpg";
+    images[3].setAttribute("alt", "Blunderston to Flixton");
+    images[4].src = "assets/images/benacre.jpg";
+    images[4].setAttribute("alt", "Benacre");
+  }
   let website = document.getElementsByClassName("location-website");
   for (i = 0; i < website.length; i++) {
     website[0].setAttribute("href", "https://yarevalleysociety.org.uk/");
