@@ -45,7 +45,11 @@ nav.navbar.nav-scrolled {
         .form input,
         .footer,
         .modal button,
-        .modal label {
+        .modal label,
+        .title.info-title,
+        .subtitle.info-subtitle,
+        .title.tile-title,
+        .subtitle.tile-subtitle {
             font-family: 'Staatliches', cursive;
         }
 
@@ -65,7 +69,9 @@ nav.navbar.nav-scrolled {
         .subtitle.online-guide-subtitle,
         .column.activity p,
         .title.location-title,
-        .title.top-picks {
+        .title.top-picks,
+        .title.info-title,
+        .subtitle.info-subtitle {
             color: #2d2f39;
         }
 
@@ -91,6 +97,10 @@ nav.navbar.nav-scrolled {
             color: #F5F5F5;
         }
 
+        div.info-wrapper {
+            background-color: rgba(245, 245, 245, 0.5);
+        }
+
         .column.social-media-icons a,
         .footer-social-media .icon i {
             color: rgba(245, 245, 245, 0.3);
@@ -106,9 +116,17 @@ nav.navbar.nav-scrolled {
             opacity: 0;
         }
 
+        .info {
+            background-color: #f5f5f5;
+        }
+
         .location-key,
         .modal button {
             background-color: #60be86;
+        }
+
+        .tile.notification {
+            background-color: rgba(96, 190, 134, 0.3)
         }
 
         .section.contact {
@@ -157,6 +175,10 @@ nav.navbar.nav-scrolled {
             color: #f5f5f5;
         }
 
+        .tile.notification:hover {
+            background-color: #60be86;
+        }
+
         .toggle-modal:hover {
             color: #60be86;
         }
@@ -164,7 +186,7 @@ nav.navbar.nav-scrolled {
     /*Background images*/
         
 
-/*SPECIFIC SECTION STYLING
+/*SPECIFIC SECTION STYLING*/
     /*Header/hero image*/
     .hero-body {
         height: 100%;
@@ -176,6 +198,21 @@ nav.navbar.nav-scrolled {
     .title.hero-title {
         font-size: 70px;
         letter-spacing: 3px;
+    }
+
+    .title.info-title {
+        font-size: 4rem;
+    }
+
+    .subtitle.info-subtitle {
+        letter-spacing: 3px;
+    }
+
+    .header-hr {
+        background-color: #60be86;
+        width: 200px;
+        height: 3px;
+        margin: 0 auto;
     }
 
     .follow-us {
