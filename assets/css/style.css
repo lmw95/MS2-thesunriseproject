@@ -246,9 +246,9 @@ nav.navbar.nav-scrolled {
         flex-direction: column;
     }
 
-    .footer-social-media {
+    div.footer-social-media {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
     }
 
@@ -292,8 +292,9 @@ and (min-width: 320px) and (max-width: 375px) {
         margin-bottom: 20px;
     }
 
-    .footer-social-media {
+    div.footer-social-media {
         margin-top: 0;
+        justify-content: center;
     }
 
     .footer-contact {
@@ -336,6 +337,7 @@ and (min-width: 375px) and (max-width: 768px) {
 
     div.footer-social-media {
         margin-top: 0 !important;
+        justify-content: center;
     }
 
     .footer-contact {
@@ -350,4 +352,302 @@ and (min-width: 769px) and (max-width: 1024px) {
         font-size: 12px;
     }
 }
+
+
+
+/*
+
+.faded {
+    color: transparent;
+    text-shadow: 0 0 8px rgba(45, 47, 57);
+}
+
+.hidden {
+    display: none;
+}
+
+.hover-option {
+    cursor: pointer;
+}
+
+
+/*Location result pages
+
+.location-result {
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: rgb(245, 245, 245);
+}
+
+.location-result .title {
+   font-size: 90px;
+   font-family: 'Caveat', cursive;
+   color: rgb(45, 47, 57);
+}
+
+.location-result .subtitle {
+    letter-spacing: 0.5px;
+    color:rgb(45, 47, 57);
+}
+
+.location-img-l {
+    background: url(../images/lowestoft-harbour.jpg) no-repeat center center; 
+    background-size: cover; 
+    height: 400px;
+}
+
+.location-img-y {
+    background: url(../images/pleasure-beach.jpg) no-repeat center center;
+    background-size: cover;
+    height: 400px;
+}
+
+.location-img-k {
+    background: url(../images/africa-alive.jpg) no-repeat center center;
+    background-size: cover;
+    height: 400px;
+}
+
+.location-img-ob {
+    background: url(../images/ob.jpg) no-repeat center center;
+    background-size: cover;
+    height: 400px;
+}
+
+.enjoy {
+    letter-spacing: 4px;
+    color:rgb(45, 47, 57);
+}
+
+/*Tab toggle sections
+.profile-pic-1 {
+    background: url(../images/employee1.jpg) no-repeat center center; 
+    background-size: cover; 
+    height: 150px; 
+    width: 150px; 
+    border-radius: 50%;
+}
+
+.profile-pic-2 {
+    background: url(../images/employee2.jpg) no-repeat center center; 
+    background-size: cover; 
+    height: 150px; 
+    width: 150px; 
+    border-radius: 50%;
+}
+
+.profile-pic-3 {
+    background: url(../images/employee3.jpg) no-repeat center center;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.profile-pic-4 {
+    background: url(../images/employee4.jpg) no-repeat center center; 
+    background-size: cover; 
+    height: 150px; 
+    width: 150px; 
+    border-radius: 50%;
+}
+
+.first-light {
+    background: url(../images/first-light.jpg) no-repeat center center; 
+    background-size: cover; 
+    flex-direction: column;
+}
+
+.latitude {
+    background: url(../images/latitude.jpg) no-repeat center center;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.oulton-races {
+    background: url(../images/powerboat.jpg) no-repeat center center;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.horse-racing {
+    background: url(../images/horse-racing.jpg) no-repeat center center;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.wildlife-club {
+    background: url(../images/kids-nature.jpg) no-repeat center center;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.nearly-festival {
+    background: url(../images/tribute-band.jpg) no-repeat center center;
+    background-size: cover;
+    flex-direction: column;
+}
+
+/* Brochure / get in touch section 
+.contact-section {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: rgba(229, 208, 204);
+    color: rgb(45, 47, 57);
+}
+
+
+/* Media queries according to Google Dev tools 
+@media only screen 
+and (min-width: 319px) and (max-width: 766px) {
+
+    .navbar .navbar-brand a.navbar-item h1 {
+        font-size: 1em !important;
+    }
+
+    nav.navbar.navbar-brand {
+        align-items: center;
+    }
+
+    .cell-overlay {
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.overlay-higher {
+        top: 52vh;
+    }
+
+    div.overlay-lower {
+        top: 75vh;
+    }
+
+    .cell-overlay .title {
+        font-size: 50px;
+        padding: 10px;
+        text-align: center;
+        margin-top: 35vh;
+    }
+
+    .overlay-social-media {
+        top: 85vh;
+    }
+
+    .overlay-scroll {
+        top: 92vh;
+    }
+
+    .overlay-higher, .overlay-lower,
+    .overlay-social-media, .overlay-scroll {
+        text-align: center;
+    }
+
+
+    #projectToggle {
+        padding: 0.5em;
+    }
+
+    #projectToggle .subtitle {
+        text-align: center;
+    }
+
+    #projectToggle .card {
+        height: 150px;
+    }
+
+    .footer-contact {
+        text-align: center;
+    }
+
+    .footer-logo {
+        padding-top: 48px;
+        margin-top: 30px;
+    }
+
+
+    .footer-social-media span:nth-of-type(1) {
+        margin-left: 0;
+    }
+}
+
+@media only screen 
+and (min-width: 602px) and (max-width: 766px) {
+    .cell-overlay .title {
+        font-size: 80px;
+        margin-top: 30vh;
+    }
+
+    .location-result .enjoy {
+        padding-top: 40px;
+    }
+
+    .location-result h1 {
+        font-size: 4em;
+    }
+}
+
+@media only screen
+and (min-width: 767px) and (max-width: 1100px) {
+
+    .location-result p.enjoy {
+        text-align: center;
+    }
+
+    .location-result h1.title {
+        text-align: center;
+        padding-top: 10px;
+        font-size: 50px;
+    }
+
+    .location-result p.description {
+        text-align: center;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .container.history .columns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container.history .column {
+        width: 100%;
+    }
+
+    #projectToggle .card {
+        justify-content: space-evenly;
+    }
+
+    .columns.contact {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contact-section .column.is-offset-3 {
+        margin-left: 0;
+    }
+
+    .contact-section .contact-col {
+        width: 33%;
+    }
+
+    .footer-contact {
+        text-align: center;
+    }
+
+    .footer-logo {
+        padding-top: 48px;
+        margin-top: 30px;
+    }
+
+    .footer .footer-social-media {
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-social-media span:nth-of-type(1) {
+        margin-left: 0;
+    }
+
+
 
