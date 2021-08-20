@@ -94,7 +94,7 @@ walks.addEventListener("click", function () {
     images[1].src = "assets/images/suffolk-coast-path.jpg";
     images[1].setAttribute("alt", "Suffolk Coast Path");
     images[2].src= "assets/images/harrier.jpg";
-    images[2].setAttribute("alt", "Blunderston to Flixton");
+    images[2].setAttribute("alt", "A harrier");
     images[3].src= "assets/images/blun-to-flix.jpg";
     images[3].setAttribute("alt", "Blunderston to Flixton");
     images[4].src = "assets/images/benacre.jpg";
@@ -123,6 +123,19 @@ nature.addEventListener("click", function() {
     titles[3].textContent = "Benacre Nature Reserve";
     titles[4].textContent = "Berney Marshes";
   }
+  let images = document.getElementsByClassName("location-img");
+  for (i = 0; i < images.length; i++) {
+    images[0].src = "assets/images/sailing.jpg";
+    images[0].setAttribute("alt", "A boat on the Broads");
+    images[1].src = "assets/images/harrier.jpg";
+    images[1].setAttribute("alt", "A harrier");
+    images[2].src= "assets/images/north-cove.jpg";
+    images[2].setAttribute("alt", "A bird flapping");
+    images[3].src= "assets/images/benacre.jpg";
+    images[3].setAttribute("alt", "Benacre");
+    images[4].src = "assets/images/berney-marshes.jpg";
+    images[4].setAttribute("alt", "Berney Marshes");
+  }
   let website = document.getElementsByClassName("location-website");
   for (i = 0; i < website.length; i++) {
     website[0].setAttribute("href", "https://www.visitthebroads.co.uk/");
@@ -145,6 +158,19 @@ conservation.addEventListener("click", function() {
     titles[2].textContent = "Carlton Marshes";
     titles[3].textContent = "Pettit's";
     titles[4].textContent = "SeaLife";
+  }
+  let images = document.getElementsByClassName("location-img");
+  for (i = 0; i < images.length; i++) {
+    images[0].src = "assets/images/africa-alive.jpg";
+    images[0].setAttribute("alt", "A lion lying down");
+    images[1].src = "assets/images/redwings.jpg";
+    images[1].setAttribute("alt", "Two horses eating");
+    images[2].src= "assets/images/harrier.jpg";
+    images[2].setAttribute("alt", "A harrier");
+    images[3].src= "assets/images/pettits.jpg";
+    images[3].setAttribute("alt", "A meercat digging");
+    images[4].src = "assets/images/sealife.jpg";
+    images[4].setAttribute("alt", "Children with dolphins");
   }
   let website = document.getElementsByClassName("location-website");
   for (i = 0; i < website.length; i++) {
@@ -169,6 +195,19 @@ family.addEventListener("click", function() {
     titles[3].textContent = "Africa, Alive!";
     titles[4].textContent = "Joyland Children's Fun Park";
   }
+  let images = document.getElementsByClassName("location-img");
+  for (i = 0; i < images.length; i++) {
+    images[0].src = "assets/images/rollercoaster.jpg";
+    images[0].setAttribute("alt", "Rollercoaster");
+    images[1].src = "assets/images/fair-ground.jpg";
+    images[1].setAttribute("alt", "A fairground");
+    images[2].src= "assets/images/pettits.jpg";
+    images[2].setAttribute("alt", "A meercat digging");
+    images[3].src= "assets/images/africa-alive.jpg";
+    images[3].setAttribute("alt", "A lion lying down");
+    images[4].src = "assets/images/joyland.jpg";
+    images[4].setAttribute("alt", "Little boy on a slide");
+  }
   let website = document.getElementsByClassName("location-website");
   for (i = 0; i < website.length; i++) {
     website[0].setAttribute("href", "https://www.pleasurewoodhills.com/");
@@ -191,6 +230,19 @@ thrills.addEventListener("click", function() {
     titles[2].textContent = "Quasar";
     titles[3].textContent = "Prestige Escape Rooms";
     titles[4].textContent = "Ellough Go Karting";
+  }
+  let images = document.getElementsByClassName("location-img");
+  for (i = 0; i < images.length; i++) {
+    images[0].src = "assets/images/rollercoaster.jpg";
+    images[0].setAttribute("alt", "Rollercoaster");
+    images[1].src = "assets/images/fair-ground.jpg";
+    images[1].setAttribute("alt", "A fairground");
+    images[2].src= "assets/images/quasar.jpg";
+    images[2].setAttribute("alt", "Arcade racing cars");
+    images[3].src= "assets/images/escape-room.jpg";
+    images[3].setAttribute("alt", "Escape Room in glowing letters");
+    images[4].src = "assets/images/go-karting.jpg";
+    images[4].setAttribute("alt", "Go karting");
   }
   let website = document.getElementsByClassName("location-website");
   for (i = 0; i < website.length; i++) {
@@ -215,6 +267,19 @@ history.addEventListener("click", function() {
     titles[3].textContent = "National Trust Elizabethan House";
     titles[4].textContent = "Lowestoft Museum";
   }
+  let images = document.getElementsByClassName("location-img");
+  for (i = 0; i < images.length; i++) {
+    images[0].src = "assets/images/burgh-castle.jpg";
+    images[0].setAttribute("alt", "Man dressed as a Roman");
+    images[1].src = "assets/images/lowestoft-harbour.jpg";
+    images[1].setAttribute("alt", "Lowestoft Harbour");
+    images[2].src= "assets/images/old-trawler.jpg";
+    images[2].setAttribute("alt", "Abandoned trawler boat");
+    images[3].src= "assets/images/elizabethan.jpg";
+    images[3].setAttribute("alt", "Elizabethan house");
+    images[4].src = "assets/images/lowestoft-history.jpg";
+    images[4].setAttribute("alt", "War planes flying overhead");
+  }
   let website = document.getElementsByClassName("location-website");
   for (i = 0; i < website.length; i++) {
     website[0].setAttribute("href", "https://www.english-heritage.org.uk/visit/places/burgh-castle/");
@@ -237,6 +302,19 @@ broads.addEventListener("click", function() {
     titles[2].textContent = "Nicholas Everitt Park";
     titles[3].textContent = "Oulton Watersports Center";
     titles[4].textContent = "Breydon Water";
+  }
+  let images = document.getElementsByClassName("location-img");
+  for (i = 0; i < images.length; i++) {
+    images[0].src = "assets/images/sailing.jpg";
+    images[0].setAttribute("alt", "A boat on the Broads");
+    images[1].src = "assets/images/river-center.jpg";
+    images[1].setAttribute("alt", "A boat on open water");
+    images[2].src= "assets/images/nicholas-everitt.jpg";
+    images[2].setAttribute("alt", "Playground");
+    images[3].src= "assets/images/powerboat.jpg";
+    images[3].setAttribute("alt", "A powerboat");
+    images[4].src = "assets/images/breydon-water.jpg";
+    images[4].setAttribute("alt", "Large river estuary");
   }
   let website = document.getElementsByClassName("location-website");
   for (i = 0; i < website.length; i++) {
@@ -261,6 +339,19 @@ music.addEventListener("click", function() {
     titles[3].textContent = "Lowestoft Players";
     titles[4].textContent = "Hippodrome Circus";
   }
+  let images = document.getElementsByClassName("location-img");
+  for (i = 0; i < images.length; i++) {
+    images[0].src = "assets/images/latitude.jpg";
+    images[0].setAttribute("alt", "Latitude logo");
+    images[1].src = "assets/images/marina.jpg";
+    images[1].setAttribute("alt", "Theatre curtain");
+    images[2].src= "assets/images/first-lights.jpg";
+    images[2].setAttribute("alt", "Festival dancing");
+    images[3].src= "assets/images/players.jpg";
+    images[3].setAttribute("alt", "Performers on stage");
+    images[4].src = "assets/images/hippodrome.jpg";
+    images[4].setAttribute("alt", "Fire hula-hooper");
+  }
   let website = document.getElementsByClassName("location-website");
   for (i = 0; i < website.length; i++) {
     website[0].setAttribute("href", "https://www.latitudefestival.com/");
@@ -283,6 +374,19 @@ nightlife.addEventListener("click", function() {
     titles[2].textContent = "Iconic Bar";
     titles[3].textContent = "Broadview Wine Bar";
     titles[4].textContent = "Hotel Hatfield";
+  }
+  let images = document.getElementsByClassName("location-img");
+  for (i = 0; i < images.length; i++) {
+    images[0].src = "assets/images/ocean-rooms.jpg";
+    images[0].setAttribute("alt", "Strobe nights in a club");
+    images[1].src = "assets/images/the-commodore.jpg";
+    images[1].setAttribute("alt", "Man pulling a pint");
+    images[2].src= "assets/images/iconic.jpg";
+    images[2].setAttribute("alt", "Man pouring cocktails");
+    images[3].src= "assets/images/broadview.jpg";
+    images[3].setAttribute("alt", "People cheering with wine");
+    images[4].src = "assets/images/hatfield.jpg";
+    images[4].setAttribute("alt", "Bar staff serving drinks");
   }
   let website = document.getElementsByClassName("location-website");
   for (i = 0; i < website.length; i++) {
@@ -307,6 +411,19 @@ local.addEventListener("click", function() {
     titles[3].textContent = "Yarmouth Market";
     titles[4].textContent = "Upper Wood Farm Shop";
   }
+  let images = document.getElementsByClassName("location-img");
+  for (i = 0; i < images.length; i++) {
+    images[0].src = "assets/images/carboot.jpg";
+    images[0].setAttribute("alt", "Carboot sign");
+    images[1].src = "assets/images/carboot.jpg";
+    images[1].setAttribute("alt", "Carboot sign");
+    images[2].src= "assets/images/lound.jpg";
+    images[2].setAttribute("alt", "Succulents");
+    images[3].src= "assets/images/market.jpg";
+    images[3].setAttribute("alt", "Fish at market");
+    images[4].src = "assets/images/farm-shop.jpg";
+    images[4].setAttribute("alt", "Carrots");
+  }
   let website = document.getElementsByClassName("location-website");
   for (i = 0; i < website.length; i++) {
     website[0].setAttribute("href", "https://www.tripadvisor.co.uk/Attraction_Review-g1464316-d7186715-Reviews-Kessingland_Car_Boot-Kessingland_Suffolk_East_Anglia_England.html");
@@ -330,6 +447,19 @@ beach.addEventListener("click", function() {
     titles[3].textContent = "Kessingland Beach";
     titles[4].textContent = "Pakefield Beach";
   }
+  let images = document.getElementsByClassName("location-img");
+  for (i = 0; i < images.length; i++) {
+    images[0].src = "assets/images/lowestoft.jpg";
+    images[0].setAttribute("alt", "Lowestoft beach");
+    images[1].src = "assets/images/yarmouth.jpg";
+    images[1].setAttribute("alt", "Yarmouth beach");
+    images[2].src= "assets/images/gorleston.jpg";
+    images[2].setAttribute("alt", "Gorleston beach");
+    images[3].src= "assets/images/kessingland-2.jpg";
+    images[3].setAttribute("alt", "Kessingland beach");
+    images[4].src = "assets/images/pakefield.jpg";
+    images[4].setAttribute("alt", "Pakefield beach");
+  }
   let website = document.getElementsByClassName("location-website");
   for (i = 0; i < website.length; i++) {
     website[0].setAttribute("href", "https://www.thebeachguide.co.uk/south-east-england/suffolk/lowestoft-town");
@@ -352,6 +482,19 @@ water.addEventListener("click", function() {
     titles[2].textContent = "Oulton Broad Yacht Club";
     titles[3].textContent = "Scroby Sands Boat Trips";
     titles[4].textContent = "Waveney River Tours";
+  }
+  let images = document.getElementsByClassName("location-img");
+  for (i = 0; i < images.length; i++) {
+    images[0].src = "assets/images/powerboat.jpg";
+    images[0].setAttribute("alt", "A powerboat");
+    images[1].src = "assets/images/river-center.jpg";
+    images[1].setAttribute("alt", "A boat on open water");
+    images[2].src= "assets/images/yachts.jpg";
+    images[2].setAttribute("alt", "Yachts on water");
+    images[3].src= "assets/images/seal-pup.jpg";
+    images[3].setAttribute("alt", "Seal pup");
+    images[4].src = "assets/images/river-tours.jpg";
+    images[4].setAttribute("alt", "River at sunset");
   }
   let website = document.getElementsByClassName("location-website");
   for (i = 0; i < website.length; i++) {
