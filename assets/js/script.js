@@ -53,11 +53,8 @@ window.onload = (event) => {
     // Click event that allows map locations to show
 
     $(".activity").on("click", function() {
-      if (window.screen.width < 768 ) {
-        $("#activityWrapper").css("display", "block");
-      } else {
-        $("#activityWrapper").css("display", "flex");
-      }
+        $("#activityWrapper").css("opacity", "1");
+        $("#activityWrapper").css("height", "100%");
     });
 
   });
@@ -133,7 +130,7 @@ conservation.addEventListener("click", function() {
     titles[0].textContent = "Africa, Alive!";
     titles[1].textContent = "Redwings";
     titles[2].textContent = "Carlton Marshes";
-    titles[3].textContent = "Pettit's Animal Adventure Park";
+    titles[3].textContent = "Pettit's";
     titles[4].textContent = "SeaLife";
   }
   let website = document.getElementsByClassName("location-website");
@@ -155,7 +152,7 @@ family.addEventListener("click", function() {
   for (i = 0; i < titles.length ; i++) {
     titles[0].textContent = "Pleasurewood Hills";
     titles[1].textContent = "Pleasure Beach";
-    titles[2].textContent = "Pettit's Animal Adventure Park";
+    titles[2].textContent = "Pettit's";
     titles[3].textContent = "Africa, Alive!";
     titles[4].textContent = "Joyland Children's Fun Park";
   }
