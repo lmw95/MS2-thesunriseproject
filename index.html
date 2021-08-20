@@ -128,8 +128,36 @@
   </header>
   <!--Header section end-->
 
+  <!--Tabs to toggle each info section-->
+<section class="section p-5 toggle-tabs is-flex is-flex-direction-row is-align-items-center is-justify-content-center" id="toggleButtons">
+  <div class="columns">
+    <div class="column is-one-third">
+      <div class="circle-button is-flex is-flex-direction-column is-align-items-center is-justify-content-center hvr-wobble-horizontal" id="circleButtonGuide">
+        <p class="subtitle tile-subtitle has-text-centered p-3">
+          Online guide
+        </p>
+      </div>
+    </div>
+    <div class="column is-one-third">
+      <div class="circle-button is-flex is-flex-direction-column is-align-items-center is-justify-content-center hvr-wobble-horizontal" id="circleButtonInfo">
+        <p class="subtitle tile-subtitle has-text-centered p-3">
+          The Sunrise Coast
+        </p>
+      </div>
+    </div>
+    <div class="column is-one-third">
+      <div class="circle-button is-flex is-flex-direction-column is-align-items-center is-justify-content-center hvr-wobble-horizontal" id="circleButtonOwner">
+        <p class="subtitle tile-subtitle has-text-centered p-2">
+          About the project
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Tabs section end-->
+
   <!--Online guide section-->
-  <section class="section online-guide p-5 fade-in" id="onlineGuide">
+  <section class="section online-guide p-5" id="onlineGuide" style="display: none;">
     <!--Online guide titles-->
     <div class="columns">
       <div class="column is-full online-guide-wrapper">
@@ -231,13 +259,13 @@
         <div class="card">
           <div class="card-image">
             <figure class="image is-4by3">
-              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" class="location-img">
+              <img src="assets/images/placeholder.jpg" alt="Placeholder image" class="location-img">
             </figure>
           </div>
           <div class="card-content">
             <div class="content">
               <div class="block">
-                <p class="title location-title pb-4">Location</p>
+                <p class="title location-title pb-4"></p>
               </div>
               <div class="block">
                 <a class="location-website p-3" href="#" target="_blank">Explore</a>
@@ -254,13 +282,13 @@
         <div class="card">
           <div class="card-image">
             <figure class="image is-4by3">
-              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" class="location-img">
+              <img src="assets/images/placeholder.jpg" alt="Placeholder image" class="location-img">
             </figure>
           </div>
           <div class="card-content">
             <div class="content">
               <div class="block">
-                <p class="title location-title pb-4">Location</p>
+                <p class="title location-title pb-4"></p>
               </div>
               <div class="block">
                 <a class="location-website p-3" href="#" target="_blank">Explore</a>
@@ -277,13 +305,13 @@
         <div class="card">
           <div class="card-image">
             <figure class="image is-4by3">
-              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" class="location-img">
+              <img src="assets/images/placeholder.jpg" alt="Placeholder image" class="location-img">
             </figure>
           </div>
           <div class="card-content">
             <div class="content">
               <div class="block">
-                <p class="title location-title pb-4">Location</p>
+                <p class="title location-title pb-4"></p>
               </div>
               <div class="block">
                 <a class="location-website p-3" href="#" target="_blank">Explore</a>
@@ -300,13 +328,13 @@
         <div class="card">
           <div class="card-image">
             <figure class="image is-4by3">
-              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" class="location-img">
+              <img src="assets/images/placeholder.jpg" alt="Placeholder image" class="location-img">
             </figure>
           </div>
           <div class="card-content">
             <div class="content">
               <div class="block">
-                <p class="title location-title pb-4">Location</p>
+                <p class="title location-title pb-4"></p>
               </div>
               <div class="block">
                 <a class="location-website p-3" href="#" target="_blank">Explore</a>
@@ -323,13 +351,13 @@
         <div class="card">
           <div class="card-image">
             <figure class="image is-4by3">
-              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" class="location-img">
+              <img src="assets/images/placeholder.jpg" alt="Placeholder image" class="location-img">
             </figure>
           </div>
           <div class="card-content">
             <div class="content">
               <div class="block">
-                <p class="title location-title pb-4">Location</p>
+                <p class="title location-title pb-4"></p>
               </div>
               <div class="block">
                 <a class="location-website p-3" href="#" target="_blank">Explore</a>
@@ -341,6 +369,84 @@
     </div>
   </section>
   <!--Online guide section end-->
+
+  <!--Info section-->
+<section class="section info p-5" id="infoSection" style="display: none;">
+  <div class="columns">
+    <div class="column is-full has-text-centered">
+      <h1 class="title info-heading is-size-2">Take a look around...</h1>
+    </div>
+  </div>
+  <div class="container is-fluid p-0">
+    <!--Bulma tiles - code: https://bulma.io/documentation/layout/tiles/-->
+    <div class="tile is-ancestor">
+      <div class="tile is-vertical is-8">
+        <div class="tile">
+          <div class="tile is-parent is-vertical">
+            <article class="tile is-child notification is-flex is-justify-content-center is-align-items-center is-flex-direction-column">
+              <p class="title tile-title has-text-centered pb-4">700,000 years of history</p>
+              <p class="subtitle tile-subtitle has-text-centered">From flint tools found near Kessingland, the home to the infamous Brittonic Iceni tribe, a rich maritime and naval history and a flourishing fishing trade during the 19th century.</p>
+              <span class="icon is-large">
+                <i class="fas fa-landmark fa-2x tile-icon"></i>
+              </span>
+            </article>
+            <article class="tile is-child notification is-flex is-justify-content-center is-align-items-center is-flex-direction-column">
+              <p class="title tile-title has-text-centered pb-4">A forgotten corner</p>
+              <p class="subtitle tile-subtitle has-text-centered">Up until Sir Samuel Peto connected the coast to London by train in the early 1800s, large areas of the coast were untouched by the industrious activity of the 19th century.</p>
+              <span class="icon is-large">
+                <i class="fas fa-landmark fa-2x tile-icon"></i>
+              </span>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child notification is-flex is-flex-direction-column">
+              <p class="title tile-title has-text-centered">This is East Anglia!</p>
+              <p class="subtitle tile-subtitle has-text-centered">We are right on the eastern tip</p>
+              <figure class="image is-4by3">
+                <img src="assets/images/ea-map.png" alt="Map of East Anglia">
+              </figure>
+              <p class="subtitle tile-subtitle has-text-centered pt-5">The Sunrise Coast is home to Ness Point, Britain's most easterly point. Despite being by the sea, the area is in-fact on of the driest in the country, only recieving 787mm of rain each year!</p>
+            </article>
+          </div>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child notification">
+            <p class="title tile-title has-text-centered pb-4">A perfect location for your staycation</p>
+            <div class="content">
+              <p class="subtitle tile-subtitle has-text-centered">With two large towns, pockets of rugged countryside, access to the Broads and the sea, the Sunrise Coast is a complete package for those looking for adventure and a great family holiday to remember!</p>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child notification">
+          <div class="content">
+            <p class="title tile-title has-text-centered">A haven for wildlife</p>
+            <p class="subtitle tile-subtitle has-text-centered pb-4">Thanks to the Broads and its marshy landscape, the Sunrise coast provides a home for many endangered species, including:</p>
+            <div class="content">
+              <p class="subtitle tile-subtitle is-size-4 mb-0 has-text-centered">Swallowtail Butterfly</p>
+              <hr class="tile-hr mt-2">
+              <figure class="image is-2by1 mt-0">
+                <img src="assets/images/swallowtail.jpg" alt="Swallowtail butterfly">
+              </figure>
+              <p class="subtitle tile-subtitle is-size-4 mb-0 has-text-centered">Water vole</p>
+              <hr class="tile-hr mt-2">
+              <figure class="image is-2by1 mt-0">
+                <img src="assets/images/water-vole.jpg" alt="Water vole">
+              </figure>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Info section end-->
+
+<!--Owner info section-->
+<secition class="section owner-info p-5" id="ownerSection">
+
+</secition>
 
   <!--Contact us section-->
   <section class="section contact p-5">
