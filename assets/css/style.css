@@ -46,13 +46,15 @@ nav.navbar.nav-scrolled {
         .contact,
         .form input,
         .footer,
-        .modal button {
+        .modal button,
+        .modal-label {
             font-family: 'Staatliches', cursive;
         }
 
         .company-name,
         .title.hero-title,
-        .title.top-picks {
+        .title.top-picks,
+        .title.modal-title {
             font-family: 'Alfa Slab One', cursive;
         }
 
@@ -97,10 +99,6 @@ nav.navbar.nav-scrolled {
         .online-guide {
             background-color:#f5f5f5;
             opacity: 0;
-        }
-
-        .div.map-location {
-            background-color: rgba(96, 190, 134, 0.3);
         }
 
         .location-key,
