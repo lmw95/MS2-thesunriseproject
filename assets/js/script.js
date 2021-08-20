@@ -58,22 +58,59 @@ window.onload = (event) => {
         $(".unselected-overlay").css("display", "none");
     });
 
+
+    // Click event that toggles the online guide to appear
+
+    $("#circleButtonGuide").on("click", function() {
+        $("#onlineGuide").slideDown(1000);
+        $("#infoSection").slideUp(500);
+        $("#ownerSection").slideUp(500);
+    })
+
+
+    // Click event that takes user to the top of the guide section when it's corresponding button is clicked
+
+    let $guideButton = $("#circleButtonGuide");
+    $guideButton.on("click", function(){
+      var position = $("#onlineGuide").position();
+      scroll(0,position.top);
+    });
+
+    // Click event that toggles the info section to appear
+
+    $("#circleButtonInfo").on("click", function() {
+        $("#infoSection").slideDown(1000);
+        $("#ownerSection").slideUp(500);
+        $("#onlineGuide").slideUp(500);
+    });
+
+    
+    // Click event that takes user to the top of the info section when its corresponding circle button is clicked
+
+    let $infoButton = $("#circleButtonInfo");
+    $infoButton.on("click", function(){
+      var position = $("#infoSection").position();
+      scroll(0,position.top);
+    });
+
+    // Click event that toggles the owner section to appear
+    $("#circleButtonOwner").on("click", function() {
+      $("#ownerSection").slideDown(100);
+      $("#infoSection").slideUp(500);
+      $("#onlineGuide").slideUp(500);
+    });
+
+    
+    // Click event that takes user to the top of the owner section when itd corresponding circle button is clicked
+
+    let $ownerButton = $("#circleButtonOwner");
+    $ownerButton.on("click", function(){
+      var position = $("#ownerSection").position();
+      scroll(0,position.top);
+    });
+
   });
 }
-
-// Event listener that allows online guide to fade in and out when user scrolls - https://webdesign.tutsplus.com/tutorials/simple-fade-effect-on-scroll--cms-35166
-
-const checkpoint = 150;
-window.addEventListener("scroll", () => {
-  const currentScroll = window.pageYOffset;
-  if (currentScroll <= checkpoint) {
-    opacity = 0 - currentScroll / checkpoint;
-  } else {
-    opacity = 1;
-  }
-  document.querySelector(".online-guide").style.opacity = opacity;
-});
-
 
 // Changes content for 'walks'
 
