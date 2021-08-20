@@ -1,6 +1,4 @@
 /*Import Google Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 
@@ -73,7 +71,8 @@ nav.navbar.nav-scrolled {
 
         .title.hero-title,
         .column.activity i,
-        .modal i {
+        .modal i,
+        .footer-contact i {
             color: #60be86;
         }
 
@@ -83,11 +82,17 @@ nav.navbar.nav-scrolled {
         .location-key p,
         .map-location a,
         .title.contact-title,
-        .subtitle.contact-subtitle {
+        .subtitle.contact-subtitle,
+        .contact-method,
+        .footer-contact,
+        .footer-logo,
+        .footer-menu a,
+        .footer-social-media {
             color: #F5F5F5;
         }
 
-        .column.social-media-icons a {
+        .column.social-media-icons a,
+        .footer-social-media .icon i {
             color: rgba(245, 245, 245, 0.3);
         }
 
@@ -227,31 +232,27 @@ nav.navbar.nav-scrolled {
         text-transform: uppercase;
     }
 
-    .top-picks {
+    .title.top-picks {
         font-size: 1.2rem;
     }
 
+    .contact-method {
+        flex-direction: column;
+    }
+
     /*Footer*/
-
-    .footer .footer-contact {
-        color: rgb(229, 208, 204);
-    }
-
     .footer-logo {
-        color: rgb(229, 208, 204);
         letter-spacing: 2px;
-    }
-
-    .footer-menu a {
-        color:rgb(229, 208, 204);
+        flex-direction: column;
     }
 
     .footer-social-media {
-        color:rgb(229, 208, 204);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .footer-social-media .icon i {
-        color:rgba(229, 208, 204, 0.3);
         transition: all 0.1s ease-in-out;
     }
 
@@ -269,7 +270,7 @@ nav.navbar.nav-scrolled {
 @media only screen
 and (min-width: 320px) and (max-width: 375px) {
     .company-name {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .title.hero-title {
@@ -284,6 +285,24 @@ and (min-width: 320px) and (max-width: 375px) {
 
     .activity p {
         font-size: 0.7rem;
+    }
+
+    .contact-wrapper {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-social-media {
+        margin-top: 0;
+    }
+
+    .footer-contact {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .footer-contact p {
+        font-size: 0.9rem !important;
     }
 }
 
@@ -309,6 +328,20 @@ and (min-width: 375px) and (max-width: 768px) {
     .map-location {
         height: 250px;
     }
+
+    .contact-wrapper {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    div.footer-social-media {
+        margin-top: 0 !important;
+    }
+
+    .footer-contact {
+        text-align: center;
+        margin-bottom: 30px;
+    }
 }
 
 @media only screen
@@ -317,377 +350,4 @@ and (min-width: 769px) and (max-width: 1024px) {
         font-size: 12px;
     }
 }
-
-
-
-/*
-
-.faded {
-    color: transparent;
-    text-shadow: 0 0 8px rgba(45, 47, 57);
-}
-
-.hidden {
-    display: none;
-}
-
-.hover-option {
-    cursor: pointer;
-}
-
-
-/*Location result pages
-
-.location-result {
-    font-family: "Roboto Condensed", sans-serif;
-    background-color: rgb(245, 245, 245);
-}
-
-.location-result .title {
-   font-size: 90px;
-   font-family: 'Caveat', cursive;
-   color: rgb(45, 47, 57);
-}
-
-.location-result .subtitle {
-    letter-spacing: 0.5px;
-    color:rgb(45, 47, 57);
-}
-
-.location-img-l {
-    background: url(../images/lowestoft-harbour.jpg) no-repeat center center; 
-    background-size: cover; 
-    height: 400px;
-}
-
-.location-img-y {
-    background: url(../images/pleasure-beach.jpg) no-repeat center center;
-    background-size: cover;
-    height: 400px;
-}
-
-.location-img-k {
-    background: url(../images/africa-alive.jpg) no-repeat center center;
-    background-size: cover;
-    height: 400px;
-}
-
-.location-img-ob {
-    background: url(../images/ob.jpg) no-repeat center center;
-    background-size: cover;
-    height: 400px;
-}
-
-.enjoy {
-    letter-spacing: 4px;
-    color:rgb(45, 47, 57);
-}
-
-/*Tab toggle sections
-.profile-pic-1 {
-    background: url(../images/employee1.jpg) no-repeat center center; 
-    background-size: cover; 
-    height: 150px; 
-    width: 150px; 
-    border-radius: 50%;
-}
-
-.profile-pic-2 {
-    background: url(../images/employee2.jpg) no-repeat center center; 
-    background-size: cover; 
-    height: 150px; 
-    width: 150px; 
-    border-radius: 50%;
-}
-
-.profile-pic-3 {
-    background: url(../images/employee3.jpg) no-repeat center center;
-    background-size: cover;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-}
-
-.profile-pic-4 {
-    background: url(../images/employee4.jpg) no-repeat center center; 
-    background-size: cover; 
-    height: 150px; 
-    width: 150px; 
-    border-radius: 50%;
-}
-
-.first-light {
-    background: url(../images/first-light.jpg) no-repeat center center; 
-    background-size: cover; 
-    flex-direction: column;
-}
-
-.latitude {
-    background: url(../images/latitude.jpg) no-repeat center center;
-    background-size: cover;
-    flex-direction: column;
-}
-
-.oulton-races {
-    background: url(../images/powerboat.jpg) no-repeat center center;
-    background-size: cover;
-    flex-direction: column;
-}
-
-.horse-racing {
-    background: url(../images/horse-racing.jpg) no-repeat center center;
-    background-size: cover;
-    flex-direction: column;
-}
-
-.wildlife-club {
-    background: url(../images/kids-nature.jpg) no-repeat center center;
-    background-size: cover;
-    flex-direction: column;
-}
-
-.nearly-festival {
-    background: url(../images/tribute-band.jpg) no-repeat center center;
-    background-size: cover;
-    flex-direction: column;
-}
-
-/* Brochure / get in touch section 
-.contact-section {
-    font-family: 'Roboto Condensed', sans-serif;
-    background-color: rgba(229, 208, 204);
-    color: rgb(45, 47, 57);
-}
-
-
-/* Media queries according to Google Dev tools 
-@media only screen 
-and (min-width: 319px) and (max-width: 766px) {
-
-    .navbar .navbar-brand a.navbar-item h1 {
-        font-size: 1em !important;
-    }
-
-    nav.navbar.navbar-brand {
-        align-items: center;
-    }
-
-    .cell-overlay {
-        justify-content: center;
-        align-items: center;
-    }
-
-    div.overlay-higher {
-        top: 52vh;
-    }
-
-    div.overlay-lower {
-        top: 75vh;
-    }
-
-    .cell-overlay .title {
-        font-size: 50px;
-        padding: 10px;
-        text-align: center;
-        margin-top: 35vh;
-    }
-
-    .overlay-social-media {
-        top: 85vh;
-    }
-
-    .overlay-scroll {
-        top: 92vh;
-    }
-
-    .overlay-higher, .overlay-lower,
-    .overlay-social-media, .overlay-scroll {
-        text-align: center;
-    }
-
-    .quiz-section p.welcome {
-        padding-left: 0;
-        padding-right: 0;
-        text-align: justify;
-    }
-
-    .location-result {
-        padding: 0.5em;
-    }
-
-    .location-result .container {
-        padding: 1em;
-    }
-
-    .location-result .container .title {
-        font-size: 3em;
-        padding-top: 10px;
-    }
-
-    .location-result .container .subtitle {
-        padding-top: 12px;
-    }
-
-    .location-result h1 {
-        font-size: 60px;
-        text-align: center;
-    }
-
-    .location-result .enjoy {
-        padding-bottom: 10px;
-        text-align: center;
-    }
-
-    .location-result .description {
-        text-align: center;
-    }
-
-    .tabs span:nth-of-type(2) {
-        font-size: 15px;
-    }
-
-    #projectToggle {
-        padding: 0.5em;
-    }
-
-    #projectToggle .subtitle {
-        text-align: center;
-    }
-
-    #projectToggle .card {
-        height: 150px;
-    }
-
-    .container.history {
-        padding: 0;
-        padding-top: 20px;
-    }
-
-    .contact-section .contact-col {
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-
-    .contact-section .contact-col:nth-last-of-type(2) {
-        border-left: none;
-        border-right: none;
-        border-top: 2px solid rgb(245,245,245);
-        border-bottom: 2px solid rgb(245,245,245);
-    }
-
-    .footer-contact {
-        text-align: center;
-    }
-
-    .footer-logo {
-        padding-top: 48px;
-        margin-top: 30px;
-    }
-
-    .footer .footer-social-media {
-        margin-top: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .footer-social-media span:nth-of-type(1) {
-        margin-left: 0;
-    }
-}
-
-@media only screen 
-and (min-width: 602px) and (max-width: 766px) {
-    .cell-overlay .title {
-        font-size: 80px;
-        margin-top: 30vh;
-    }
-
-    .location-result .enjoy {
-        padding-top: 40px;
-    }
-
-    .location-result h1 {
-        font-size: 4em;
-    }
-}
-
-@media only screen
-and (min-width: 767px) and (max-width: 1100px) {
-
-    .location-result p.enjoy {
-        text-align: center;
-    }
-
-    .location-result h1.title {
-        text-align: center;
-        padding-top: 10px;
-        font-size: 50px;
-    }
-
-    .location-result p.description {
-        text-align: center;
-        padding: 0;
-        margin-bottom: 10px;
-    }
-
-    .container.history .columns {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .container.history .column {
-        width: 100%;
-    }
-
-    #projectToggle .card {
-        justify-content: space-evenly;
-    }
-
-    .columns.contact {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .contact-section .column.is-offset-3 {
-        margin-left: 0;
-    }
-
-    .contact-section .contact-col {
-        width: 33%;
-    }
-
-    .footer-contact {
-        text-align: center;
-    }
-
-    .footer-logo {
-        padding-top: 48px;
-        margin-top: 30px;
-    }
-
-    .footer .footer-social-media {
-        margin-top: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .footer-social-media span:nth-of-type(1) {
-        margin-left: 0;
-    }
-}
-
-@media only screen 
-and (min-width: 1101px) {
-    .contact-section .column.is-offset-3 {
-        margin-left: 0;
-    }
-
-    .contact-section .contact-col {
-        width: 33%;
-    }
-}
-
-
 
