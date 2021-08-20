@@ -12,7 +12,7 @@ body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    background: url(../images/kessingland.jpg) no-repeat center center fixed;
+    background: url(../images/sunrise.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -21,11 +21,6 @@ nav.navbar.nav-scrolled {
     background-color: #60be86;
     transition: background-color 200ms ease-in-out;
   }
-
-.fade-in {
-    opacity: 0;
-    transition: opacity 400ms ease-in-out;
-} 
 
 .clicked {
     background-color: #2d2f39;
@@ -117,7 +112,6 @@ nav.navbar.nav-scrolled {
 
         .online-guide {
             background-color:#f5f5f5;
-            opacity: 0;
         }
 
         .info {
@@ -125,7 +119,8 @@ nav.navbar.nav-scrolled {
         }
 
         .location-key,
-        .modal button {
+        .modal button,
+        .circle-button {
             background-color: #60be86;
         }
 
@@ -144,9 +139,10 @@ nav.navbar.nav-scrolled {
     /*Hover effects*/
         .navbar-end .navbar-item:hover,
         .column.social-media-icons a:hover,
-        .column.activity,
-        .map-location a,
-        .toggle-modal {
+        .column.activity:hover,
+        .map-location a:hover,
+        .toggle-modal:hover,
+        .circle-button:hover {
             cursor: pointer;
         }
 
@@ -172,7 +168,6 @@ nav.navbar.nav-scrolled {
 
         .map-location:hover {
             background-color: #60be86;
-            transform: scale(1.05);
         }
         
         .map-location a:hover {
@@ -312,6 +307,12 @@ nav.navbar.nav-scrolled {
         flex-direction: column;
     }
 
+    .circle-button {
+        border-radius: 50%;
+        height: 125px;
+        width: 125px;
+    }
+
     /*Footer*/
     .footer-logo {
         letter-spacing: 2px;
@@ -337,6 +338,7 @@ nav.navbar.nav-scrolled {
     .modal button {
         font-weight: 700;
     }
+
     
 @media only screen
 and (min-width: 320px) and (max-width: 375px) {
@@ -352,6 +354,18 @@ and (min-width: 320px) and (max-width: 375px) {
     .subtitle.online-guide-subtitle {
         text-align: center;
         font-size: 0.5px;
+    }
+
+    .toggle-tabs .columns {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .circle-button {
+        width: 100%;
+        height: 33.3%;
+        border-radius: 0px;
     }
 
     .activity p {
@@ -411,6 +425,18 @@ and (min-width: 375px) and (max-width: 768px) {
 
     .title.hero-title {
         font-size: 2.4rem;
+    }
+
+    .toggle-tabs .columns {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .circle-button {
+        width: 100%;
+        height: 33.3%;
+        border-radius: 0px;
     }
 
     .activity p {
