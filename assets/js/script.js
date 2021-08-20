@@ -55,11 +55,11 @@ window.onload = (event) => {
     $(".activity").on("click", function() {
         $("#activityWrapper").css("opacity", "1");
         $("#activityWrapper").css("height", "100%");
+        $(".unselected-overlay").css("display", "none");
     });
 
   });
 }
-
 
 // Event listener that allows online guide to fade in and out when user scrolls - https://webdesign.tutsplus.com/tutorials/simple-fade-effect-on-scroll--cms-35166
 
