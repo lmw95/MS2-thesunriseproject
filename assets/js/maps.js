@@ -1,7 +1,3 @@
- //Google API key
- let apiKey = "AIzaSyAz2AgSP-awt4zaXYsWQWIXLev7StjPLLM";
- 
-
 //Declare global variables
 
 let map;
@@ -432,7 +428,7 @@ function initMap(chosenDestinations) {
     //Loop through array to get latitude and longitude values and place markers
 
     if (chosenDestinations) {
-        for (i = 0; i < chosenDestinations.length; i++) {  
+        for (let i = 0; i < chosenDestinations.length; i++) {  
             markers = new google.maps.Marker({
                 position: chosenDestinations[i].coordinates,
                 map: map,
@@ -507,6 +503,6 @@ $(document).ready(function() {
         let $waterButton = $("#activityWater");
         $waterButton.click(function () {
             initMap(waterLocations);
-        })
+        });
     });
 });
