@@ -329,7 +329,7 @@ nav.navbar.nav-scrolled {
         height: 500px;
     }
 
-    .location-wrapper {
+    .columns.location-wrapper {
         align-items: center;
         opacity: 0.4;
     }
