@@ -7,13 +7,18 @@ function sendMail(contactForm) {
     .then(
         function(response) {
             console.log("SUCCESS", response);
+            let form = document.getElementById("myForm");
+            form.reset();
         },
         function(error) {
             console.log("FAILED", error);
         }
     );
-    return false;  
+    return false; 
 }
+
+let form = document.getElementById("myForm");
+form.reset();
 
 // Closes modal when submit is pressed
 $(document).ready(function(){
