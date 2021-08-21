@@ -33,10 +33,13 @@ This website is the company's primary marketing method, and offers an online inf
     * [i. Navigation menu & hero image]()
     * [ii. Section toggle buttons]()
     * [iii. Online guide]()
-        * [Interactive quiz]()
+        * [Interactive buttons]()
+        * [Googe Maps]()
         * [Location results]()
     * [iv. Information page]()
     * [v. Owner profile]()
+    * [vi. Contact section]()
+    * [vii. Footer]()
     * [vi. Contact modal]()
     * [Possible future features]()
 * [Responsive design]()
@@ -202,15 +205,44 @@ The round toggle buttons sit underneath the bouncing icon which indicates the us
 
 
 ## **Online guide**
+### Interactive buttons
+![](assets/screenshots/activities.png)
+These buttons describe different activities that the user can select from. Each button drops five markers on the map below, using the coordinates of the 'top 5' businesses used in [maps.js](https://github.com/lmw95/MS2-thesunriseproject/blob/main/assets/js/maps.js). Each button has an activity name and a corresponding icon.
 
+### Google Maps
+![](assets/screenshots/google-maps.png)
+This section is where the Google Maps is rendered. The markers are dropped on the map, as seen in the picture; the example used here is 'Music & Art'. The map is zoomable. The previous markers clear off the map when each activity is clicked. 
 
-* [iii. Online guide]()
-        * [Interactive quiz]()
-        * [Location results]()
-    * [iv. Information page]()
-    * [v. Owner profile]()
-    * [vi. Contact modal]()
-    * [Possible future features]()
+### Location results
+*Before*
+![](assets/screenshots/location-results-before.png)
+
+*After*
+![](assets/screenshots/location-results-after.png)
+
+The location results display according to user interaction. Before selection, the results are shown as blank, as seen in the before picture above, whereas after user selection, they will display the 'top 5' locations (i.e. the locations marked on the map). The letters correspond to the markers on the map. The links will take the user to the company's website. These cards were made using [Bulma cards](https://bulma.io/documentation/components/card/).
+
+## Information page 
+![](assets/screenshots/info.png)
+This section is toggleable and is a static page displaying information about the local area. It is formatted using [Bulma tiles](https://bulma.io/documentation/layout/tiles/). The tiles are hoverable and change the background colour. The page would have revealed more content when the user scrolled down, but due to time constraints this idea was abandoned.
+
+## Owner profile
+![](assets/screenshots/owner-profile.png)
+This section is toggleable and is also a static page displaying information about the owner 'Rose' and her aim with and the purpose of the website. I had an idea of placing an accordian inside the content section, which toggled backstory, aim and profile, but due to time constraints this idea also did not come to fruition. 
+
+## Contact section 
+![](assets/screenshots/contact-section.png)
+The contact section simply displays contact details of the owner, and also includes a link on the 'click here' paragraph which toggles the contact modal.
+
+## Footer 
+![](assets/screenshots/footer.png)
+The footer includes reinforcement of contact information of the owner on the left, a different version of the logo of the company in the center and social media links in the right corner.
+
+## Contact modal 
+![](assets/screenshots/modal.png)
+The modal is toggled when the user clicks on the 'contact' menu item, or on the 'click here' link. The user is able to submit an enquiry, and upon submission a paragraph appears confirming submission if successful. The form also clears upon submission. 
+
+## Possible future features
 
 
 
