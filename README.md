@@ -463,6 +463,57 @@ Testings of user stories are set on the user’s journey across the website and 
 ![](assets/screenshots/responsive-2.png)
 ![](assets/screenshots/responsive-3.png)
 
+*T10 ACCEPTANCE CRITERIA*
+> As a user, I want to see maps of the local area so I know where to go
+* I want to see a map of the area which is zoomable and has markers when I click on an activity
+
+*T10 RESULT*
+* PASS 
+
+![](assets/screenshots/google-maps.png)
+
+*T11 ACCEPTANCE CRITERIA*
+> As the business owner, I want to highlight the fact that this website is a guide for visitors
+> As the business owner, I want the website to allow and encourage users to engage with the 
+interactive parts of the website to encourage them to visit the area based on its recommendations
+> As the business owner, I want to promote the local area to visitors
+* I want to emphasise the use of the online guide in the language of the site
+* I want the website to display activity results to the user that they wanted 
+
+*T11 RESULT*
+> PASS
+
+![](assets/screenshots/language.png)
+![](assets/screenshots/language-2.png)
+![](assets/screenshots/location-results-after.png)
+
+*T12 ACCEPTANCE CRITERIA*
+> As the business owner, I want to offer our top 5 recommended attractions for each area
+* I want the website to display the top 5 recommendations in correspondance with the markers on the map
+
+*T12 RESULT*
+* PASS
+
+![](assets/screenshots/google-maps.png)
+![](assets/screenshots/location-results-after.png)
+
+*T13 ACCEPTANCE CRITERIA*
+> As the business owner, I want to make visitors feel welcome to the site and in turn, to the local area
+* I want to use welcoming language, including exlamation marks, fun fonts and easy-to-access information
+
+*T13 RESULT*
+* PASS
+
+![](assets/screenshots/info.png)
+
+*T14 ACCEPTANCE CRITERIA*
+> As the business owner, I want to encouage visitors to get in touch with us if they have any questions regarding their day out
+
+*T14 RESULT*
+* PASS
+
+![](assets/screenshots/contact-section.png)
+
 # **Issues & improvements**
 
 # **Deployment**
