@@ -10,48 +10,48 @@ This website is the company's primary marketing method, and offers an online inf
 [The deployed site can be found here.]()
 
 # Table of Contents
-* [UX]()
-    * [i. User Stories]()
-        * [Users]()
-        * [Owners]()
-    * [ii. Strategy]()
-        * [Project inception]()
-        * [Research]()
-    * [iii. Scope]()
-        * [Target audience]()
-        * [Requirements]()
-        * [Limitations]()
-    * [iv. Structure]()
-        * [Architecture]()
-        * [Website flow]()
-    * [v. Skeleton]()
-        * [Wireframes & changes]()
-    * [vi. Surface]()
-        * [Initial considerations]()
-        * [Palette]()
-        * [Typography]()
-        * [Iconography & imagery]()
-* [Features]()
-    * [i. Navigation menu & hero image]()
-    * [ii. Section toggle buttons]()
-    * [iii. Online guide]()
-        * [Interactive buttons]()
-        * [Googe Maps]()
-        * [Location results]()
-    * [iv. Information page]()
-    * [v. Owner profile]()
-    * [vi. Contact section]()
-    * [vii. Footer]()
-    * [vi. Contact modal]()
-    * [Possible future features]()
-* [Responsive design]()
-* [Accessibility]()
-* [Validation]()
-* [Testing]()
-* [Issues & improvements]()
-* [Deployment]()
-* [Technologies & tools]()
-* [Credits & acknowledgements]()
+* [UX](https://github.com/lmw95/MS2-thesunriseproject#ux)
+    * [i. User Stories](https://github.com/lmw95/MS2-thesunriseproject#user-stories)
+        * [Users](https://github.com/lmw95/MS2-thesunriseproject#users)
+        * [Owners](https://github.com/lmw95/MS2-thesunriseproject#owners)
+    * [ii. Strategy](https://github.com/lmw95/MS2-thesunriseproject#ii-strategy)
+        * [Project inception](https://github.com/lmw95/MS2-thesunriseproject#project-inception)
+        * [Research](https://github.com/lmw95/MS2-thesunriseproject#research)
+    * [iii. Scope](https://github.com/lmw95/MS2-thesunriseproject#iii-scope)
+        * [Target audience](https://github.com/lmw95/MS2-thesunriseproject#target-audience)
+        * [Requirements](https://github.com/lmw95/MS2-thesunriseproject#requirements)
+        * [Limitations](https://github.com/lmw95/MS2-thesunriseproject#limitations)
+    * [iv. Structure](https://github.com/lmw95/MS2-thesunriseproject#iv-structure)
+        * [Architecture](https://github.com/lmw95/MS2-thesunriseproject#architecture)
+        * [Website flow](https://github.com/lmw95/MS2-thesunriseproject#website-flow)
+    * [v. Skeleton](https://github.com/lmw95/MS2-thesunriseproject#v-skeleton)
+        * [Wireframes & changes](https://github.com/lmw95/MS2-thesunriseproject#wireframes--changes)
+    * [vi. Surface](https://github.com/lmw95/MS2-thesunriseproject#vi-surface)
+        * [Initial considerations](https://github.com/lmw95/MS2-thesunriseproject#initial-considerations)
+        * [Palette](https://github.com/lmw95/MS2-thesunriseproject#palette)
+        * [Typography](https://github.com/lmw95/MS2-thesunriseproject#typography)
+        * [Iconography & imagery](https://github.com/lmw95/MS2-thesunriseproject#iconography--imagery)
+* [Features](https://github.com/lmw95/MS2-thesunriseproject#features)
+    * [Navigation menu & hero image](https://github.com/lmw95/MS2-thesunriseproject#navigation-menu--hero-image)
+    * [Section toggle buttons](https://github.com/lmw95/MS2-thesunriseproject#section-toggle-buttons)
+    * [Online guide](https://github.com/lmw95/MS2-thesunriseproject#online-guides)
+        * [Interactive buttons](https://github.com/lmw95/MS2-thesunriseproject#interactive-buttons)
+        * [Googe Maps](https://github.com/lmw95/MS2-thesunriseproject#google-maps)
+        * [Location results](https://github.com/lmw95/MS2-thesunriseproject#location-results)
+    * [Information page](https://github.com/lmw95/MS2-thesunriseproject#information-page)
+    * [Owner profile](https://github.com/lmw95/MS2-thesunriseproject#owner-profile)
+    * [Contact section](https://github.com/lmw95/MS2-thesunriseproject#contact-section)
+    * [Footer](https://github.com/lmw95/MS2-thesunriseproject#footer)
+    * [Contact modal](https://github.com/lmw95/MS2-thesunriseproject#contact-modal)
+    * [Possible future features](https://github.com/lmw95/MS2-thesunriseproject#possible-future-improvements)
+* [Responsive design](https://github.com/lmw95/MS2-thesunriseproject#responsive-design)
+* [Accessibility](https://github.com/lmw95/MS2-thesunriseproject#accessibility)
+* [Validation](https://github.com/lmw95/MS2-thesunriseproject#validation)
+* [Testing](https://github.com/lmw95/MS2-thesunriseproject#testing)
+* [Issues & improvements](https://github.com/lmw95/MS2-thesunriseproject#issues--improvements)
+* [Deployment](https://github.com/lmw95/MS2-thesunriseproject#deployment)
+* [Technologies & tools](https://github.com/lmw95/MS2-thesunriseproject#technologies--tools)
+* [Credits & acknowledgements](https://github.com/lmw95/MS2-thesunriseproject#credits--acknowledgements)
 
 # **UX**
 ## **i. User stories**
@@ -551,10 +551,8 @@ interactive parts of the website to encourage them to visit the area based on it
 * **Test**: The contact section link should open the modal.
 * **Result**: PASS - the modal opens when link is clicked.
 
-# **Issues & improvements**
-
-
 # **Deployment**
+
 
 # **Technologies & tools**
 *LANGUAGES*
@@ -608,8 +606,8 @@ This is is a list of the code that has helped me through this project. I also us
 * [Creating a form & integrating emailJS](https://www.emailjs.com/docs/tutorial/creating-contact-form/)
 
 ## **References**
-![Keeping code dry](https://betterprogramming.pub/keeping-your-code-dry-1105377c9c80)
-![BEM - Best practices](http://getbem.com/naming/)
+* [Keeping code dry](https://betterprogramming.pub/keeping-your-code-dry-1105377c9c80)
+* [BEM - Best practices](http://getbem.com/naming/)
 
 ## **Media**
 Image name | Source
@@ -673,6 +671,6 @@ yachts.jpg | [Source](https://unsplash.com/photos/JuFjCDUihGQ)
 yare-valley.jpg | [Source](https://unsplash.com/photos/c3UTJ7odXw0)
 yarmouth.jpg | [Source](https://www.flickr.com/photos/157132713@N05/47589751742/in/photolist-2fvkVc5-Fu1atH-UGgfXG-97rL8o-PtnHZW-4MUzxB-4Y3yRR-24ib5L5-25JzDbe-22KSJj4-PKf4dn-8dKzoA-8dGgy2-XnHMRB-4Nna9n-RJ8VV1-5JyDMy-22VVkDW-2eFXChS-WE7SFZ-4UNmWc-8b48YK-UgAMBP-36P9NL-2aad6aC-Tt4upE-HCjV8V-8dGitn-CFZxZo-PNG5o9-Z64SPd-LLQkjm-XbuDBs-2AF1uS-29q3Cy5-2dLJvQi-ELeZ54-TvUCS1-KzEmrU-21brcJ-NmCA5-4SeFhg-Y4wCNW-Sf1ji-4yYwwD-4Wf44g-4XLtY1-vGnti-kddpxN-24aYtyL)
 
-## **Thanks!**
-The project could not have been possible without the help and support of my mentor Narender, the wonderful Slack community and the wider coding community (praise be to [Stack Overflow](https://stackoverflow.com/)!). Thank you all for your support.
+## **Thank you!**
+Thank you viewing my website for my Milestone 2 Interactive Front End assignment. This project could not have been possible without the help and support of my mentor Narender, the wonderful Slack community and the wider coding community (praise be to [Stack Overflow](https://stackoverflow.com/)!). Thank you all for your support.
 
