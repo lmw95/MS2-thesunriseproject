@@ -51,11 +51,13 @@ window.onload = (event) => {
       $(".modal").addClass("is-active", "is-clipped");
     })
 
+
     // Click event that allows modal to close by cancel
 
     let $closeModalButton = $("#closeModal");
     $closeModalButton.on("click", function(){
       $(".modal").removeClass("is-active", "is-clipped");
+      $(".modal-subtitle").css("display", "none");
     });
 
 
@@ -64,6 +66,7 @@ window.onload = (event) => {
     let $closeModalBackground = $(".modal-background");
     $closeModalBackground.on("click", function() {
       $(".modal").removeClass("is-active", "is-clipped");
+      $(".modal-subtitle").css("display", "none");
     });
 
 
