@@ -312,7 +312,7 @@ The [W3C Markup Validation tool](https://validator.w3.org/) returned one error, 
 
 After this typo was corrected, the W3C validator returned no errors.
 
-![](assets/screenshots/w3c-html-final-report.png)
+![](assets/reports/w3c-html-final-report.png)
 
 ## **W3C CSS Validaton - Inital/final report**
 The [W3C validation tool](https://jigsaw.w3.org/css-validator/) returned errors in the report that are beyond the developer's control as they are part of the [Bulma](https://bulma.io/) CSS framework. There were no errors in the developer's code.
@@ -320,3 +320,39 @@ The [W3C validation tool](https://jigsaw.w3.org/css-validator/) returned errors 
 ![](assets/reports/w3c-css-errors.png)
 
 ## **JShint JavaScript validation**
+I used [jshint](https://jshint.com/) to validate my JavaScript and jQuery code. I only used one validation tool and tested each .js file at a time.
+
+### MAPS.JS
+The report for the [maps.js](https://github.com/lmw95/MS2-thesunriseproject/blob/main/assets/js/maps.js) file returned the following errors:
+
+![](assets/reports/maps-errors.png)
+
+* The variable ```i``` in the ```for()``` loop was not defined.
+* The ```google``` variable in the Google Maps API call was not defined.
+* The API key was an unsed variable.
+
+After fixing the API key variable and ```i``` variable error, the report came back with only the Google variable as undefined, but I do not currently have the knowledge on how to solve that error.
+
+### SCRIPT.JS
+The report for the [script.js](https://github.com/lmw95/MS2-thesunriseproject/blob/main/assets/js/script.js) file returned the follow errors:
+
+![](assets/reports/script-errors.png)
+
+* A handful of missing semi-colons ```;```
+* Lots of ```i``` variables in loops undefined.
+* A redefinition of the ```history``` variable.
+
+I added in the missing semi-colons and declared ```let i;``` in each function where it was missing. I did not understand where the ````history```` error was coming from, but changing the variable to ```histories``` did the trick.
+
+### SENDEMAIL.JS
+The report for [sendEmail.js](https://github.com/lmw95/MS2-thesunriseproject/blob/main/assets/js/sendEmail.js) file returned the following errors:
+
+![](assets/reports/emailjs-errors.png)
+
+* ```sendMail()``` is an unsed function.
+* The variable ```emailjs``` is undefined.
+
+I attempted to fix the ```emailjs``` variable error, but it broke the code allowing the user to send emails to my inbox. I do not currently have the skills to fix this erorr, so I left it be. The same lack of skills led me to leave the ```sendMail()``` error too, as emailJS was working perfectly during testing, despite these two errors.
+
+# **Testing**
+
