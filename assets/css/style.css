@@ -44,15 +44,15 @@ nav.navbar.nav-scrolled {
         .subtitle.info-subtitle,
         .title.tile-title,
         .subtitle.tile-subtitle,
-        .title.info-title {
+        .title.info-title,
+        .title.info-heading {
             font-family: 'Staatliches', cursive;
         }
 
         .company-name,
         .title.hero-title,
         .title.top-picks,
-        .title.modal-title,
-        .title.info-heading {
+        .title.modal-title {
             font-family: 'Alfa Slab One', cursive;
         }
 
@@ -248,7 +248,8 @@ nav.navbar.nav-scrolled {
     }
 
     /*Online guide*/
-    .column.online-guide-wrapper {
+    .column.online-guide-wrapper,
+    .column.info-heading-wrapper {
         border-bottom: 3px solid #60be86;
     }
 
