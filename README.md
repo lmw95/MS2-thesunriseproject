@@ -44,6 +44,7 @@ This website is the company's primary marketing method, and offers an online inf
     * [Possible future features]()
 * [Responsive design]()
 * [Accessibility]()
+* [Validation]()
 * [Testing]()
 * [Issues & improvements]()
 * [Deployment]()
@@ -60,18 +61,17 @@ The website is targeted at anyone who wishes to visit the Sunrise Coast (both lo
 * The website to be easily readable and easy to navigate so that I can find the information that I need
 * To see the various attractions and activities that are available in each location
 * To see images of each location so that I know it's somewhere I would like to visit
-* The website to engage with me and guide me towards my final decision
-* Contact information of the tourism board available in case I have any queries
-* To know the story behind the Sunrise Coast and each location to decide whether I would like to visit the area
+* Contact information of the owner available in case I have any queries
+* To know the story behind the Sunrise Coast to decide whether I would like to visit the area
 * The website to respond to my interaction, without any unresponsive buttons
 * The website to be responsive so I can view it on my phone or tablet if I am out and about
 * To see maps of the local area so I know where to go
 
 ### Owners
 *As the business owner, I want...*
-* Highlight the fact that this website specialises in days out and local events
+* Highlight the fact that this website is a guide for visitors
 * The website to allow and encourage users to engage with the interactive parts of the website to encourage them to visit the area based on its recommendations
-* To promote the local area and advertise local events to visitors
+* To promote the local area to visitors
 * To offer our top 5 recommended attractions for each area
 * To make visitors feel welcome to the site and in turn, to the local area
 * Encouage visitors to get in touch with us if they have any questions regarding their day out
@@ -102,20 +102,19 @@ Potential feature | Importance | Viability | Overall score
 ------------ | ------------- | ------------ | -------------
 *INTERACTIVE GUIDE*
 Clickable activity options | 5 | 5 | 10
-Reset button for guide | 5 | 5 | 10
-Button to 'show all' locations | 3 | 5 | 8
+Reset button for guide | 1 | 4 | 5
+Button to 'show all' locations | 1 | 5 | 8
 Blur effect on unselected activities | 2 | 5 | 7
 Toggle for visitor age range | 3 | 2 | 5
 Toggle/calendar for date range | 3 | 2 | 5
-Toggle for specific location | 2 | 2 | 4
-*LOCATION PAGE*
-Google Map with markers for top 5 attractions | 5 | 5 | 10
-Key using Google Map markers with attraction info (accordian) | 5 | 5 | 10
+Toggle for specific section of the webpage | 5 | 2 | 4
+Zoomable Google Maps with markers for each location | 5 | 5 | 10
+* INFOMATION PAGE *
 Live weather report | 1 | 3 | 4
 Live pollen report | 1 | 3 | 4
 Clickable Google Maps markers that trigger accordians | 1 | 1 | 2
-*VISITOR CENTER*
-Toggleable tabs for each sub-section (company info, history and events) | 5 | 5 | 10
+*OWNER INFORMATION*
+Accordian with the owner's name, backstory and information | 5 | 4 | 10
 *CONTACT MODAL* 
 Submissable enquiry to owner | 5 | 5 | 10
 Clickable submit button | 5 | 5 | 10
@@ -124,24 +123,22 @@ Clickable submit button | 5 | 5 | 10
 I narrowed down the scope to the final interactive features which would be included alongside the HTML/CSS features:
 
 *INTERACTIVE GUIDE*
-* Clickable activity buttons
-* Reset button
-* 'Show all' locations button
-* Blur effect on unselected activities
+* Clickable activity buttons which drops makers on the map
+* Zoomable Google Maps
+* Map locations to display image, name and link to 'top 5' picks from the activities
 
 *LOCATION PAGE*
-* Google Map with markers for top 5 attractions
-* Key using Google Map markers with attraction info (accordian)
+* In the end, this ended up being a toggleable static section using [Bulma tiles](https://bulma.io/documentation/layout/tiles/) to create an inviting layout for the user, and each tile is hoverable so the background colour changes
 
-*VISITOR CENTER*
-* Toggleable tabs for each sub-section (company info, history and events)
+*OWNER INFORMATION*
+* Due to time constraints, this page is also a simple static, toggleable section detailing the owners aim with the website
 
 *CONTACT MODAL*
 * Submissable enquiry to owner
 * Clickable submit button 
 
 ### Limitations
-I realised that I would need to keep the scope quite tight due to time constraints and my JavaScript / jQuery abilities, but this helps to keep the website to the the most important components that users will require. I also only have one previous experience building a website, so there may be limitations in terms of user experience and desgin combined with interactive elements.
+I realised that I would need to keep the scope quite tight due to time constraints and my JavaScript / jQuery abilities, but this helps to keep the website to the the most important components that users will require. I also only have one previous experience building a website, so there may be limitations in terms of user experience and desgin combined with interactive elements. There were also considerable time constraints which meant  alot of elements and ideas were either dropped or rearranged into a new feature.
 
 ## iv. Structure
 ### Architecture
