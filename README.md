@@ -30,17 +30,14 @@ This website is the company's primary marketing method, and offers an online inf
         * [Typography]()
         * [Iconography & imagery]()
 * [Features]()
-    * [i. Initial impressions]()
-    * [ii. Navigation]()
-    * [iii. Information center & sub-sections]()
-        * [Information center design]()
-        * [What is the Sunrise Coast?]()
-        * [What is the Sunrise Project?]()
-        * [Be inspired...]()
-    * [iv. Online guide]()
+    * [i. Navigation menu & hero image]()
+    * [ii. Section toggle buttons]()
+    * [iii. Online guide]()
         * [Interactive quiz]()
-        * [Location page toggling]()
-    * [v. Location pages]()
+        * [Location results]()
+    * [iv. Information page]()
+    * [v. Owner profile]()
+    * [vi. Contact modal]()
     * [Possible future features]()
 * [Responsive design]()
 * [Accessibility]()
@@ -51,8 +48,8 @@ This website is the company's primary marketing method, and offers an online inf
 * [Technologies & tools]()
 * [Credits & acknowledgements]()
 
-# UX
-## i. User stories
+# **UX**
+## **i. User stories**
 The website is targeted at anyone who wishes to visit the Sunrise Coast (both local and external visitors), and aims to provide them with the best location for their day out.
 
 ### Users
@@ -76,7 +73,7 @@ The website is targeted at anyone who wishes to visit the Sunrise Coast (both lo
 * To make visitors feel welcome to the site and in turn, to the local area
 * Encouage visitors to get in touch with us if they have any questions regarding their day out
 
-## ii. Strategy
+## **ii. Strategy**
 ### Project inception
 I was inspired to create this website due to the rise in staycations around the UK following the COVID-19 travel restrictions from 2020 - 2021, and possibly beyond. My hometown sits on a strip of coastline called the 'Sunrise Coast', and has historically been a tourism spot since the Victorian times (since the town was connected to London by railway).
 
@@ -87,7 +84,7 @@ I thought that a guide to the Sunrise Coast would be an ideal project to work on
 ### Research
 To find my own inspiration for the site, I looked at other tourism board's websites for ideas, whilst taking into consideration time restraints and my own JavaScript/jQuery abilities. I was looking out for interactive elements of the websites that I could apply to my own fictional tourism board, and I found myself drawing the most inspiration from [Visit Devon](https://www.visitdevon.co.uk/), [Visit England](https://www.visitengland.com/) and [Discover Lowestoft](https://www.discoverlowestoft.co.uk/).
 
-## iii. Scope
+## **iii. Scope**
 ### Target audience
 The target users of this website are both local people and external visitors who wish to look for some inspiration for their visit to the Sunrise Coast, and as the area is not well-known outside of the county of Suffolk, this means that the website serves as an introduction and a guide to the local area.
 
@@ -100,7 +97,7 @@ Now that I had a scope, I could focus and define exactly what I would need for t
 
 Potential feature | Importance | Viability | Overall score
 ------------ | ------------- | ------------ | -------------
-*INTERACTIVE GUIDE*
+***INTERACTIVE GUIDE***
 Clickable activity options | 5 | 5 | 10
 Reset button for guide | 1 | 4 | 5
 Button to 'show all' locations | 1 | 5 | 8
@@ -109,13 +106,13 @@ Toggle for visitor age range | 3 | 2 | 5
 Toggle/calendar for date range | 3 | 2 | 5
 Toggle for specific section of the webpage | 5 | 2 | 4
 Zoomable Google Maps with markers for each location | 5 | 5 | 10
-* INFOMATION PAGE *
+***INFOMATION PAGE***
 Live weather report | 1 | 3 | 4
 Live pollen report | 1 | 3 | 4
 Clickable Google Maps markers that trigger accordians | 1 | 1 | 2
-*OWNER INFORMATION*
+***OWNER INFORMATION***
 Accordian with the owner's name, backstory and information | 5 | 4 | 10
-*CONTACT MODAL* 
+***CONTACT MODAL*** 
 Submissable enquiry to owner | 5 | 5 | 10
 Clickable submit button | 5 | 5 | 10
 
@@ -140,7 +137,7 @@ I narrowed down the scope to the final interactive features which would be inclu
 ### Limitations
 I realised that I would need to keep the scope quite tight due to time constraints and my JavaScript / jQuery abilities, but this helps to keep the website to the the most important components that users will require. I also only have one previous experience building a website, so there may be limitations in terms of user experience and desgin combined with interactive elements. There were also considerable time constraints which meant  alot of elements and ideas were either dropped or rearranged into a new feature.
 
-## iv. Structure
+## **iv. Structure**
 ### Architecture
 
 *INFORMATION ARCHITECTURE*
@@ -162,7 +159,7 @@ From there, they can toggle each section as they please - each section toggles d
 
 ## v. Skeleton
 ### Initial design 
-The inital design of the website was different to how the deployed product turned out. [These wireframes](https://github.com/lmw95/MS2-thesunriseproject/tree/main/assets/wireframes) demonstrate the original idea - I have described the differences in the wireframes below, [click here]() to see the updated wireframes.
+The inital design of the website was different to how the deployed product turned out. [These wireframes](https://github.com/lmw95/MS2-thesunriseproject/tree/main/assets/wireframes) demonstrate the original idea - I have described the differences in the wireframes below, [click here]() to see the updated wireframes. I used [Balsamiq](https://balsamiq.com/) to build my wireframes.
 
 * **Header**: The webpage title is now centered within a div which is itself also centered in the middle of the hero body. There are now only two items in the navigation menu and the background no longer scrolls, it is just a static image.
 * **Information center**: This is now a toggleable subsection with Bulma tiles containing content about the area.
@@ -172,12 +169,48 @@ The inital design of the website was different to how the deployed product turne
 * **Contact**: The contact section retains the 'Download a brochure' and a button that toggles the contact modal, but there is also an extra section that provides a phone number too. 
 * **Footer**: The footer remains the same, but with the company logo at center.
 
+## **vi. Surface**
+### Initial considerations
+I wanted to the website to be fun yet informative, and match the overall theme of the area (rugged countryside and the sea, but turned readable and bubbly). I used a consistent palette that kept on theme throughout the site, using only three colours.
+
+*COLOUR PALETTE*
+
+![](assets/screenshots/colour-palette.png)
+
+The palette is fresh and provides plenty of contrast, and includes a light green to represent the countryside, a navy blue for the sea and white for section backgrounds. It helps the user to visualise the area they are looking into. I used [Coolors](https://coolors.co/) to generate this palette.
+
+*TYPOGRAPHY*
+
+I used two fonts from [Google Fonts](https://fonts.google.com/):
+* [Staatliches](https://fonts.google.com/specimen/Staatliches?category=Display,Handwriting&query=staat) for subtitles and general content
+* [Alfa Slab One](https://fonts.google.com/specimen/Alfa+Slab+One?category=Display,Handwriting&query=alfa+sla) for headings, as it is bold and packs a punch on the site on first viewing
+
+*ICONOGRAPHY & IMAGERY*
+
+I used icons from [Font Awesome](https://fontawesome.com/) and flaticons from [Flaticon](https://www.flaticon.com/). All images were used to represent the content of the site, and the sources can be found in the [credits]().
+
+# **Features**
+## **Navigation menu & hero image**
+![](assets/screenshots/landing-page-header.png)
+The navigation menu is set to transparent when at the top of the page, but turns green when the user starts to scroll down the page. It is fully responsive and the menu collapses into a burger menu when viewed on mobile and tablet screens. The home item takes the user to the top of the page, and the contact item opens the contact form modal.
+
+Upon entering the website, the hero image of the sunset and the desription in the central box is the first thing the user sees, indicating what the website is for. Underneath the title is the social media links and a bouncing icon which indicates the user to go down the page.
+
+## **Section toggle buttons**
+![](assets/screenshots/toggle-buttons.png)
+The round toggle buttons sit underneath the bouncing icon which indicates the user to page down. When clicked, each button toggles a different section: 'Online guide' toggles the online guide section, 'The sunrise coast' toggles the information section and the 'About the project' section toggles the owner profile.
 
 
+## **Online guide**
 
 
-
-
+* [iii. Online guide]()
+        * [Interactive quiz]()
+        * [Location results]()
+    * [iv. Information page]()
+    * [v. Owner profile]()
+    * [vi. Contact modal]()
+    * [Possible future features]()
 
 
 
