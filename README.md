@@ -514,7 +514,45 @@ interactive parts of the website to encourage them to visit the area based on it
 
 ![](assets/screenshots/contact-section.png)
 
+---
+
+## **EmailJS**
+* **Test**: User should be able to send an email to site owner through contact modal.
+* **Result**: Pass - the emails come through to owner's gmail account.
+---
+* **Test**: The form should reset when the user submits their enquiry.
+* **Result**: PASS - the form input fields clear when form is submitted.
+---
+* **Test**: When the form is successfully submitted, the confirmation message should appear underneath the modal title.
+* **Result**: PASS - the confirmation message appears when form is submitted.
+
+## **Interactive components**
+* **Test**: Navbar menu opens when burger is clicked.
+* **Result**: PASS - burger menu opens as expected.
+---
+* **Test**: Toggle buttons open their corresponding sections.
+* **Result**: PASS - all sections open accordingly.
+---
+* **Test**: Social media links open to external pages.
+* **Result**: PASS - all links open externally.
+---
+* **Test**: The nav menu items should all work - the 'home' item should take the user to the top of the page and the contact item should open the modal. The logo should also take user to top of page.
+* **Result**: PASS - all items work accordingly.
+---
+* **Test**: Each activity button should drop five markers on the map.
+* **Result**: PASS = every activity button works.
+---
+* **Test**: Each activity button should toggle the location result cards content to change according to user interaction.
+* **Result**: PASS - the cards change everytime in accordance to which button is clicked.
+---
+* **Test**: All location card links should take user to external webpage.
+* **Result**: PASS - all links work accordingly.
+---
+* **Test**: The contact section link should open the modal.
+* **Result**: PASS - the modal opens when link is clicked.
+
 # **Issues & improvements**
+
 
 # **Deployment**
 
@@ -531,6 +569,7 @@ interactive parts of the website to encourage them to visit the area based on it
 * [Bulma](https://bulma.io/)
 
 *TOOLS & KITS*
+* [Gmail](https://mail.google.com/mail/u/0/)
 * [Font Awesome](https://fontawesome.com/)
 * [Flaticon](https://www.flaticon.com/)
 * [Google Fonts](https://fonts.google.com/)
@@ -543,11 +582,34 @@ interactive parts of the website to encourage them to visit the area based on it
 * [Unsplash](https://unsplash.com/)
 
 # **Credits & acknowledgements**
-## **Code**
-
-
 ## **Solutions**
+* [Maps markers not showing](https://stackoverflow.com/questions/46935093/google-maps-error-not-a-latlng-or-latlngliteral-invalidvalueerror)
+* [Getting ride of white space on responsive view](https://stackoverflow.com/questions/33285107/how-do-i-get-rid-of-white-space-on-the-right-side)
+* [Images not appearing](https://stackoverflow.com/questions/54509475/css-background-image-url-not-showing-with-error-404-not-found-in-various-bro)
 
+
+## **Code**
+This is is a list of the code that has helped me through this project. I also used code from my lectures with [Code Institute](https://github.com/Code-Institute-Org).
+* [Adding multiple click events in one function](https://www.codegrepper.com/code-examples/javascript/adding+multiple+click+event+listerners+on+a+single+element)
+* [How to use scrollTop()](https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollTop)
+* [Toggle nav menu with burger menu](https://stackoverflow.com/questions/41137114/im-trying-to-use-hamburger-menu-on-bulma-css-but-it-doesnt-work-what-is-wron)
+* [Changes the navbar when the user scrolls down](https://stackoverflow.com/a/41037394)
+* [Changes the navbar colour](https://webdesign.tutsplus.com/tutorials/simple-fade-effect-on-scroll--cms-35166)
+* [Rendering a map](https://developers.google.com/maps/documentation/javascript/adding-a-google-map)
+* [Simple map markers](https://developers.google.com/maps/documentation/javascript/examples/marker-simple)
+* [Auto-center map with multiple markers](https://stackoverflow.com/questions/15719951/auto-center-map-with-multiple-markers-in-google-maps-api-v3)
+* [Looping through array of locations](https://stackoverflow.com/questions/23982996/google-map-only-loads-half-of-its-portion-i-have-used-some-extra-javascript-for)
+* [Close accordian windows](https://codepen.io/motuzik/pen/XWWRQXr)
+* [Help toggling accordion windows](https://stackoverflow.com/questions/41061265/jquery-slide-toggle-close-others-wherever-accordion-type)
+* [Bulma tiles](https://bulma.io/documentation/layout/tiles/)
+* [Bouncy icon effect](https://techstacker.com/how-to-animate-a-bouncing-svg-icon-with-css/)
+* [Pulse effect on icon](https://www.florin-pop.com/blog/2019/03/css-pulse-effect/)
+* [Navbar close on document click](https://stackoverflow.com/questions/47140356/collapse-nav-menu-when-body-is-clicked)
+* [Creating a form & integrating emailJS](https://www.emailjs.com/docs/tutorial/creating-contact-form/)
+
+## **References**
+![Keeping code dry](https://betterprogramming.pub/keeping-your-code-dry-1105377c9c80)
+![BEM - Best practices](http://getbem.com/naming/)
 
 ## **Media**
 Image name | Source
