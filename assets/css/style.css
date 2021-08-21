@@ -47,7 +47,8 @@ nav.navbar.nav-scrolled {
         .title.info-title,
         .title.info-heading,
         .title.owner-info-title,
-        .owner-summary {
+        .owner-summary,
+        .subtitle.modal-subtitle {
             font-family: 'Staatliches', cursive;
         }
 
