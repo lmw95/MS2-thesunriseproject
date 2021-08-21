@@ -243,6 +243,12 @@ The footer includes reinforcement of contact information of the owner on the lef
 The modal is toggled when the user clicks on the 'contact' menu item, or on the 'click here' link. The user is able to submit an enquiry, and upon submission a paragraph appears confirming submission if successful. The form also clears upon submission. 
 
 ## Possible future features
+Some ideas that I would like to implement in the future would be:
+* A weather API displaying the current weather in the local area.
+* A carousel in the information section displaying the list of endangered animals that live locally.
+* The accordian feature in the owner profile as mentioned previously
+* More sections of the website - such as local / upcoming events, information about the actual towns (Lowestoft, Yarmouth, Kessingland and Oulton Broad) and a broader history section. 
+
 
 
 
