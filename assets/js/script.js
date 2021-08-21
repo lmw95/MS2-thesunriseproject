@@ -12,6 +12,18 @@ window.onload = (event) => {
     });
 
 
+    // Function that toggles nav burger - https://stackoverflow.com/a/47756956
+
+  $("#navBurger").on("click", function() {
+    var burger = $('.navbar-burger');
+    var menu = $('.navbar-menu');
+    burger.toggleClass('is-active');
+    menu.toggleClass('is-active');
+    menu.css("text-align", "center");
+    menu.css("background-color", "#60be86");
+  }); 
+
+
     // Click event that opens the modal from the nav menu
 
     let $openModal = $("#toggleModal");
@@ -85,6 +97,7 @@ window.onload = (event) => {
 
   });
 }
+
 
 // Changes content for 'walks'
 
