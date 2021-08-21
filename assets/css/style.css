@@ -228,13 +228,6 @@ nav.navbar.nav-scrolled {
                 opacity: 1;
             }
           }
-
-        /*Hidden sections*/
-        .section.online-guide,
-        .section.info,
-        .section.owner-info {
-            display: none;
-        }
         
 
 /*SPECIFIC SECTION STYLING*/
@@ -331,7 +324,6 @@ nav.navbar.nav-scrolled {
 
     .columns.location-wrapper {
         align-items: center;
-        opacity: 0.4;
     }
 
     .map-location {
