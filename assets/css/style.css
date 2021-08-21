@@ -389,7 +389,6 @@ span.unselected-overlay {
 }
 
 .column.owner-photo {
-    height: 400px;
     background: url(../images/employee3.jpg) no-repeat center center;
     background-size: cover;
 }
