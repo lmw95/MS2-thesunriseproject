@@ -1,3 +1,5 @@
+![](/assets/screenshots/responsive-design.png)
+
 # The Sunrise Project - A Visitors Guide
 > This project is for purely educational purposes only. Content and information within this project may not be 100% accurate and is based on a fictitious tourism board.
 
@@ -20,10 +22,8 @@ This website is the company's primary marketing method, and offers an online inf
     * [iv. Structure]()
         * [Architecture]()
         * [Website flow]()
-        * [Static components]()
-        * [Interactive components]()
     * [v. Skeleton]()
-        * [Wireframes]()
+        * [Wireframes & changes]()
     * [vi. Surface]()
         * [Initial considerations]()
         * [Palette]()
@@ -144,14 +144,40 @@ I realised that I would need to keep the scope quite tight due to time constrain
 ### Architecture
 
 *INFORMATION ARCHITECTURE*
-* The original idea for this website was to have the location pages on separate pages, but after speaking with my mentor, it became apparent that it would be more efficient and sleeker to have the location pages toggled when the activities were selected by the user. Therefore, the website is contained to one page, with static and dynamic display of content depending on user interaction.
+* The original idea for this website was to have the location pages on separate pages, but after speaking with my mentor, it became apparent that it would be more efficient and sleeker to have the top 5 picks toggled when the activities were selected by the user. Therefore, the website is contained to one page, with static and dynamic display of content depending on user interaction.
 
 *ORGANISATION ARCHITECTURE*
-* Header: 
-* Interactive guide:
-* Visitor center:
-* Contact:
-* Footer: 
+* **Header**: The header contains a collapsable navigation menu, the main title of the webpage and links to social media 
+* **Circular tabs (toggle each section)**: These tabs toggle the sections below
+* **Interactive guide**: The guide contains the activity buttons and the Google Maps render, which markers drop onto depending on the activity chosen
+* **Information**: The information section is a static page which displays general information and facts about the area
+* **Owner information**: The owner info section is a static page which describes the owner of the website and her aim
+* **Contact**: The contact section is not toggleable, but displays the methods by which the user can get in touch with the owner, including a link to toggle the contact form modal
+* **Footer**: Social media links, contact information reinforced and the company logo 
+
+### Website flow
+The website is designed on one page with three toggleable sections, one small contact section, the footer and a toggleable contact form modal. The idea is that the user is welcomed with the header (and the hero image of the sunrise) and is indicated downwards by the layout and icons. 
+
+From there, they can toggle each section as they please - each section toggles downwards, and the user is guided down the page by the design and interactive components. The contact section and the footer remain at the bottom of the page as per good UX practices.
+
+## v. Skeleton
+### Initial design 
+The inital design of the website was different to how the deployed product turned out. [These wireframes](https://github.com/lmw95/MS2-thesunriseproject/tree/main/assets/wireframes) demonstrate the original idea - I have described the differences in the wireframes below, [click here]() to see the updated wireframes.
+
+* **Header**: The webpage title is now centered within a div which is itself also centered in the middle of the hero body. There are now only two items in the navigation menu and the background no longer scrolls, it is just a static image.
+* **Information center**: This is now a toggleable subsection with Bulma tiles containing content about the area.
+* **'Meet the team'**: This is now one singular owner with her own toggleable section. Half of the section is her profile picture and the other half is information about her.
+* **'Be inspired'** This section does not exist anymore.
+* **Online guide**: The online guide is now in its own toggable section, but retains a similar layout to the wireframe, only now there are 12 activites for the user to interact with, and each one returns markers on the map. Below the map, there are now five [Bulma cards](https://bulma.io/documentation/components/card/) which return an image, the name of the locations marked on the map, and a link to the company's site. The activity buttons no longer return a location, rather places markers on the map and returns information about the local companies themselves. I found this to a much better experience building but also in the mindset of a user, who would rather see local companies than pages about whole towns.
+* **Contact**: The contact section retains the 'Download a brochure' and a button that toggles the contact modal, but there is also an extra section that provides a phone number too. 
+* **Footer**: The footer remains the same, but with the company logo at center.
+
+
+
+
+
+
+
 
 
 
