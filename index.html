@@ -545,7 +545,7 @@
 <!--Footer end-->
 
 <!--Modal - only active when contact button clicked-->
-<div class="modal" >
+<div class="modal modal-contact">
     <div class="modal-background">
     </div>
     <div class="modal-content">
@@ -553,6 +553,7 @@
           <div class="columns">
               <div class="column is-full">
                   <h1 class="title modal-title is-size-2">Get in touch!</h1>
+                  <h2 class="subtitle modal-subtitle is-size-4" style="display: none;">Thanks! We will be in touch shortly.</h2>
               </div>
           </div>
         <form onsubmit="return sendMail(this);">
@@ -595,6 +596,7 @@
       </form>
     </div>
   </div>
+
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="assets/js/sendEmail.js"></script>
