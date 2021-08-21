@@ -382,7 +382,8 @@ span.unselected-overlay {
 }
 
 .circle-button {
-    border-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
     height: 125px;
     width: 125px;
 }
