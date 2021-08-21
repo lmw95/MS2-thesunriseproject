@@ -18,6 +18,8 @@ function sendMail(contactForm) {
 // Closes modal when submit is pressed
 $(document).ready(function(){
     $("#submitCloseModal").on("click", function() {
-        $(".modal").removeClass("is-active", "is-clipped");
+        $(".modal-subtitle").css("display", "inline");
     });
 });
+
+
