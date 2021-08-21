@@ -230,9 +230,9 @@ nav.navbar.nav-scrolled {
           }
 
         /*Hidden sections*/
-        .online-guide,
-        .info,
-        .owner-info {
+        .section.online-guide,
+        .section.info,
+        .section.owner-info {
             display: none;
         }
         
