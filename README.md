@@ -257,6 +257,10 @@ The website is designed to be fully responsive on screens sized from 320px and u
 # **Accessibility**
 I wanted to ensure that my website would be able to be accessabile to a wide as an audience as possible, taking into consideration screen readers, colourblindness and other sight conditions. 
 
+*SCREEN READERS*
+
+To ensure that my website is fully accessbile to users with screen readers, I ensured that all the ```<img>``` tags had an ```alt``` property which would allow the user to know what the image depicted.
+
 *COLOURBLINDNESS* 
 
 When choosing my colour palette, I chose colours that would still provide contrast to users who have sight conditions that affect seeing colour. This process was done using [Coolors](https://coolors.co/) colourblindness tester, as seen below the colours I selected still provide a contrast and would be readable for a user with these conditions:
@@ -282,11 +286,16 @@ When choosing my colour palette, I chose colours that would still provide contra
 ![](assets/screenshots/protanomaly.png)
 
 **Deuteranomaly**
+
 ![](assets/screenshots/deuteranomaly.png)
 
 **Tritanomaly**
+
 ![](assets/screenshots/tritanomaly.png)
 
 **Achromatomaly**
+
 ![](assets/screenshots/achromatomaly.png)
+
+
 
