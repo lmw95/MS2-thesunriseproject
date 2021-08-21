@@ -249,12 +249,44 @@ Some ideas that I would like to implement in the future would be:
 * The accordian feature in the owner profile as mentioned previously
 * More sections of the website - such as local / upcoming events, information about the actual towns (Lowestoft, Yarmouth, Kessingland and Oulton Broad) and a broader history section. 
 
+# **Responsive design**
+The website is designed to be fully responsive on screens sized from 320px and upwards. I achieved this by utilising media queries in my [stylesheet](https://github.com/lmw95/MS2-thesunriseproject/blob/main/assets/css/style.css). As seen in the [Am I Responsive?](http://ami.responsivedesign.is/) viewer, the website is able to be viewed on all popular screen sizes. See responsive testing [here]().
 
+![](assets/screenshots/responsive-design.png)
 
+# **Accessibility**
+I wanted to ensure that my website would be able to be accessabile to a wide as an audience as possible, taking into consideration screen readers, colourblindness and other sight conditions. 
 
+*COLOURBLINDNESS* 
 
+When choosing my colour palette, I chose colours that would still provide contrast to users who have sight conditions that affect seeing colour. This process was done using [Coolors](https://coolors.co/) colourblindness tester, as seen below the colours I selected still provide a contrast and would be readable for a user with these conditions:
 
+**Protanopia**
 
+![](assets/screenshots/protanopia.png)
 
+**Deuteranopia**
 
+![](assets/screenshots/deuteranopia.png)
+
+**Tritanopia**
+
+![](assets/screenshots/tritanopia.png)
+
+**Achromatopsia**
+
+![](assets/screenshots/archromatopsia.png)
+
+**Protanomaly**
+
+![](assets/screenshots/protanomaly.png)
+
+**Deuteranomaly**
+![](assets/screenshots/deuteranomaly.png)
+
+**Tritanomaly**
+![](assets/screenshots/tritanomaly.png)
+
+**Achromatomaly**
+![](assets/screenshots/achromatomaly.png)
 
