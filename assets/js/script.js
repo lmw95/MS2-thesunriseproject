@@ -3,6 +3,7 @@ window.onload = (event) => {
 
 // All click events / jQuery code
 
+
   //Click event where navbar background fades in when user scrolls - https://stackoverflow.com/a/41037394
 
   $(function () {
@@ -12,16 +13,27 @@ window.onload = (event) => {
     });
 
 
-    // Function that toggles nav burger - https://stackoverflow.com/a/47756956
+  // Function that toggles nav burger - https://stackoverflow.com/a/47756956
 
-  $("#navBurger").on("click", function() {
-    var burger = $('.navbar-burger');
-    var menu = $('.navbar-menu');
-    burger.toggleClass('is-active');
-    menu.toggleClass('is-active');
+  $("#navBurger").on("click", function(event) {
+    var burger = $(".navbar-burger");
+    var menu = $(".navbar-menu");
+    burger.toggleClass("is-active");
+    menu.toggleClass("is-active");
     menu.css("text-align", "center");
     menu.css("background-color", "#60be86");
+    event.stopPropagation();
   }); 
+
+
+  // Closes navbar when document is clicked - https://stackoverflow.com/questions/47140356/collapse-nav-menu-when-body-is-clicked
+
+  $(document).click(function(event) { 
+    if($('.is-active').length){
+       $(".navbar-menu").toggleClass("is-active");
+       $(".navbar-burger").toggleClass("is-active");
+    }
+  });
 
 
     // Click event that opens the modal from the nav menu
@@ -31,7 +43,9 @@ window.onload = (event) => {
       $(".modal").addClass("is-active", "is-clipped");
     });
 
+
     // Click event that opens to modal from the contact section
+
     let $openModalOption = $("#toggleModalOption");
     $openModalOption.on("click", function() {
       $(".modal").addClass("is-active", "is-clipped");
@@ -88,7 +102,9 @@ window.onload = (event) => {
         $("#onlineGuide").slideUp(500);
     });
 
+
     // Click event that toggles the owner section to appear
+
     $("#circleButtonOwner").on("click", function() {
       $("#ownerSection").slideDown(100);
       $("#infoSection").slideUp(500);
