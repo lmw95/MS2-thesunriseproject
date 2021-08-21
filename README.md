@@ -7,6 +7,8 @@ With the event of COVID-19 resulting in the dramatic increase in staycations, Th
 
 This website is the company's primary marketing method, and offers an online information center for the Sunrise Coast, complete with an interactive guide to help visitors make the most of their day out. As the area advertised is not well-known outside of Suffolk, this means that the website will serve as an introduction as well as a guide to the local area.
 
+[The deployed site can be found here]()
+
 # Table of Contents
 * [UX]()
     * [i. User Stories]()
@@ -355,4 +357,104 @@ The report for [sendEmail.js](https://github.com/lmw95/MS2-thesunriseproject/blo
 I attempted to fix the ```emailjs``` variable error, but it broke the code allowing the user to send emails to my inbox. I do not currently have the skills to fix this erorr, so I left it be. The same lack of skills led me to leave the ```sendMail()``` error too, as emailJS was working perfectly during testing, despite these two errors.
 
 # **Testing**
+
+# **Issues & improvements**
+
+# **Deployment**
+
+# **Technologies & tools**
+*LANGUAGES*
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)
+* [CSS3](https://en.wikipedia.org/wiki/CSS)
+* [JavaScript ES6](https://en.wikipedia.org/wiki/JavaScript)
+
+*LIBRARIES*
+* [jQuery](https://jquery.com/)
+
+*FRAMEWORKS*
+* [Bulma](https://bulma.io/)
+
+*TOOLS & KITS*
+* [Font Awesome](https://fontawesome.com/)
+* [Flaticon](https://www.flaticon.com/)
+* [Google Fonts](https://fonts.google.com/)
+* [Balsamiq](https://balsamiq.com/)
+* [EmailJS](https://www.emailjs.com/)
+* [W3C Markup Validator](https://validator.w3.org/)
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+* [Google Maps API](https://developers.google.com/maps/documentation/javascript/overview)
+* [Flickr](https://www.flickr.com/)
+* [Unsplash](https://unsplash.com/)
+
+# **Credits & acknowledgements**
+## **Code**
+
+
+## **Solutions**
+
+
+## **Media**
+Image name | Source
+-----------|--------
+africa-alive.jpg | [Source](https://unsplash.com/photos/z3oQQV37Jns)
+benacre.jpg | [Source](https://unsplash.com/photos/xneM68SDfok)
+berney-marshes.jpg | [Source](https://unsplash.com/photos/yKyxRKjLJ2E)
+blun-to-flix.jpg | [Source](https://unsplash.com/photos/rdRYgxnSsLE)
+breydon-water.jpg | [Source](https://unsplash.com/photos/1vo8DUgy9x4L)
+broadview.jpg | [Source](https://unsplash.com/photos/WrueFKpTlQs)
+burgh-castle.jpg | [Source](https://unsplash.com/photos/Z0z67PEJxIk)
+carboot.jpg | [Source](https://unsplash.com/photos/-aeP54r2ibQ)
+ea-map.png | [Source](https://mir-s3-cdn-cf.behance.net/project_modules/disp/29efe516634031.562af20f36353.png)
+elizabethan.jpg | [Source](https://unsplash.com/photos/_IanZg5nnbw)
+employee3.jpg | [Source](https://unsplash.com/photos/_H6wpor9mjs)
+escape-room.jpg | [Source](https://unsplash.com/photos/OmaFZNYOy6E)
+fair-ground.jpg | [Source](https://unsplash.com/photos/xg8GovNgwd8)
+farm-shop.jpg | [Source](https://unsplash.com/photos/IFGVE61AAno)
+first-lights.jpg | [Source](https://unsplash.com/photos/hzgs56Ze49s)
+go-karting.jpg | [Source](https://unsplash.com/photos/srpE-a5W418)
+gorleston.jpg | [Source](https://www.flickr.com/photos/37348193@N08/8727007468)
+harrier.jpg | [Source](https://unsplash.com/photos/3HNy-2FXnS0)
+hatfield.jpg | [Source](https://unsplash.com/photos/szCvt1gP2d4)
+hippodrome.jpg | [Source](https://unsplash.com/photos/pMsebqxRnxs)
+iconic.jpg | [Source](https://unsplash.com/photos/yLUvnCFI500)
+joyland.jpg | [Source](https://unsplash.com/photos/3uI-ZzbnJs0)
+kessingland-2.jpg | [Source](https://www.flickr.com/photos/miniokpet/8485937924/in/photolist-dVSDGy-96VjSf-76x8F7-doz8xe-dm3vNU-96Sgqi-76wWoU-5fueyy-2NF9Dp-2gBdurN-h3J5Hs-3hyrpN-fWP2P-pjdvcL-bUC7UN-2czxLRo-aEzsH1-bUC9oA-bUC8hS-dVSEfu-dVM2YT-dVSDpd-h3JFnC-h3TNRD-dVM4f8-o9JRLU-APhPdM-dVSCVN-h3JFg5-bUC89s-h3Uc1X-2bsa7dY-fWP3c-dVM3kR-h3Q6vg-h3JFnN-h3JFnY-dVM3ue-h3JFnh-dVSDxA-h3JFns-4WDNT8-h3U31V-2kxR9aR-bUC8vU-2kS3p6w-GWst4h-44cJPh-dVM2mP-bm2eWw)
+latitude.jpg | [Source](https://www.flickr.com/photos/49733413@N04/5950829793/in/photolist-a4RynF-8kgyp6-mnfJg-2ghnsX-6HkfTp-WJP5Cu-2kJkyE-8kgFaH-8kgwSk-2kJngG-oL9aBw-cycjx3-8kgjKc-K9yfer-a4Uszh-8p7RLa-8kjv6d-a5HVgw-8oXAdv-6Mh8XK-6HkuYz-8kiCRW-6Vpkog-6Mh8W6-8kfKWp-8m2bjr-2kJjP7-8kivPC-2kDZwe-8kufAH-2kE17z-2kJjrU-2kJkmf-2grmCd-8kj11h-pXuPYr-6Hpjjb-6Hkwmp-2kDZ4P-8qtsQ5-8Es9Rs-oBLbRS-8kiYJY-b7SeEa-2kE1AD-8kjRhY-8kjQsL-6Hkm1x-2kJnuA-8kgAbi)
+lighthouse.jpg | [Source](https://www.flickr.com/photos/stuartmccallum/3977116880/in/photolist-74rLhG-9ZNDxz-fjQeMm-2edUFwo-coL5yf-2eo4mEg-gfrEC-gfr7b-cubsVw-LzacWs-35UCKS-dEGfaj-rnfhdq-bFLECn-LkDbh9-btbkKN-69WLUu-xmA65J-oTs9WX-oo2NJZ-knUaic-Wb1ivk-2kYfmQC-oRAwmH-8mxD2d-2a9et1h-7DLd8k-JGy9dq-btkhL9-bsH3TC-8Do6rK-s4G4ne-s1iSLV-o7gSWW-BJsLbH-ooNGfx-mmT19-BHhAq6-LaV1Fp-mZRXFp-2knjtiW-9n8vCy-btk7Ad-2kEjZZ4-moRVEj-2m9BBsC-mjz3pv-7VSqSj-2jLvf1J-65Umfx)
+lound.jpg | [Source](https://unsplash.com/photos/MFdS8ukYxLU)
+lowestoft-harbour.jpg | [Source](https://www.flickr.com/photos/jerrywoodford/4980081104/in/photolist-8A5dBj-2ggE6yi-2ggDVYp-2ggE6k7-8A27pP-2ggEoPK-8A27Ct-2ggE6bQ-2ggE62g-2ggEpQH-2ggE6Sp-2ggE5LG-2ggDW56-rFSkZM-28jDh54-2jvHeQo-oQ3E5a-oQjB6X-wwm3Jx-RXed6j-SDNWUq-4zs5Jw-oxPSZP-85TKKV-KtcciM-2jhdkxF-9AcEpe-2juH94i-2jgzMDc-2jheEQN-zidJu7-2iPfTeu-2jvt4Ru-2jvwrbR-28jCYG8-UguQPg-m9USvS-oQ3Lyn-b28wHc-oxQ4Ho-2itzqJh-7hoLzV-TMpbCf-qVEs1S-2jhd5XJ-o7gPeL-otPTvz-opQJ1r-paKjbf-62RRkZ)
+lowestoft-history.jpg | [Source](https://unsplash.com/photos/m05oq_Ppjzc)
+lowestoft.jpg | [Source](https://pixabay.com/photos/lowestoft-beach-england-seaside-2382102/)
+marina.jpg | [Source](https://unsplash.com/photos/m3th3rIQ9-w)
+market.jpg | [Source](https://unsplash.com/photos/FVRgbf99V6k)
+ness-point.jpg | [Source](https://www.flickr.com/photos/131620710@N07/32714640268/in/photolist-RQT5MS-XweG18-xdQgAT-SLwijo-2iyuSCy-2iYPFxj-2jM41mW-L8jANE-2fCkJyu-2jdzmKD-2kBLQ55-2kCRApY-EfajQ6-2mad5uT-XZ421T-YBz1gh-9zYQaQ-2hq7VEp-YW8X73-8PsW6Y-JgkJ76-cYWmzJ-aBAjWj-X3HJeh-p5hcCm-kvbM8c-axVjD4-Ej6Nhh-2mbndGA-2di4d71-2jeJ7NR-XVKLM3-2mcjRSH-2jsUjdr-2g6obRz-2iLiW7Y-2m3L2ww-2gTRHmA-2imh2dB-6qBx4k-2g8SSX7-2iZnduH-2gixjJN-RN2h4w-HQLY5w-qNXyKA-UARWhk-y8uC3G-5C6vbg-tgHCaT)
+nicholas-everitt.jpg | [Source](https://unsplash.com/photos/E0BmfKjeQrw)
+north.cove.jpg | [Source](https://unsplash.com/photos/Sw9jEODtjhU)
+ob.jpg | [Source](https://www.flickr.com/photos/62424671@N03/36286563226/in/photolist-Xhw83s-29nEvjB-pqmgYd-2iFaTi1-2k7iR3V-Th9egw-2jz5Z3r-2kQ4m7F-29h6AsP-2kGUCsZ-6rTYec-JuBudD-23r3md2-JmTuJq-2iaP4An-2ghKmeP-2j6VaSY-JAaV2R-S4ecc9-Su6ZEB-Chatm4-2isvsPE-CMqBPu-2iKzyxD-2hiJJwx-2hsAWn2-22zKDes-2bS2HJ7-VcQmTZ-MpgiMr-2gdqDcK-22V6Kbw-2iEShAd-2m3RuwH-2iywNtW-fMaZG7-TrYzr9-29XHshb-22TXyr6-2kUxkfX-JJGR3s-2j3FtnU-dQ8qEW-2iqMrVW-29wZFqL-2237LJh-Q28cKL-2kxrXpS-2kp5dkX-GsMLf)
+ocean-rooms.jpg | [Source](https://unsplash.com/photos/r3XvSBEQQLo)
+old-trawler.jpg | [Source](https://unsplash.com/photos/7BmvnQEh30U)
+pakefield.jpg | [Source](https://www.flickr.com/photos/141706070@N06/45198421752)
+pettits.jpg | [Source](https://unsplash.com/photos/ueNZfERaaHI)
+placeholder.jpg | [Source](http://www.solidbackgrounds.com/1280x960-battleship-grey-solid-color-background.html)
+players.jpg | [Source](https://unsplash.com/photos/p6rNTdAPbuk)
+powerboat.jpg | [Source](https://www.flickr.com/photos/37348193@N08/7326664898/in/photolist-2h4mJpb-2h4j8ch-2h4jaB7-2h4j32H-rtFs6q-2h4j2zF-2kwwJH1-2h4mFfk-L6RtCP-2h4mP46-2h4mKbB-2h4mE6m-L6Rvgt-2h4mFQJ-LBjtij-L6FmQ1-LBjxoo-L6EVPQ-2h4j9Gb-2asscgz-LVQMxZ-LBjBf1-LVQnKD-L6RpZr-ozceq9-oRqa2k-ozcpsU-ozcmuj-ozcGUX-oPE2Do-ozc92A-ozcjqm-ozcfqA-ozd1K6-ozc37i-oRq1TX-ozc33S-ozcxoy-ozbQgK-bYafRq-6LS9UW-5bnNtU-c9dT5j-5bivWv-c9sUpN-5c3z4M-car5dA-5c3kRR-5c7FT5-5c7DAN)
+quasar.jpg | [Source](https://unsplash.com/photos/Sp0B6PR95EI)
+redwings.jpg | [Source](https://unsplash.com/photos/TKw5ExsqLSk)
+river-center.jpg | [Source](https://unsplash.com/photos/zHg5TXgVoGQ)
+river-tours.jpg | [Source](https://unsplash.com/photos/XV6MHFz8MtQ)
+rollercoaster.jpg | [Source](https://unsplash.com/photos/yEv3yD8j4J8)
+sailing.jpg | [Source](https://unsplash.com/photos/kmo2dXfhvy8)
+seal-pup.jpg | [Source](https://unsplash.com/photos/giZJHm2m9yY)
+sealife.jpg | [Source](https://unsplash.com/photos/wkZ8haSnAYA)
+suffolk-coast-path.jpg | [Source](https://unsplash.com/photos/zb8yjRyoMhc)
+sunrise.jpg | [Source](https://www.flickr.com/photos/131616583@N08/47072950232/in/photolist-2eHFb7d-bdWwXP-EPAhGb-rhj9s3-ZjQnh1-74Kr6b-MiDSLk-7RG33C-Zq7hhQ-Xwvudv-YoC6jq-22Amnbn-bBhywH-28VwZM6-YQttEk-RQT5MS-2dpwXRB-Zn6Jrf-EQ98uE-ceRcNN-DiDSQx-Yz4tMG-5rmoXb-8up6Fd-28XuHjD-Lsu3YG-gTzMUE-Dw4idA-22NyJMA-NmnMKH-eh6h89-Ngpv6t-R2EDht-2fwCotw-gj7L9q-jKHSoY-egpne5-D1LKBi-bet7hD-gfKRe-RN2h4w-5rmpjw-p35CzZ-22zBrhp-GhqXv-JWpo4T-6XPbLq-23TzQ7d-MzenUo-D7fNZA)
+swallowtail.jpg | [Source](https://butterfly-conservation.org/butterflies/swallowtail)
+the-commodore.jpg | [Source](https://unsplash.com/photos/VJXLzQi5TlE)
+water-vole.jpg | [Source](https://unsplash.com/photos/wO1SCsmlIAk)
+yachts.jpg | [Source](https://unsplash.com/photos/JuFjCDUihGQ)
+yare-valley.jpg | [Source](https://unsplash.com/photos/c3UTJ7odXw0)
+yarmouth.jpg | [Source](https://www.flickr.com/photos/157132713@N05/47589751742/in/photolist-2fvkVc5-Fu1atH-UGgfXG-97rL8o-PtnHZW-4MUzxB-4Y3yRR-24ib5L5-25JzDbe-22KSJj4-PKf4dn-8dKzoA-8dGgy2-XnHMRB-4Nna9n-RJ8VV1-5JyDMy-22VVkDW-2eFXChS-WE7SFZ-4UNmWc-8b48YK-UgAMBP-36P9NL-2aad6aC-Tt4upE-HCjV8V-8dGitn-CFZxZo-PNG5o9-Z64SPd-LLQkjm-XbuDBs-2AF1uS-29q3Cy5-2dLJvQi-ELeZ54-TvUCS1-KzEmrU-21brcJ-NmCA5-4SeFhg-Y4wCNW-Sf1ji-4yYwwD-4Wf44g-4XLtY1-vGnti-kddpxN-24aYtyL)
+
+## **Thanks!**
+The project could not have been possible without the help and support of my mentor Narender, the wonderful Slack community and the wider coding community (praise be to [Stack Overflow](https://stackoverflow.com/)!). Thank you all for your support.
 
