@@ -200,8 +200,8 @@ The navigation menu is set to transparent when at the top of the page, but turns
 Upon entering the website, the hero image of the sunset and the desription in the central box is the first thing the user sees, indicating what the website is for. Underneath the title is the social media links and a bouncing icon which indicates the user to go down the page.
 
 ## **Section toggle buttons**
-![](assets/screenshots/toggle-buttons.png)
-The round toggle buttons sit underneath the bouncing icon which indicates the user to page down. When clicked, each button toggles a different section: 'Online guide' toggles the online guide section, 'The sunrise coast' toggles the information section and the 'About the project' section toggles the owner profile.
+![](assets/screenshots/toggle-tabs.png)
+The semi-circle toggle buttons sit underneath the bouncing icon which indicates the user to page down. When clicked, each button toggles a different section: 'Online guide' toggles the online guide section, 'The sunrise coast' toggles the information section and the 'About the project' section toggles the owner profile.
 
 
 ## **Online guide**
@@ -297,5 +297,26 @@ When choosing my colour palette, I chose colours that would still provide contra
 
 ![](assets/screenshots/achromatomaly.png)
 
+*LIGHTHOUSE REPORT*
 
+Using Google Chrome's Lighthouse feature, I was able to check the final accessibility score for the website on both mobile and desktop, which was 100%: 
 
+![](assets/screenshots/accessibility-report-desktop.png)
+![](assets/screenshots/accessibility-report-mobile.png)
+
+# **Validation**
+## **W3C Markup Validaton - Initial report**
+The [W3C Markup Validation tool](https://validator.w3.org/) returned one error, which turned out to be caused be a typo in the tag name.
+
+![](assets/reports/w3c-html-errors.png)
+
+After this typo was corrected, the W3C validator returned no errors.
+
+![](assets/screenshots/w3c-html-final-report.png)
+
+## **W3C CSS Validaton - Inital/final report**
+The [W3C validation tool](https://jigsaw.w3.org/css-validator/) returned errors in the report that are beyond the developer's control as they are part of the [Bulma](https://bulma.io/) CSS framework. There were no errors in the developer's code.
+
+![](assets/reports/w3c-css-errors.png)
+
+## **JShint JavaScript validation**
