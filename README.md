@@ -7,7 +7,7 @@ With the event of COVID-19 resulting in the dramatic increase in staycations, Th
 
 This website is the company's primary marketing method, and offers an online information center for the Sunrise Coast, complete with an interactive guide to help visitors make the most of their day out. As the area advertised is not well-known outside of Suffolk, this means that the website will serve as an introduction as well as a guide to the local area.
 
-[The deployed site can be found here]()
+[The deployed site can be found here.]()
 
 # Table of Contents
 * [UX]()
@@ -357,6 +357,111 @@ The report for [sendEmail.js](https://github.com/lmw95/MS2-thesunriseproject/blo
 I attempted to fix the ```emailjs``` variable error, but it broke the code allowing the user to send emails to my inbox. I do not currently have the skills to fix this erorr, so I left it be. The same lack of skills led me to leave the ```sendMail()``` error too, as emailJS was working perfectly during testing, despite these two errors.
 
 # **Testing**
+## **Introduction**
+The testing for this project was done manually throughout the development of the site. Each new feature was built, tested then finalised. The following were used throughout the process:
+* ```console.log()``` and Google Chrome Developer Tools 
+* Manual testing throughout development
+
+## **Bugs & fixes**
+This is a list of bugs in the markup and interactivity that were uncovered during the development process:
+
+* The owner photo section was stuck at 400px due to the element having a height property of ```height: 400px;``` After removing this property, the bug was resolved.
+* In addition to this bug, when viewing on a mobile screen, after the height property had been removed, the photo was invisible. I had to re-insert the ```height: 400px;``` to the mobile media queries and this resolved the bug.
+* At one point, the owner image was not displaying. This is because it had not been pushed to GitHub. After being pushed, the bug was resolved. 
+* There was a ```400``` error appearing in the console related to emailJS. I discovered that the ```service_id``` was incorrectly written. After being corrected, emailJS worked as expected and the error in the console disappeared.
+* Post-deployment, the images were not displaying on the site. This was due to incorrect file path being used. I changed the file paths from absolute ```/assets/images/file.jpg``` to relative ```.../images/file.jpg``` and this solved the bug.
+* The page content was completely out of alignment post-deployment due to ```display``` property not being set to ```absolute```. After this was corrected, the bugs were resolved.
+* The Bulma cards were overlapping each other on mobile and tablet view due to leftover inline styling. After this was removed, the issue was resolved.
+* The location results origianally sat in a column, but the heights would jump about and become uneven when the content changed, providing a decreased user experience. To solve this issue, I wrapped the location results in Bulma cards components which improved the aesthetics significantly.
+* Post-deployment there were a few issues that required inline styling as a last resort. 1) All toggleable sections were showing despite css styling declaring ```display: none;```, and due to time constraints I resorted to inline styling which solved the bug. The same happend with the location results that were not semi-opaque despite having their ```opacity``` property set as ```0.4```, which was also resolved using inline styling.
+* The whole wrapper that contained the location markers were not appearing correctly with appropriate responsiveness after being toggled. To resolve this issue, I kept the ```display``` of the wrapper before being toggled as normal but changed the ```opacity``` to ```0.4``` with a new pulsing overlay to encourage the user to interact with the guide. This in turn created a new feature which I was very happy with as it looked a lot more professional than before and the cards kept their responsive styling.
+* There was a bug with the ```opacity``` of the location result wrapper which was causing further issues with the rest of the markup. The links to the company websites were still appearing as ghost/invisible links in the contact section and it was creating a confusing user experience. This issue was resolved with the above solution.
+
+## **User stories**
+### **Introduction**
+Testings of user stories are set on the user’s journey across the website and cover all interactive elements, as well as the responsiveness of the website across different devices and browsers. All user stories were tested manually.
+
+> As a user, I want the website to immediately communicate its purpose so I know what to expect from the site
+
+*T01 ACCEPTANCE CRITERIA*
+* The header displays an enticing background, and the content conveys to me that I know what this website is about through language and imagery.
+
+*T01 RESULT*
+* PASS
+
+![](assets/screenshots/landing-page-header.png)
+
+> As a user, I want the website to be easily readable and easy to navigate so that I can find the information that I need
+
+*T02 ACCEPTANCE CRITERIA*
+* The navigation menu must be present and functioning
+* There must be contrast between font and backgrounds so I can see what I am looking at 
+* There must be indication guiding me down the site through the navigation menu or icons on the page
+
+*T02 RESULT*
+* PASS 
+
+![](assets/screenshots/navbar-good-mobile.png)
+![](assets/screenshots/navbar-good-desktop.png)
+
+*T03 ACCEPTANCE CRITERIA*
+> As a user, I want to see the various attractions and activities that are available in each location
+* I want to see the companies that offer these attractions and services depending on which acitivity I want 
+
+*T03 RESULT*
+* PASS
+
+![](assets/screenshots/location-results-after.png)
+
+*T04 ACCEPTANCE CRITERIA*
+> To see images of each location so that I know it's somewhere I would like to visit
+* I want to get an idea of the place that I am visiting and the places I could potentially visit
+
+*T04 RESULT*
+* PASS
+
+![](assets/screenshots/location-results-after.png)
+
+*T05 ACCEPTANCE CRITERIA*
+> As a user, I want contact information of the owner available in case I have any queries
+* I want to see email, phone and some where where I can submit an enquiry should I need
+* I want confirmation that my message has been sent 
+
+*T05 RESULTS*
+
+![](assets/screenshots/contact-section.png)
+![](assets/screenshots/modal.png)
+![](assets/screenshots/modal-confirmation.png)
+
+*T06 ACCEPTANCE CRITERIA*
+> As a user, I want to know the story behind the Sunrise Coast to decide whether I would like to visit the area
+* I want to see the history
+* I want to see some facts
+* I want to see some general information
+
+*TO7 RESULT*
+* PASS
+
+![](assets/screenshots/info.png)
+
+*T08 ACCEPTANCE CRITERIA*
+> As a user, I want the website to respond to my interaction, without any unresponsive buttons
+* Whwn I click on the buttons I expect them to work
+
+*T08 RESULT*
+* PASS 
+
+*T09 ACCEPTANCE CRITERIA*
+> As a user, I want the website to be responsive so I can view it on my phone or tablet if I am out and about
+* I want to be able to view it on my phone
+* I want to be able to view it on my tablet
+* I want to be able to view it on my laptop
+
+*T09 RESULT*
+
+![](assets/screenshots/responsive-1.png)
+![](assets/screenshots/responsive-2.png)
+![](assets/screenshots/responsive-3.png)
 
 # **Issues & improvements**
 
