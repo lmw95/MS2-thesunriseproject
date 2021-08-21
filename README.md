@@ -57,6 +57,8 @@ This website is the company's primary marketing method, and offers an online inf
 ## **i. User stories**
 The website is targeted at anyone who wishes to visit the Sunrise Coast (both local and external visitors), and aims to provide them with the best location for their day out.
 
+[Back to top](https://github.com/lmw95/MS2-thesunriseproject#the-sunrise-project---a-visitors-guide)
+
 ### Users
 *As a user, I want...*
 * The website to immediately communicate its purpose so I know what to expect from the site
@@ -78,6 +80,8 @@ The website is targeted at anyone who wishes to visit the Sunrise Coast (both lo
 * To make visitors feel welcome to the site and in turn, to the local area
 * Encouage visitors to get in touch with us if they have any questions regarding their day out
 
+[Back to top](https://github.com/lmw95/MS2-thesunriseproject#the-sunrise-project---a-visitors-guide)
+
 ## **ii. Strategy**
 ### Project inception
 I was inspired to create this website due to the rise in staycations around the UK following the COVID-19 travel restrictions from 2020 - 2021, and possibly beyond. My hometown sits on a strip of coastline called the 'Sunrise Coast', and has historically been a tourism spot since the Victorian times (since the town was connected to London by railway).
@@ -88,6 +92,8 @@ I thought that a guide to the Sunrise Coast would be an ideal project to work on
 
 ### Research
 To find my own inspiration for the site, I looked at other tourism board's websites for ideas, whilst taking into consideration time restraints and my own JavaScript/jQuery abilities. I was looking out for interactive elements of the websites that I could apply to my own fictional tourism board, and I found myself drawing the most inspiration from [Visit Devon](https://www.visitdevon.co.uk/), [Visit England](https://www.visitengland.com/) and [Discover Lowestoft](https://www.discoverlowestoft.co.uk/).
+
+[Back to top](https://github.com/lmw95/MS2-thesunriseproject#the-sunrise-project---a-visitors-guide)
 
 ## **iii. Scope**
 ### Target audience
@@ -142,6 +148,8 @@ I narrowed down the scope to the final interactive features which would be inclu
 ### Limitations
 I realised that I would need to keep the scope quite tight due to time constraints and my JavaScript / jQuery abilities, but this helps to keep the website to the the most important components that users will require. I also only have one previous experience building a website, so there may be limitations in terms of user experience and desgin combined with interactive elements. There were also considerable time constraints which meant  alot of elements and ideas were either dropped or rearranged into a new feature.
 
+[Back to top](https://github.com/lmw95/MS2-thesunriseproject#the-sunrise-project---a-visitors-guide)
+
 ## **iv. Structure**
 ### Architecture
 
@@ -162,6 +170,8 @@ The website is designed on one page with three toggleable sections, one small co
 
 From there, they can toggle each section as they please - each section toggles downwards, and the user is guided down the page by the design and interactive components. The contact section and the footer remain at the bottom of the page as per good UX practices.
 
+[Back to top](https://github.com/lmw95/MS2-thesunriseproject#the-sunrise-project---a-visitors-guide)
+
 ## v. Skeleton
 ### Initial design 
 The inital design of the website was different to how the deployed product turned out. [These wireframes](https://github.com/lmw95/MS2-thesunriseproject/tree/main/assets/wireframes) demonstrate the original idea - I have described the differences in the wireframes below, [click here]() to see the updated wireframes. I used [Balsamiq](https://balsamiq.com/) to build my wireframes.
@@ -173,6 +183,8 @@ The inital design of the website was different to how the deployed product turne
 * **Online guide**: The online guide is now in its own toggable section, but retains a similar layout to the wireframe, only now there are 12 activites for the user to interact with, and each one returns markers on the map. Below the map, there are now five [Bulma cards](https://bulma.io/documentation/components/card/) which return an image, the name of the locations marked on the map, and a link to the company's site. The activity buttons no longer return a location, rather places markers on the map and returns information about the local companies themselves. I found this to a much better experience building but also in the mindset of a user, who would rather see local companies than pages about whole towns.
 * **Contact**: The contact section retains the 'Download a brochure' and a button that toggles the contact modal, but there is also an extra section that provides a phone number too. 
 * **Footer**: The footer remains the same, but with the company logo at center.
+
+[Back to top](https://github.com/lmw95/MS2-thesunriseproject#the-sunrise-project---a-visitors-guide)
 
 ## **vi. Surface**
 ### Initial considerations
@@ -251,10 +263,14 @@ Some ideas that I would like to implement in the future would be:
 * The accordian feature in the owner profile as mentioned previously
 * More sections of the website - such as local / upcoming events, information about the actual towns (Lowestoft, Yarmouth, Kessingland and Oulton Broad) and a broader history section. 
 
+[Back to top](https://github.com/lmw95/MS2-thesunriseproject#the-sunrise-project---a-visitors-guide)
+
 # **Responsive design**
 The website is designed to be fully responsive on screens sized from 320px and upwards. I achieved this by utilising media queries in my [stylesheet](https://github.com/lmw95/MS2-thesunriseproject/blob/main/assets/css/style.css). As seen in the [Am I Responsive?](http://ami.responsivedesign.is/) viewer, the website is able to be viewed on all popular screen sizes. See responsive testing [here]().
 
 ![](assets/screenshots/responsive-design.png)
+
+[Back to top](https://github.com/lmw95/MS2-thesunriseproject#the-sunrise-project---a-visitors-guide)
 
 # **Accessibility**
 I wanted to ensure that my website would be able to be accessabile to a wide as an audience as possible, taking into consideration screen readers, colourblindness and other sight conditions. 
@@ -306,6 +322,8 @@ Using Google Chrome's Lighthouse feature, I was able to check the final accessib
 ![](assets/screenshots/accessibility-report-desktop.png)
 ![](assets/screenshots/accessibility-report-mobile.png)
 
+[Back to top](https://github.com/lmw95/MS2-thesunriseproject#the-sunrise-project---a-visitors-guide)
+
 # **Validation**
 ## **W3C Markup Validaton - Initial report**
 The [W3C Markup Validation tool](https://validator.w3.org/) returned one error, which turned out to be caused be a typo in the tag name.
@@ -355,6 +373,8 @@ The report for [sendEmail.js](https://github.com/lmw95/MS2-thesunriseproject/blo
 * The variable ```emailjs``` is undefined.
 
 I attempted to fix the ```emailjs``` variable error, but it broke the code allowing the user to send emails to my inbox. I do not currently have the skills to fix this erorr, so I left it be. The same lack of skills led me to leave the ```sendMail()``` error too, as emailJS was working perfectly during testing, despite these two errors.
+
+[Back to top](https://github.com/lmw95/MS2-thesunriseproject#the-sunrise-project---a-visitors-guide)
 
 # **Testing**
 ## **Introduction**
@@ -551,8 +571,11 @@ interactive parts of the website to encourage them to visit the area based on it
 * **Test**: The contact section link should open the modal.
 * **Result**: PASS - the modal opens when link is clicked.
 
+[Back to top](https://github.com/lmw95/MS2-thesunriseproject#the-sunrise-project---a-visitors-guide)
+
 # **Deployment**
 
+[Back to top](https://github.com/lmw95/MS2-thesunriseproject#the-sunrise-project---a-visitors-guide)
 
 # **Technologies & tools**
 *LANGUAGES*
@@ -578,6 +601,8 @@ interactive parts of the website to encourage them to visit the area based on it
 * [Google Maps API](https://developers.google.com/maps/documentation/javascript/overview)
 * [Flickr](https://www.flickr.com/)
 * [Unsplash](https://unsplash.com/)
+
+[Back to top](https://github.com/lmw95/MS2-thesunriseproject#the-sunrise-project---a-visitors-guide)
 
 # **Credits & acknowledgements**
 ## **Solutions**
@@ -674,3 +699,4 @@ yarmouth.jpg | [Source](https://www.flickr.com/photos/157132713@N05/47589751742/
 ## **Thank you!**
 Thank you viewing my website for my Milestone 2 Interactive Front End assignment. This project could not have been possible without the help and support of my mentor Narender, the wonderful Slack community and the wider coding community (praise be to [Stack Overflow](https://stackoverflow.com/)!). Thank you all for your support.
 
+[Back to top](https://github.com/lmw95/MS2-thesunriseproject#the-sunrise-project---a-visitors-guide)
