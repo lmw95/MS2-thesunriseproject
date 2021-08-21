@@ -68,14 +68,6 @@ window.onload = (event) => {
     })
 
 
-    // Click event that takes user to the top of the guide section when it's corresponding button is clicked
-
-    let $guideButton = $("#circleButtonGuide");
-    $guideButton.on("click", function(){
-      var position = $("#onlineGuide").position();
-      scroll(0,position.top);
-    });
-
     // Click event that toggles the info section to appear
 
     $("#circleButtonInfo").on("click", function() {
@@ -84,29 +76,11 @@ window.onload = (event) => {
         $("#onlineGuide").slideUp(500);
     });
 
-    
-    // Click event that takes user to the top of the info section when its corresponding circle button is clicked
-
-    let $infoButton = $("#circleButtonInfo");
-    $infoButton.on("click", function(){
-      var position = $("#infoSection").position();
-      scroll(0,position.top);
-    });
-
     // Click event that toggles the owner section to appear
     $("#circleButtonOwner").on("click", function() {
       $("#ownerSection").slideDown(100);
       $("#infoSection").slideUp(500);
       $("#onlineGuide").slideUp(500);
-    });
-
-    
-    // Click event that takes user to the top of the owner section when itd corresponding circle button is clicked
-
-    let $ownerButton = $("#circleButtonOwner");
-    $ownerButton.on("click", function(){
-      var position = $("#ownerSection").position();
-      scroll(0,position.top);
     });
 
   });
