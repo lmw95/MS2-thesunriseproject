@@ -11,8 +11,8 @@
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="icon" href="assets/flaticon/icon-samples/sunrise-tab-icon.svg">
   <title>The Sunrise Project</title>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-  <script type="text/javascript">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script>
     (function(){
         emailjs.init("user_i1pF3Igfgj7leN21SoVmw");
     })();
@@ -24,7 +24,7 @@
   <!--Header section-->
   <header class="hero is-fullheight">
       <!--Navbar-->
-      <nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
+      <nav class="navbar is-fixed-top is-transparent" aria-label="main navigation">
         <!--Company logo-->
         <div class="navbar-brand">
           <a class="navbar-item" href="index.html">
@@ -45,7 +45,7 @@
           <!--Nav end (navbar menu)-->
           <div class="navbar-end is-uppercase is-text-weight-semibold">
             <a class="navbar-item hvr-push has-text-weight-bold" href="index.html" target="_self">Home</a>
-            <a class="navbar-item hvr-push has-text-weight-bold" id="toggleModal" target="_self">Contact</a>
+            <a class="navbar-item hvr-push has-text-weight-bold" href="#" id="toggleModal" target="_self">Contact</a>
           </div>
         </div>
       </nav>
@@ -61,12 +61,12 @@
             </div>
             <div class="columns">
               <div class="column is-full pl-6 pr-6">
-                <p class="subtitle hero-subtitle is-uppercase has-text-centered has-text-weight-light">Visit, explore and <span class="has-text-weight-bold">discover...</span></h1>
+                <p class="subtitle hero-subtitle is-uppercase has-text-centered has-text-weight-light">Visit, explore and <span class="has-text-weight-bold">discover...</span></p>
               </div>
             </div>
             <div class="columns">
               <div class="column is-full pl-6 pr-6">
-                <p class="title hero-title has-text-centered">The Sunrise Coast</h1>
+                <p class="title hero-title has-text-centered">The Sunrise Coast</p>
               </div>
             </div>
             <div class="columns">
@@ -134,7 +134,7 @@
   <!--Header section end-->
 
   <!--Tabs to toggle each info section-->
-<section class="section p-5 toggle-tabs is-flex is-flex-direction-row is-align-items-center is-justify-content-center id="toggleButtons">
+<section class="section p-5 toggle-tabs is-flex is-flex-direction-row is-align-items-center is-justify-content-center" id="toggleButtons">
   <div class="columns">
     <div class="column is-one-third">
       <div class="circle-button is-flex is-flex-direction-column is-align-items-center is-justify-content-center hvr-sink" id="circleButtonGuide">
@@ -167,7 +167,7 @@
     <div class="columns">
       <div class="column is-full online-guide-wrapper">
         <h1 class="title online-guide-title">The Sunrise Project Online Guide</h1>
-        <h2 class="subtitle online-guide-subtitle pt-1">Make the most of your time with us by choosing your favourite activities below, and we'll show our top 5 picks!</h1>
+        <h2 class="subtitle online-guide-subtitle pt-1">Make the most of your time with us by choosing your favourite activities below, and we'll show our top 5 picks!</h2>
       </div>
     </div>
     <!--Clickable activity options-->
@@ -255,7 +255,7 @@
     </div>
     <!--Top 5 picks-->
     <div class="columns has-text-centered mt-4 mb-4 location-wrapper" id="activityWrapper" style="opacity: 0.4;">
-    <span class="unselected-overlay"><p>Please select an activity to see results</p></span>
+    <span class="unselected-overlay">Please select an activity to see results</span>
       <!--Marker A-->
       <div class="column is-2 is-offset-1 p-3 map-location">
         <div class="location-key is-flex is-align-items-center is-justify-content-center mb-3">
@@ -389,14 +389,14 @@
         <div class="tile">
           <div class="tile is-parent is-vertical">
             <article class="tile is-child notification is-flex is-justify-content-center is-align-items-center is-flex-direction-column">
-              <p class="title tile-title has-text-centered pb-4">700,000 years of history</p>
+              <h3 class="title tile-title has-text-centered pb-4">700,000 years of history</h3>
               <p class="subtitle tile-subtitle has-text-centered">From flint tools found near Kessingland, the home to the infamous Brittonic Iceni tribe, a rich maritime and naval history and a flourishing fishing trade during the 19th century.</p>
               <span class="icon is-large">
                 <i class="fas fa-landmark fa-2x tile-icon"></i>
               </span>
             </article>
             <article class="tile is-child notification is-flex is-justify-content-center is-align-items-center is-flex-direction-column">
-              <p class="title tile-title has-text-centered pb-4">A forgotten corner</p>
+              <h3 class="title tile-title has-text-centered pb-4">A forgotten corner</h3>
               <p class="subtitle tile-subtitle has-text-centered">Up until Sir Samuel Peto connected the coast to London by train in the early 1800s, large areas of the coast were untouched by the industrious activity of the 19th century.</p>
               <span class="icon is-large">
                 <i class="fas fa-landmark fa-2x tile-icon"></i>
@@ -405,7 +405,7 @@
           </div>
           <div class="tile is-parent">
             <article class="tile is-child notification is-flex is-flex-direction-column">
-              <p class="title tile-title has-text-centered">This is East Anglia!</p>
+              <h3 class="title tile-title has-text-centered">This is East Anglia!</h3>
               <p class="subtitle tile-subtitle has-text-centered">We are right on the eastern tip</p>
               <figure class="image is-4by3">
                 <img src="assets/images/ea-map.png" alt="Map of East Anglia">
@@ -416,7 +416,7 @@
         </div>
         <div class="tile is-parent">
           <article class="tile is-child notification">
-            <p class="title tile-title has-text-centered pb-4 mb-0">A perfect location for your staycation</p>
+            <h3 class="title tile-title has-text-centered pb-4 mb-0">A perfect location for your staycation</h3>
             <div class="content has-text-centered">
               <p class="subtitle tile-subtitle">With two large towns, pockets of rugged countryside, access to the Broads and the sea, the Sunrise Coast is a complete package for those looking for adventure and a great family holiday to remember!</p>
               <a href="https://www.countrysideonline.co.uk/care-for-the-countryside/countryside-code/" target="_blank" class="countryside-code">(Dont forget to follow the The Countryside Code)</a>
@@ -427,7 +427,7 @@
       <div class="tile is-parent">
         <article class="tile is-child notification">
           <div class="content">
-            <p class="title tile-title has-text-centered">A haven for wildlife</p>
+            <h3 class="title tile-title has-text-centered">A haven for wildlife</h3>
             <p class="subtitle tile-subtitle has-text-centered pb-4">Thanks to the Broads and its marshy landscape, the Sunrise coast provides a home for many endangered species, including:</p>
             <div class="content">
               <p class="subtitle tile-subtitle is-size-4 mb-0 has-text-centered">Swallowtail Butterfly</p>
@@ -460,7 +460,8 @@
         <p class="owner-summary pt-5 pl-5 pr-5 pb-3 is-size-5 has-text has-text-justified">
           I am on a one woman mission to show the world what the Sunrise Coast has to offer. Since COVID-19, the number of staycations in the UK has increased, and with more visitors than ever before, it seemed only fitting to produce a guide to welcome guests to the area!
         </p>
-      </div class="block mt-1">
+      </div>
+      <div class="block mt-1">
         <p class="owner-summary pt-3 pl-5 pr-5 pb-5 is-size-5 has-text-justified">That's where the Sunrise Project was born. Feel free to use and share this website to anyone coming to stay on the Sunrise Coast - by doing so you are supporting a small local business. I hope you enjoy your stay here!</p>
       </div>
     </div>
@@ -473,7 +474,7 @@
     <div class="columns">
       <div class="column is-half contact-wrapper">
         <h1 class="title contact-title">Any questions? Get in touch!</h1>
-        <h2 class="subtitle contact-subtitle pt-1 has-text-weight-light">We are here to help - simply get in touch and we will reply as soon as possible</h1>
+        <h2 class="subtitle contact-subtitle pt-1 has-text-weight-light">We are here to help - simply get in touch and we will reply as soon as possible</h2>
       </div>
       <div class="column is-half">
         <div class="columns contact-method-wrapper is-mobile">
@@ -513,7 +514,7 @@
         <p class="is-size-6 p-2"><i class="fas fa-map-marked-alt mr-2"></i> London Road North, Lowestoft, NR32 3UU</p>
       </div>
       <div class="column footer-logo is-one-third has-text-centered is-flex is-justify-content-center is-align-items-center">
-        <img src="assets/flaticon/icon-samples/sunrise-green-bg.png" style="height: 70px; max-width: 70px;">
+        <img src="assets/flaticon/icon-samples/sunrise-green-bg.png" alt="White sunrise on green background" style="height: 70px; max-width: 70px;">
         <p class="is-size-6 is-uppercase pt-3">The Sunrise Project</p>
       </div>
       <div class="column is-one-third">
@@ -546,8 +547,7 @@
 
 <!--Modal - only active when contact button clicked-->
 <div class="modal modal-contact">
-    <div class="modal-background">
-    </div>
+  <div class="modal-background"></div>
     <div class="modal-content">
       <div class="box p-6">
           <div class="columns">
@@ -556,7 +556,7 @@
                   <h2 class="subtitle modal-subtitle is-size-4" style="display: none;">Thanks! We will be in touch shortly.</h2>
               </div>
           </div>
-        <form onsubmit="return sendMail(this);">
+        <form onsubmit="return sendMail(this);" id="myForm">
           <!--Full name input-->
           <div class="field">
             <label class="label">Full name</label>
@@ -595,8 +595,7 @@
         </div>
       </form>
     </div>
-  </div>
-
+</div>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="assets/js/sendEmail.js"></script>
