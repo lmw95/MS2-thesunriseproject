@@ -12,32 +12,32 @@ This website is the company's primary marketing method, and offers an online inf
 # Table of Contents
 * [UX](https://github.com/lmw95/MS2-thesunriseproject#ux)
     * [i. User Stories](https://github.com/lmw95/MS2-thesunriseproject#i-user-stories)
-        * [Users](https://github.com/lmw95/MS2-thesunriseproject#users)
-        * [Owners](https://github.com/lmw95/MS2-thesunriseproject#owners)
+        * Users
+        * Owners
     * [ii. Strategy](https://github.com/lmw95/MS2-thesunriseproject#ii-strategy)
-        * [Project inception](https://github.com/lmw95/MS2-thesunriseproject#project-inception)
-        * [Research](https://github.com/lmw95/MS2-thesunriseproject#research)
+        * Project inception
+        * Research
     * [iii. Scope](https://github.com/lmw95/MS2-thesunriseproject#iii-scope)
-        * [Target audience](https://github.com/lmw95/MS2-thesunriseproject#target-audience)
-        * [Requirements](https://github.com/lmw95/MS2-thesunriseproject#requirements)
-        * [Limitations](https://github.com/lmw95/MS2-thesunriseproject#limitations)
+        * Target audience
+        * Requirements
+        * Limitations
     * [iv. Structure](https://github.com/lmw95/MS2-thesunriseproject#iv-structure)
-        * [Architecture](https://github.com/lmw95/MS2-thesunriseproject#architecture)
-        * [Website flow](https://github.com/lmw95/MS2-thesunriseproject#website-flow)
+        * Architecture
+        * Website flow
     * [v. Skeleton](https://github.com/lmw95/MS2-thesunriseproject#v-skeleton)
-        * [Wireframes & changes](https://github.com/lmw95/MS2-thesunriseproject#wireframes--changes)
+        * Wireframes & changes
     * [vi. Surface](https://github.com/lmw95/MS2-thesunriseproject#vi-surface)
-        * [Initial considerations](https://github.com/lmw95/MS2-thesunriseproject#initial-considerations)
-        * [Palette](https://github.com/lmw95/MS2-thesunriseproject#palette)
-        * [Typography](https://github.com/lmw95/MS2-thesunriseproject#typography)
-        * [Iconography & imagery](https://github.com/lmw95/MS2-thesunriseproject#iconography--imagery)
+        * Initial considerations
+        * Palette
+        * Typography
+        * Iconography & imagery
 * [Features](https://github.com/lmw95/MS2-thesunriseproject#features)
     * [Navigation menu & hero image](https://github.com/lmw95/MS2-thesunriseproject#navigation-menu--hero-image)
     * [Section toggle buttons](https://github.com/lmw95/MS2-thesunriseproject#section-toggle-buttons)
     * [Online guide](https://github.com/lmw95/MS2-thesunriseproject#online-guides)
-        * [Interactive buttons](https://github.com/lmw95/MS2-thesunriseproject#interactive-buttons)
-        * [Googe Maps](https://github.com/lmw95/MS2-thesunriseproject#google-maps)
-        * [Location results](https://github.com/lmw95/MS2-thesunriseproject#location-results)
+        * Interactive buttons
+        * Googe Maps
+        * Location results
     * [Information page](https://github.com/lmw95/MS2-thesunriseproject#information-page)
     * [Owner profile](https://github.com/lmw95/MS2-thesunriseproject#owner-profile)
     * [Contact section](https://github.com/lmw95/MS2-thesunriseproject#contact-section)
