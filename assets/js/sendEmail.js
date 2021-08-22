@@ -1,3 +1,5 @@
+// Integrates emailJS 
+
 function sendMail(contactForm) {
     emailjs.send("service_fgrbztc", "enquiry", {
         "from_name": contactForm.name.value,
@@ -20,7 +22,9 @@ function sendMail(contactForm) {
 let form = document.getElementById("myForm");
 form.reset();
 
+
 // Closes modal when submit is pressed
+
 $(document).ready(function(){
     $("#submitCloseModal").on("click", function() {
         $(".modal-subtitle").css("display", "inline");
