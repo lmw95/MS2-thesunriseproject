@@ -449,6 +449,7 @@ div.footer-social-media {
         width: 100%;
         flex-direction: row;
         align-items: center;
+        padding-bottom: 20px;
     }
 
     .circle-button {
@@ -528,6 +529,7 @@ div.footer-social-media {
         width: 100%;
         flex-direction: row;
         align-items: center;
+        padding-bottom: 20px;
     }
 
     .circle-button {
