@@ -7,7 +7,7 @@ With the event of COVID-19 resulting in the dramatic increase in staycations, Th
 
 This website is the company's primary marketing method, and offers an online information center for the Sunrise Coast, complete with an interactive guide to help visitors make the most of their day out. As the area advertised is not well-known outside of Suffolk, this means that the website will serve as an introduction as well as a guide to the local area.
 
-[The deployed site can be found here.]()
+[The deployed site can be found here.](https://lmw95.github.io/MS2-thesunriseproject/)
 
 # Table of Contents
 * [UX](https://github.com/lmw95/MS2-thesunriseproject#ux)
