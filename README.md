@@ -586,11 +586,80 @@ The score for the performance of the website in the Lighthouse report on desktop
 
 ![](assets/reports/performance.png)
 
----
+## **Cross-device compatability**
+This webstie was tested on the following devices, both Android and iOS:
+
+Device | Operating system | Screen size | Compatible?
+-------|------------------|-------------|------------
+iPhone 6 | iOS | Mobile | Yes
+iPhone 11 | iOS | Mobile | Yes
+Samsung Galaxy Prime | Android | Mobile | Yes
+Samsung Galaxy Tab | Android | Tablet | Yes
+Amazon Fire | Fire OS | Tablet | Yes
+HP Pavillion | Windows | Desktop | Yes
+
+## **Cross-browser compatability**
+This website was tested on the following browsers to ensure cross-browser compatability:
+
+Browser | Compatible?
+--------|------------
+Chrome | Yes
+Microsoft Edge | Yes
+Safari | Yes
+Firefox | Yes
+Opera | Yes
 
 [Back to top](https://github.com/lmw95/MS2-thesunriseproject#the-sunrise-project---a-visitors-guide)
 
 # **Deployment**
+## **Interface used to develop the website**
+This website was developed on Gitpod using the Code Institute student template with changes frequently committed to git then pushed onto GitHub from the Gitpod terminal.
+
+Several branches were created and merged onto the master when implementing new features. All branches should be updated with the latest version of the website.
+
+The deployed version of the website is the master.
+
+## **Deployment of the page**
+The website was deployed on GitHub using the following steps:
+* Log onto GitHub
+* Go to the “repositories” section
+* Click on the repository: [lmw95/ms2-thesunriseproject](https://github.com/lmw95/MS2-thesunriseproject)
+* Once in the repository, click on "settings" located in the right handside of the menu on top of the repository
+* Click on “Pages” located in the left handside menu
+* Under “Source”, select “Master” in the first tab
+* In the next tab, select “/root” if not already selected by default
+* Click “Save” and the url should be displayed above the "source" section
+* Now that the link is displayed, the website is deployed and can be accessed in the browser by clicking on the url
+
+![](assets/screenshots/github-pages.png)
+
+## **How to run the code locally**
+To use this project, you can either fork or clone the local repository on gitHug as follows:
+
+* ### Forking local repository
+    You can make a copy of the GitHub Repository by "forking" the original repository onto your own account, where changes can be made without affecting the original repository by following the following steps:
+
+    * Log onto Github
+    * Navigate to the GitHub repository : [lmw95/ms2-thesunriseproject](https://github.com/lmw95/MS2-thesunriseproject)
+    * Click on the fork icon (located on top right of the page at the same level of repository name)
+    * You should now have a copy of this repository into your GitHub account.
+    * To make a change changes, clone the file into your local IDE.
+
+## **Cloning local repository**
+* Log into GitHub and navigate to the GitHub repository: lemocla/neon-hangman
+* Above the repository folder and file content, click “Code”
+* Select from one of the following options:
+* Clone the files using url
+* Copy the url
+* Create a repository in GitHub and a workspace in your IDE
+* Open the terminal and type: $ git clone https://github.com/ms2-thesunriseproject.git
+* All the files should have been imported in your workspace
+* Download zip files
+* Create a repository in GitHub and a workspace in your IDE
+* Unzip the folder
+* Upload the files into your workspace
+
+![](assets/screenshots/github-clone.png)
 
 [Back to top](https://github.com/lmw95/MS2-thesunriseproject#the-sunrise-project---a-visitors-guide)
 
@@ -616,6 +685,7 @@ The score for the performance of the website in the Lighthouse report on desktop
 * [W3C Markup Validator](https://validator.w3.org/)
 * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 * [Google Maps API](https://developers.google.com/maps/documentation/javascript/overview)
+* [Autoprefixer](https://autoprefixer.github.io/)
 * [Flickr](https://www.flickr.com/)
 * [Unsplash](https://unsplash.com/)
 
@@ -626,7 +696,6 @@ The score for the performance of the website in the Lighthouse report on desktop
 * [Maps markers not showing](https://stackoverflow.com/questions/46935093/google-maps-error-not-a-latlng-or-latlngliteral-invalidvalueerror)
 * [Getting ride of white space on responsive view](https://stackoverflow.com/questions/33285107/how-do-i-get-rid-of-white-space-on-the-right-side)
 * [Images not appearing](https://stackoverflow.com/questions/54509475/css-background-image-url-not-showing-with-error-404-not-found-in-various-bro)
-
 
 ## **Code**
 This is is a list of the code that has helped me through this project. I also used code from my lectures with [Code Institute](https://github.com/Code-Institute-Org).
@@ -646,10 +715,6 @@ This is is a list of the code that has helped me through this project. I also us
 * [Pulse effect on icon](https://www.florin-pop.com/blog/2019/03/css-pulse-effect/)
 * [Navbar close on document click](https://stackoverflow.com/questions/47140356/collapse-nav-menu-when-body-is-clicked)
 * [Creating a form & integrating emailJS](https://www.emailjs.com/docs/tutorial/creating-contact-form/)
-
-## **References**
-* [Keeping code dry](https://betterprogramming.pub/keeping-your-code-dry-1105377c9c80)
-* [BEM - Best practices](http://getbem.com/naming/)
 
 ## **Media**
 Image name | Source
