@@ -206,6 +206,8 @@ I used two fonts from [Google Fonts](https://fonts.google.com/):
 
 I used icons from [Font Awesome](https://fontawesome.com/) and flaticons from [Flaticon](https://www.flaticon.com/). All images were used to represent the content of the site, and the sources can be found in the [credits]().
 
+[Back to top](https://github.com/lmw95/MS2-thesunriseproject#the-sunrise-project---a-visitors-guide)
+
 # **Features**
 ## **Navigation menu & hero image**
 ![](assets/screenshots/landing-page-header.png)
@@ -216,7 +218,6 @@ Upon entering the website, the hero image of the sunset and the desription in th
 ## **Section toggle buttons**
 ![](assets/screenshots/toggle-tabs.png)
 The semi-circle toggle buttons sit underneath the bouncing icon which indicates the user to page down. When clicked, each button toggles a different section: 'Online guide' toggles the online guide section, 'The sunrise coast' toggles the information section and the 'About the project' section toggles the owner profile.
-
 
 ## **Online guide**
 ### Interactive buttons
