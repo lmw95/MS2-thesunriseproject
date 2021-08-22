@@ -571,6 +571,23 @@ interactive parts of the website to encourage them to visit the area based on it
 * **Test**: The contact section link should open the modal.
 * **Result**: PASS - the modal opens when link is clicked.
 
+## **Best practices**
+The score for best practices in the Lighthouse report on desktop and mobile was 93%
+
+![](assets/reports/best-practices-report.png)
+
+## **Search Engine Optomisation**
+The score for the SEO of the website in the Lighthouse report on desktop and mobile was 100%
+
+![](assets/reports/seo-report.png)
+
+## **Performance**
+The score for the performance of the website in the Lighthouse report on desktop and mobile was 99%
+
+![](assets/reports/performance.png)
+
+---
+
 [Back to top](https://github.com/lmw95/MS2-thesunriseproject#the-sunrise-project---a-visitors-guide)
 
 # **Deployment**
