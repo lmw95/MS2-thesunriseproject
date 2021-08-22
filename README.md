@@ -12,32 +12,34 @@ This website is the company's primary marketing method, and offers an online inf
 # Table of Contents
 * [UX](https://github.com/lmw95/MS2-thesunriseproject#ux)
     * [i. User Stories](https://github.com/lmw95/MS2-thesunriseproject#i-user-stories)
-        * Users
-        * Owners
+        * [Users](https://github.com/lmw95/MS2-thesunriseproject#users)
+        * [Owners](https://github.com/lmw95/MS2-thesunriseproject#owner)
     * [ii. Strategy](https://github.com/lmw95/MS2-thesunriseproject#ii-strategy)
-        * Project inception
-        * Research
+        * [Project inception](https://github.com/lmw95/MS2-thesunriseproject#project-inception)
+        * [Research](https://github.com/lmw95/MS2-thesunriseproject#research)
     * [iii. Scope](https://github.com/lmw95/MS2-thesunriseproject#iii-scope)
-        * Target audience
-        * Requirements
-        * Limitations
+        * [Target audience](https://github.com/lmw95/MS2-thesunriseproject#target-audience)
+        * [Scope table of interactive features](https://github.com/lmw95/MS2-thesunriseproject#scope-of-interactive-features)
+        * [### Final interactive features](https://github.com/lmw95/MS2-thesunriseproject#final-interactive-features)
+        * [Requirements](https://github.com/lmw95/MS2-thesunriseproject#requirements)
+        * [Limitations](https://github.com/lmw95/MS2-thesunriseproject#limitations)
     * [iv. Structure](https://github.com/lmw95/MS2-thesunriseproject#iv-structure)
-        * Architecture
-        * Website flow
+        * [Architecture](https://github.com/lmw95/MS2-thesunriseproject#architecture)
+        * [Website flow](https://github.com/lmw95/MS2-thesunriseproject#website-flow)
     * [v. Skeleton](https://github.com/lmw95/MS2-thesunriseproject#v-skeleton)
-        * Wireframes & changes
+        * [Wireframes & changes](https://github.com/lmw95/MS2-thesunriseproject#wireframes--changes)
     * [vi. Surface](https://github.com/lmw95/MS2-thesunriseproject#vi-surface)
-        * Initial considerations
-        * Palette
-        * Typography
-        * Iconography & imagery
+        * [Initial considerations](https://github.com/lmw95/MS2-thesunriseproject#initial-considerations)
+        * [Palette](https://github.com/lmw95/MS2-thesunriseproject#palette)
+        * [Typography](https://github.com/lmw95/MS2-thesunriseproject#typography)
+        * [Iconography & imagery](https://github.com/lmw95/MS2-thesunriseproject#iconography--imagery)
 * [Features](https://github.com/lmw95/MS2-thesunriseproject#features)
     * [Navigation menu & hero image](https://github.com/lmw95/MS2-thesunriseproject#navigation-menu--hero-image)
     * [Section toggle buttons](https://github.com/lmw95/MS2-thesunriseproject#section-toggle-buttons)
     * [Online guide](https://github.com/lmw95/MS2-thesunriseproject#online-guides)
-        * Interactive buttons
-        * Googe Maps
-        * Location results
+        * [Interactive buttons](https://github.com/lmw95/MS2-thesunriseproject#interactive-buttons)
+        * [Googe Maps](https://github.com/lmw95/MS2-thesunriseproject#google-maps)
+        * [Location results](https://github.com/lmw95/MS2-thesunriseproject#location-results)
     * [Information page](https://github.com/lmw95/MS2-thesunriseproject#information-page)
     * [Owner profile](https://github.com/lmw95/MS2-thesunriseproject#owner-profile)
     * [Contact section](https://github.com/lmw95/MS2-thesunriseproject#contact-section)
@@ -173,7 +175,7 @@ From there, they can toggle each section as they please - each section toggles d
 [Back to top](https://github.com/lmw95/MS2-thesunriseproject#the-sunrise-project---a-visitors-guide)
 
 ## v. Skeleton
-### Initial design 
+### Wireframes & changes
 The inital design of the website was different to how the deployed product turned out. [These wireframes](https://github.com/lmw95/MS2-thesunriseproject/tree/main/assets/wireframes) demonstrate the original idea - I have described the differences in the wireframes below, [click here]() to see the updated wireframes. I used [Balsamiq](https://balsamiq.com/) to build my wireframes.
 
 * **Header**: The webpage title is now centered within a div which is itself also centered in the middle of the hero body. There are now only two items in the navigation menu and the background no longer scrolls, it is just a static image.
@@ -190,19 +192,19 @@ The inital design of the website was different to how the deployed product turne
 ### Initial considerations
 I wanted to the website to be fun yet informative, and match the overall theme of the area (rugged countryside and the sea, but turned readable and bubbly). I used a consistent palette that kept on theme throughout the site, using only three colours.
 
-*COLOUR PALETTE*
+### Colour palette
 
 ![](assets/screenshots/colour-palette.png)
 
 The palette is fresh and provides plenty of contrast, and includes a light green to represent the countryside, a navy blue for the sea and white for section backgrounds. It helps the user to visualise the area they are looking into. I used [Coolors](https://coolors.co/) to generate this palette.
 
-*TYPOGRAPHY*
+### Typography
 
 I used two fonts from [Google Fonts](https://fonts.google.com/):
 * [Staatliches](https://fonts.google.com/specimen/Staatliches?category=Display,Handwriting&query=staat) for subtitles and general content
 * [Alfa Slab One](https://fonts.google.com/specimen/Alfa+Slab+One?category=Display,Handwriting&query=alfa+sla) for headings, as it is bold and packs a punch on the site on first viewing
 
-*ICONOGRAPHY & IMAGERY*
+### Iconography & imagery
 
 I used icons from [Font Awesome](https://fontawesome.com/) and flaticons from [Flaticon](https://www.flaticon.com/). All images were used to represent the content of the site, and the sources can be found in the [credits]().
 
