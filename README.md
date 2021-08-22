@@ -11,7 +11,7 @@ This website is the company's primary marketing method, and offers an online inf
 
 # Table of Contents
 * [UX](https://github.com/lmw95/MS2-thesunriseproject#ux)
-    * [i. User Stories](https://github.com/lmw95/MS2-thesunriseproject#user-stories)
+    * [i. User Stories](https://github.com/lmw95/MS2-thesunriseproject#i-user-stories)
         * [Users](https://github.com/lmw95/MS2-thesunriseproject#users)
         * [Owners](https://github.com/lmw95/MS2-thesunriseproject#owners)
     * [ii. Strategy](https://github.com/lmw95/MS2-thesunriseproject#ii-strategy)
